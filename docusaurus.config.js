@@ -120,7 +120,7 @@ const config = {
                 to: '/blog',
               },
               {
-                label: 'Ajanart Website',
+                label: "ajnart's Website",
                 href: 'https://ajnart.fr/',
               },
             ],
