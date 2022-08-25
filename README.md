@@ -1,6 +1,6 @@
 # Website
 
-This is the documentation about homarr
+This is the documentation about homarr (Docuzaurus)
 
 ### Installation
 
