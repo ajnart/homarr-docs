@@ -14,7 +14,7 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <img src="/img/favicon.png" height={200} />
+        <img src="/img/favicon.png" height={200} style={{filter: 'brightness(500%)'}} />
         <h1 className="hero__title">Homarr 🦞</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', margin: -5 }}>
