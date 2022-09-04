@@ -16,7 +16,7 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'manuel-rw', // Usually your GitHub org/user name.
+  organizationName: 'ajnart', // Usually your GitHub org/user name.
   projectName: 'homarr', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -36,13 +36,13 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/ajnart/homarr-docs',
+          editUrl: 'https://github.com/ajnart/homarr-docs/edit/master',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/ajnart/homarr-docs',
+          editUrl: 'https://github.com/ajnart/homarr-docs/edit/master',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
