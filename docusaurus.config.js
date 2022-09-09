@@ -91,7 +91,7 @@ const config = {
             items: [
               {
                 label: 'Installation',
-                to: '/docs/quick-start/',
+                to: '/docs/introduction/installation',
               },
               {
                 label: 'Modules',
