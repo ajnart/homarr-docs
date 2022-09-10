@@ -30,9 +30,11 @@ function HomepageHeader() {
 }
 
 export default function Home() {
-  const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout title={siteConfig.title} description="">
+    <Layout
+      title={'Landing Page 🚀'}
+      description="Homarr is a simple and lightweight homepage for your server, that helps you easily access all of your services in one place. It integrates with the services you use to display information on the homepage and helps your organize your services."
+    >
       <HomepageHeader />
       <main>
         <HomepageFeatures />
