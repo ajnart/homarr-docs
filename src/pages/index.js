@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import clsx from 'clsx';
 import { IconDownload } from "@tabler/icons";
 import Link from '@docusaurus/Link';
@@ -11,11 +11,18 @@ import HomepageUserReviews from '../components/HomepageUserReviews';
 
 import styles from './index.module.css';
 import StyledDivider from '../components/Divider/StyledDivider';
+import Particles from 'react-tsparticles';
+import { loadFull } from 'tsparticles';
 
 function HomepageHeader() {
+
+  const particlesInit = useCallback(async (engine) => {
+    await loadFull(engine);
+  }, []);
+
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner, styles.hero)}>
-      <div className="container">
+      <div className="container" style={{ zIndex: 1 }}>
         <div className="row">
           <div className="col">
             <h1>A modern and leightweight homepage for your server</h1>
@@ -51,10 +58,24 @@ function HomepageHeader() {
             </div>
           </div>
           <div className="col">
-            <img className={styles.heroImage} src="/img/pictures/homarr-touch-screen.JPG" />
+            <img
+              className={styles.heroImage}
+              src="/img/pictures/homarr-devices-preview.png"
+              style={{
+                filter: 'drop-shadow(2px 4px 6px rgba(0,0,0,0.5))',
+                border: '1px solid #ffffff30'
+              }}
+            />
           </div>
         </div>
       </div>
+
+      <Particles
+        url="/particles/particlesjs-config.json"
+        init={particlesInit}
+        canvasClassName={styles.particleCanvas}
+        style={{ position: 'absolute' }}
+      />
     </header>
   );
 }
@@ -73,7 +94,7 @@ export default function Home() {
       >
         <path
           fill="#fa5252"
-          fill-opacity="1"
+          fillOpacity="1"
           d="M0,256L48,256C96,256,192,256,288,245.3C384,235,480,213,576,218.7C672,224,768,256,864,266.7C960,277,1056,267,1152,256C1248,245,1344,235,1392,229.3L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
           data-darkreader-inline-fill=""
         />
