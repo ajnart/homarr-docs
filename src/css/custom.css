@@ -45,3 +45,27 @@
 .navbar__logo {
   margin-right: 1rem;
 }
+
+.aa-DetachedSearchButton,
+form.aa-Form {
+  border: none !important;
+  background-color: #e8e8e8 !important;
+}
+
+[data-theme='dark'] .aa-DetachedSearchButton,
+[data-theme='dark'] form.aa-Form {
+  background-color: var(--ifm-scrollbar-track-background-color) !important;
+  color: #e1e1e1;
+}
+
+[data-theme='dark'] .aa-DetachedSearchButton svg {
+  color: #e1e1e1;
+}
+
+.swiper-slide {
+  width: initial !important;
+}
+
+.footer--dark {
+  background-color: #181818 !important;
+}

@@ -1,8 +1,18 @@
 .showcase {
-  padding: 2rem 6rem;
+  padding: 2rem;
   width: 100%;
+  margin-bottom: 4rem;
 }
 
-.showcase_image {
-  border-radius: 0.5rem;
+.showcaseImage {
+  display: block;
+  margin: 0 auto;
+  max-width: min(100%, 600px);
+  border-radius: 0.3rem;
+}
+
+.showcaseText {
+  text-align: center;
+  font-size: 2.7rem;
+  margin-bottom: 2rem;
 }

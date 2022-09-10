@@ -1,0 +1,29 @@
+.genericReviewContainer {
+  background-color: var(--ifm-color-secondary-light);
+  border-radius: 0.2rem;
+  padding: 20px;
+  width: 400px;
+}
+
+[data-theme='dark'] .genericReviewContainer {
+  background-color: var(--ifm-scrollbar-track-background-color);
+}
+
+.genericReviewUserContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.genericReviewUserImage {
+  width: 60px;
+  height: 60px;
+  border-radius: 50rem;
+}
+
+.genericReviewUserName {
+  font-size: 1.3rem;
+  display: block;
+}
