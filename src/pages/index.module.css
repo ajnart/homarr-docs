@@ -1,11 +1,27 @@
 /**
  * CSS files with the .module.css suffix will be treated as CSS modules
  * and scoped locally.
- */
+*/
+
+.heroWave {
+  width: 100%;
+  height: 125px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.heroImage {
+  display: block;
+  margin-left: auto;
+  border-radius: 6px;
+  max-width: min(100%, 500px);
+}
+
 
 .heroBanner {
-  padding: 4rem 0;
-  text-align: center;
+  padding: 4rem;
   position: relative;
   overflow: hidden;
 }
@@ -16,10 +32,42 @@
   }
 }
 
-.buttons {
+.heroButtons {
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
 
-  margin: 5px;
+@media screen and (max-width: 996px) {
+  .heroButtons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.heroButton {
+  font-weight: 500;
+  color: #585858 !important;
+  border-radius: 50rem;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+[data-theme='dark'] .heroButton {
+  background-color: var(--ifm-background-surface-color);
+  color: #d4d4d4 !important;
+  border: 1px solid black;
+}
+
+.shieldBadges img {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.particleCanvas {
+  top: 0;
+  left: 0;
 }
