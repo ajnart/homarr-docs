@@ -1,21 +1,23 @@
-import React, { useCallback } from 'react';
-import clsx from 'clsx';
-import { IconDownload } from "@tabler/icons";
+import React from 'react';
+
 import Link from '@docusaurus/Link';
+import { useColorMode } from '@docusaurus/theme-common';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import { IconDownload } from '@tabler/icons';
 import Layout from '@theme/Layout';
+import clsx from 'clsx';
+import { useCallback } from 'react';
 
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import HomepageShowcase from '@site/src/components/HomepageShowcase';
 import HomepageUserReviews from '../components/HomepageUserReviews';
 
-import styles from './index.module.css';
-import StyledDivider from '../components/Divider/StyledDivider';
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
+import StyledDivider from '../components/Divider/StyledDivider';
+import styles from './index.module.css';
 
 function HomepageHeader() {
-
   const particlesInit = useCallback(async (engine) => {
     await loadFull(engine);
   }, []);
@@ -58,14 +60,7 @@ function HomepageHeader() {
             </div>
           </div>
           <div className="col">
-            <img
-              className={styles.heroImage}
-              src="/img/pictures/homarr-devices-preview.png"
-              style={{
-                filter: 'drop-shadow(2px 4px 6px rgba(0,0,0,0.5))',
-                border: '1px solid #ffffff30'
-              }}
-            />
+            <ThemedDevicePreview />
           </div>
         </div>
       </div>
@@ -109,3 +104,17 @@ export default function Home() {
     </Layout>
   );
 }
+
+const ThemedDevicePreview = () => {
+  const { colorMode } = useColorMode();
+
+  return (
+    <img
+      className={styles.heroImage}
+      src={`/img/pictures/homarr-devices-preview/compressed/homarr-devices-2d-mockup-flat-shadow-${colorMode}-compressed.png`}
+      style={{
+        filter: 'drop-shadow(2px 4px 6px rgba(0,0,0,0.5))'
+      }}
+    />
+  );
+};

@@ -66,6 +66,10 @@ form.aa-Form {
   width: initial !important;
 }
 
+.swiper-pagination-bullet-active {
+  background-color: var(--ifm-color-primary) !important;
+}
+
 .footer--dark {
   background-color: #181818 !important;
 }
