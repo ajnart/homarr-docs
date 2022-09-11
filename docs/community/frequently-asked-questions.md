@@ -10,7 +10,7 @@ tags:
 # Frequently Asked Questions
 
 ### Can I install Homarr on a Raspberry Pi?
-Yes, Homarr is compatible for the architecture of the Raspberry Pi. Have a look in our <a href="/docs/quick-start/index">installation guide</a> on how to do so.
+Yes, Homarr is compatible for the architecture of the Raspberry Pi. Have a look in our <a href="/docs/introduction/installation">installation guide</a> on how to do so.
 
 ### I have a suggestion / idea for improvement or want to report a bug
 You can report issues, suggestions or ideas for improvements <a href="https://github.com/ajnart/homarr/issues/new/choose">here</a>.

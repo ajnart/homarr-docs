@@ -30,7 +30,7 @@ hide_title: true
 <i>Join the discord! — Don't forget to star the repo if you are enjoying the project!</i>
 </p>
 <p align="center">
-<a href="https://homarr.ajnart.fr/"><strong> Demo ↗️ </strong></a> • <a href="/docs/quick-start/index"><strong> Install ➡️ </strong></a> • <a href="/docs/modules/"><strong> Modules 🧩 </strong></a> • <a href="/docs/customizations/"><strong> Customization 🎨 </strong></a>
+<a href="https://homarr.ajnart.fr/"><strong> Demo ↗️ </strong></a> • <a href="/docs/introduction/installation"><strong> Install ➡️ </strong></a> • <a href="/docs/modules/"><strong> Modules 🧩 </strong></a> • <a href="/docs/customizations/"><strong> Customization 🎨 </strong></a>
 </p>
 
 ---
