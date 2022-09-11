@@ -91,7 +91,7 @@ const config = {
             items: [
               {
                 label: 'Installation',
-                to: '/docs/quick-start/',
+                to: '/docs/introduction/installation',
               },
               {
                 label: 'Modules',
@@ -137,6 +137,12 @@ const config = {
         disableSwitch: false,
         respectPrefersColorScheme: true,
       },
+      metadata: [
+        {
+          name: 'keywords',
+          content: 'homarr, dashboard, selfhosted, hosting, modules, opensource',
+        },
+      ],
     },
   plugins: [require.resolve('@cmfcmf/docusaurus-search-local')],
 };
