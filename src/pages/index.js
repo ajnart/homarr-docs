@@ -27,9 +27,9 @@ function HomepageHeader() {
       <div className="container" style={{ zIndex: 1 }}>
         <div className="row">
           <div className="col">
-            <h1>A modern and leightweight homepage for your server</h1>
+            <h1>A modern and lightweight homepage for your server</h1>
             <p>
-              Homarr is a simple and modern homepage for your server, that helps you access all of
+              Homarr is a simple and modern homepage for your server that helps you access all of
               your services in one place. It integrates with the services you use to display useful
               information or control them. It's easy to install and supports many different devices.
             </p>
@@ -79,7 +79,7 @@ export default function Home() {
   return (
     <Layout
       title={'Landing Page 🚀'}
-      description="Homarr is a simple and lightweight homepage for your server, that helps you easily access all of your services in one place. It integrates with the services you use to display information on the homepage and helps your organize your services."
+      description="Homarr is a simple and lightweight homepage for your server that helps you easily access all of your services in one place. It integrates with the services you use to display information on the homepage and helps your organize your services."
     >
       <HomepageHeader />
 
