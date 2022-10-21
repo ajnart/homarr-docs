@@ -24,3 +24,17 @@ Then, define your background in the input field:
 Example with a custom background:
 
 ![homarr with custom background](./img/customizations-custom-background-dashboard.png)
+
+# Random Backgrounds
+
+Using [Unplash](https://unsplash.com)'s public API, you are also able to set your Homarr background to a random image from their dataset by putting their URL directly in Homarr's background input field:
+
+`https://source.unsplash.com/featured/`
+
+:::tip
+ [Topics](https://unsplash.com/t) can also be used to filter the results: `?nature,nature`
+:::
+
+Example with a random background using topics:
+
+![homarr with random unplash background](./img/customizations-custom-background-unplash.png)
