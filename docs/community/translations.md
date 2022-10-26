@@ -14,7 +14,7 @@ Our translation is running on https://crwd.in/homarr. You need an account to tra
 
 ### How to translate
 #### Process
-You can head over to the Crownin translations. There, you'll see what languages are currently being translated and what their progress is:
+You can head over to the Crowdin translations. There, you'll see what languages are currently being translated and what their progress is:
 
 ![](img/crowdin-overview.jpg)
 
