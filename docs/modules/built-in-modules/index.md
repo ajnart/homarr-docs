@@ -14,3 +14,4 @@ Homarr offers a collection of different Modules, which help you expand and perso
 | [Docker](./module-docker.md)          | The Docker module allows you to easily interact with your containers and integrate them into Homarr |
 | [Dash.](./module-dashdot.md)      | The Dash. Module will integrate the graphs of your existing instance of Dash. |
 | [Overseerr](./module-overseerr.md)      | The Overseerr module will enable you to request series and movies from your Homarr instance |
+| [Usenet](./module-usenet.md)       | The usenet module uses integrations to display a list of usenet downloads with their name, download speed, and progress.
