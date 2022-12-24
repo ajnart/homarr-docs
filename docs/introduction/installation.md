@@ -42,7 +42,7 @@ Docker will mount the configuration files and icons to your host machine. Please
 :::
 
 ### Updating Homarr
-To updae Homarr, you must remove your container first. Make sure that you've mounted your data and that you have access to it, so your configuration doesn't get lost.
+To update Homarr, you must remove your container first. Make sure that you've mounted your data and that you have access to it, so your configuration doesn't get lost.
 
 Run ``docker rm homarr`` to remove the container.
 Then, update the Homarr image (requires network connection): ``docker pull ghcr.io/ajnart/homarr:latest``.
