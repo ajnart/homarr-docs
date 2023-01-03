@@ -73,6 +73,85 @@ services:
 
 If you're not using Portainer, you can start the service using ``docker-compose up -d`` in the same directory.
 
+### Using Homarr behind Traefik with Portainer
+Copying the configuration straight from the docker-compose file won't work if you are running homarr behind Traefik, such as a Portainer setup, or docker-swarm. In that case, you should use the following slightly modified configuration:
+```yaml
+version: '3'
+services:
+  homarr:
+    container_name: homarr
+    image: ghcr.io/ajnart/homarr:latest
+    restart: unless-stopped
+    volumes:
+      - ./homarr/configs:/app/data/configs
+      - ./homarr/icons:/app/public/icons
+    environment:
+      - BASE_URL=your.internal.dns.address.here.com
+    networks:
+      - proxy
+    labels:
+      traefik.enable: true
+      traefik.http.routers.homarr.rule: Host(`your.internal.dns.address.here.com`)
+      traefik.http.routers.homarr.entrypoints: websecure
+      traefik.http.routers.homarr-secure.service: homarr
+      traefik.http.services.homarr.loadbalancer.server.port: 7575
+
+networks:
+  proxy:
+    external: true
+```
+
+A sample Traefik docker-compose.yml using Cloudflare for certificate generation that works with the configuration above would be:
+```yaml
+version: '3'
+
+services:
+  traefik:
+    image: traefik:latest
+    container_name: traefik
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    networks:
+      - proxy
+    ports:
+      - 80:80
+      - 443:443
+    environment:
+      - CF_API_EMAIL=yourcfemail@here.com
+      - CF_DNS_API_TOKEN=long-token-from-cf
+
+    command:
+      - "--log.level=DEBUG"
+      - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=false"
+      - "--providers.docker.endpoint=unix:///var/run/docker.sock"
+      - "--entrypoints.web.address=:80"
+      - "--entrypoints.web.http.redirections.entryPoint.to=websecure"
+      - "--entrypoints.web.http.redirections.entryPoint.scheme=https"
+      - "--entrypoints.web.http.redirections.entrypoint.permanent=true"
+      - "--entrypoints.websecure.address=:443"
+      - "--entrypoints.websecure.http.tls.certResolver=cloudflare"
+      - "--certificatesresolvers.cloudflare.acme.storage=acme.json"
+      - "--certificatesResolvers.cloudflare.acme.email=yourcfemail@here.com"
+      - "--certificatesResolvers.cloudflare.acme.dnsChallenge=true"
+      - "--certificatesResolvers.cloudflare.acme.dnschallenge.provider=cloudflare"
+      - "--certificatesResolvers.cloudflare.acme.dnschallenge.resolvers=1.1.1.1:53,1.0.0.1:53"
+      - "--serversTransport.insecureSkipVerify=true" # Or proxmox gives an error 500 due to its own self-signed cert
+
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./data/acme.json:/acme.json
+
+networks:
+  proxy:
+    external: true
+```
+
+Of particular note here is that both configurations explicitly define which network they are using, in this case "proxy", but it can be named anything. It just has to be the same across all services for which Traefik is serving as a proxy. These are marked as external because the proxy network was manually created by running: `docker network create proxy` but this might be unecessary depending on HOW exactly you are running Traefik. For example, if running [Traefik with Portainer](https://docs.portainer.io/advanced/reverse-proxy/traefik#deploying-in-a-docker-standalone-scenario), you can follow their official docs on how to setup Traefik and Portainer together, and you can just focus on the homarr docker labels instead.
+
+
 ## 🛒 Install from the Unraid Community App Store
 You can install Unraid without ``docker run`` and ``docker-compose``, directly from your Unraid Web Dashboard.
 
