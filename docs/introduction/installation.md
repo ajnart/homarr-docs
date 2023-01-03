@@ -77,7 +77,6 @@ If you're not using Portainer, you can start the service using ``docker-compose 
 
 #### Using Traefik to secure Homarr
 Copying the configuration straight from the docker-compose file won't work if you are running homarr behind Traefik, such as a Portainer setup, or docker-swarm. In that case, you should use the following slightly modified configuration:
-<br/>
 ```yaml
 version: '3'
 services:
