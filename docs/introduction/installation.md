@@ -73,7 +73,8 @@ services:
 
 If you're not using Portainer, you can start the service using ``docker-compose up -d`` in the same directory.
 
-### Using Homarr behind Traefik with Portainer
+:::tip
+Using Traefik to secure Homarr
 Copying the configuration straight from the docker-compose file won't work if you are running homarr behind Traefik, such as a Portainer setup, or docker-swarm. In that case, you should use the following slightly modified configuration:
 ```yaml
 version: '3'
@@ -150,7 +151,7 @@ networks:
 ```
 
 Of particular note here is that both configurations explicitly define which network they are using, in this case "proxy", but it can be named anything. It just has to be the same across all services for which Traefik is serving as a proxy. These are marked as external because the proxy network was manually created by running: `docker network create proxy` but this might be unecessary depending on HOW exactly you are running Traefik. For example, if running [Traefik with Portainer](https://docs.portainer.io/advanced/reverse-proxy/traefik#deploying-in-a-docker-standalone-scenario), you can follow their official docs on how to setup Traefik and Portainer together, and you can just focus on the homarr docker labels instead.
-
+:::
 
 ## 🛒 Install from the Unraid Community App Store
 You can install Unraid without ``docker run`` and ``docker-compose``, directly from your Unraid Web Dashboard.
