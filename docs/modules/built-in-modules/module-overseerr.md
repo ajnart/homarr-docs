@@ -15,9 +15,13 @@ import TabItem from '@theme/TabItem';
 
 # 👀 Overseerr Module
 
-The [Overseerr](https://overseerr.dev/) module will enable you to request movies and series directly from your Homarr dashboard:
+The [Overseerr](https://overseerr.dev/) module will enable you to request movies and series directly from your Homarr dashboard.
 
-![request content directly from Homarr](./img/module-overseer-search.png)
+![](img/overseerr/search-select.png)
+
+After choosing the correct type, you can search for content:
+
+![](img/overseerr/search-show.png)
 
 It displays, which content is already in your Overseerr library and links availble content directly to your [Plex](https://www.plex.tv/) or [Jellyfin](https://jellyfin.org/) instance.
 
