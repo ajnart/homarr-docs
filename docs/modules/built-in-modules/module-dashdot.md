@@ -55,7 +55,7 @@ https://getdashdot.com/docs/install
 ## After Installation
 
 After you've installed Dash., you must add it as a service to your Homarr Dashboard.
-If you haven't added a service before, check out our [guide on how to add a service](./../../introduction/manage-services.md#adding-your-first-services).
+If you haven't added a service before, check out our [guide on how to add a service](./../../introduction/manage-apps.md#adding-your-first-app).
 
 Make sure, that you've selected ``Dash.`` in the dropdown for the service type, so Homarr can embed it into your Dashboard:
 

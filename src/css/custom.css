@@ -16,7 +16,7 @@
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --aa-primary-color-rgb: #fa5252 !important;
-  --aa-muted-color-rgb: #fa5252 !important;
+  --aa-muted-color-rgb: #fb7272 !important;
   --homarr-secondary-bg: #e8e8e8;
 }
 
@@ -33,9 +33,21 @@
   --homarr-secondary-bg: #181818;
 }
 
-@media screen and (min-width: 996px) {
-  .dsla-search-wrapper {
-    width: 250px;
+.aa-DetachedOverlay {
+  backdrop-filter: blur(10px) brightness(0.5);
+}
+
+.searchBox_node_modules-\@docusaurus-theme-classic-lib-theme-Navbar-Search-styles-module {
+  min-width: 400px;
+}
+
+@media screen and (max-width: 996px) {
+  .navbar__items--right {
+    flex: 2;
+  }
+  .searchBox_node_modules-\@docusaurus-theme-classic-lib-theme-Navbar-Search-styles-module {
+    width: 100%;
+    position: relative !important;
   }
 }
 
@@ -84,4 +96,10 @@ form.aa-Form {
 
 .footer__copyright {
   color: var(--ifm-color-primary-lighter) !important;
+}
+
+[data-theme='dark'] div#__docusaurus {
+  background: linear-gradient(143deg, rgba(255,255,255,0) 0%, rgba(255,222,222,0) 63%, rgba(255, 0, 0, 0.13) 100%);
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
 }
