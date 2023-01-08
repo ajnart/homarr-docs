@@ -1,18 +1,19 @@
 .genericReviewContainer {
-  background-color: var(--ifm-color-secondary-light);
-  border-radius: 0.2rem;
+  background-color: var(--homarr-secondary-bg);
+  border-radius: 0.5rem;
   padding: 20px;
   width: 400px;
+  height: 100% !important;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 [data-theme='dark'] .genericReviewContainer {
-  background-color: var(--ifm-scrollbar-track-background-color);
+  background-color: var(--homarr-secondary-bg);
 }
+
 
 .genericReviewUserContainer {
   display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 20px;
   margin-bottom: 20px;
 }
@@ -20,10 +21,15 @@
 .genericReviewUserImage {
   width: 60px;
   height: 60px;
-  border-radius: 50rem;
+  border-radius: 50%;
 }
 
 .genericReviewUserName {
   font-size: 1.3rem;
   display: block;
+}
+
+.genericReviewUserLink {
+  color: var(--ifm-color-primary);
+  font-size: 0.9rem;
 }
