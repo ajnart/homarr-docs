@@ -149,7 +149,7 @@ const config = {
         },
       ],
     },
-  plugins: [require.resolve('@cmfcmf/docusaurus-search-local')],
+  plugins: [require.resolve('@cmfcmf/docusaurus-search-local'), 'plugin-image-zoom'],
 };
 
 module.exports = config;

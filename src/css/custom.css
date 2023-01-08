@@ -85,3 +85,9 @@ form.aa-Form {
 .footer--dark {
   background-color: #181818 !important;
 }
+
+[data-theme='dark'] div#__docusaurus {
+  background: linear-gradient(143deg, rgba(255,255,255,0) 0%, rgba(255,222,222,0) 63%, rgba(255, 0, 0, 0.13) 100%);
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+}
