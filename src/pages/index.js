@@ -2,8 +2,8 @@ import React from 'react';
 
 import Link from '@docusaurus/Link';
 import { useColorMode } from '@docusaurus/theme-common';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import { IconDownload } from '@tabler/icons';
+import { IconBook } from '@tabler/icons';
 import Layout from '@theme/Layout';
 import clsx from 'clsx';
 import { useCallback } from 'react';
@@ -39,13 +39,14 @@ function HomepageHeader() {
                 className={clsx('button button--secondary button--lg', styles.heroButton)}
                 to="#features"
               >
-                Learn more about Homarr
+                Learn More
+                <IconBook size={20} />
               </Link>
               <Link
                 className={clsx('button button--secondary button--lg', styles.heroButton)}
                 to="/docs/introduction/installation"
               >
-                <span>Install</span>
+                Install
                 <IconDownload size={20} />
               </Link>
             </div>
@@ -78,7 +79,7 @@ function HomepageHeader() {
 export default function Home() {
   return (
     <Layout
-      title={'Landing Page 🚀'}
+      title={'Home'}
       description="Homarr is a simple and lightweight homepage for your server that helps you easily access all of your services in one place. It integrates with the services you use to display information on the homepage and helps your organize your services."
     >
       <HomepageHeader />
@@ -115,7 +116,7 @@ const ThemedDevicePreview = () => {
       className={styles.heroImage}
       src={`/img/pictures/homarr-devices-preview/compressed/homarr-devices-2d-mockup-flat-shadow-${colorMode}-compressed.png`}
       style={{
-        filter: 'drop-shadow(2px 4px 6px rgba(0,0,0,0.5))'
+        filter: 'drop-shadow(2px 4px 6px rgba(0,0,0,0.5))',
       }}
     />
   );

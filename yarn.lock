@@ -1677,28 +1677,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cmfcmf/docusaurus-search-local@npm:^0.11.0":
-  version: 0.11.0
-  resolution: "@cmfcmf/docusaurus-search-local@npm:0.11.0"
-  dependencies:
-    "@algolia/autocomplete-js": ^1.5.1
-    "@algolia/autocomplete-theme-classic": ^1.5.1
-    "@algolia/client-search": ^4.12.0
-    algoliasearch: ^4.12.0
-    cheerio: ^1.0.0-rc.9
-    clsx: ^1.1.1
-    lunr-languages: ^1.4.0
-    mark.js: ^8.11.1
-  peerDependencies:
-    "@docusaurus/core": ^v2.0.0-beta.21
-    nodejieba: ^2.5.0
-  peerDependenciesMeta:
-    nodejieba:
-      optional: true
-  checksum: 9657bc43987bb8fedeb48a50d1aa375fd947d9d7a3c46f09320c369e7c974ef8c6161847dba35b5166a1d83ce63120bdf6046c8fb4af8e147b8b9adde887737f
-  languageName: node
-  linkType: hard
-
 "@colors/colors@npm:1.5.0":
   version: 1.5.0
   resolution: "@colors/colors@npm:1.5.0"
@@ -2433,6 +2411,145 @@ __metadata:
   version: 1.6.22
   resolution: "@mdx-js/util@npm:1.6.22"
   checksum: 4b393907e39a1a75214f0314bf72a0adfa5e5adffd050dd5efe9c055b8549481a3cfc9f308c16dfb33311daf3ff63added7d5fd1fe52db614c004f886e0e559a
+  languageName: node
+  linkType: hard
+
+"@node-rs/jieba-android-arm-eabi@npm:1.6.1":
+  version: 1.6.1
+  resolution: "@node-rs/jieba-android-arm-eabi@npm:1.6.1"
+  conditions: os=android & cpu=arm
+  languageName: node
+  linkType: hard
+
+"@node-rs/jieba-android-arm64@npm:1.6.1":
+  version: 1.6.1
+  resolution: "@node-rs/jieba-android-arm64@npm:1.6.1"
+  conditions: os=android & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@node-rs/jieba-darwin-arm64@npm:1.6.1":
+  version: 1.6.1
+  resolution: "@node-rs/jieba-darwin-arm64@npm:1.6.1"
+  conditions: os=darwin & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@node-rs/jieba-darwin-x64@npm:1.6.1":
+  version: 1.6.1
+  resolution: "@node-rs/jieba-darwin-x64@npm:1.6.1"
+  conditions: os=darwin & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@node-rs/jieba-freebsd-x64@npm:1.6.1":
+  version: 1.6.1
+  resolution: "@node-rs/jieba-freebsd-x64@npm:1.6.1"
+  conditions: os=freebsd & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@node-rs/jieba-linux-arm-gnueabihf@npm:1.6.1":
+  version: 1.6.1
+  resolution: "@node-rs/jieba-linux-arm-gnueabihf@npm:1.6.1"
+  conditions: os=linux & cpu=arm
+  languageName: node
+  linkType: hard
+
+"@node-rs/jieba-linux-arm64-gnu@npm:1.6.1":
+  version: 1.6.1
+  resolution: "@node-rs/jieba-linux-arm64-gnu@npm:1.6.1"
+  conditions: os=linux & cpu=arm64 & libc=glibc
+  languageName: node
+  linkType: hard
+
+"@node-rs/jieba-linux-arm64-musl@npm:1.6.1":
+  version: 1.6.1
+  resolution: "@node-rs/jieba-linux-arm64-musl@npm:1.6.1"
+  conditions: os=linux & cpu=arm64 & libc=musl
+  languageName: node
+  linkType: hard
+
+"@node-rs/jieba-linux-x64-gnu@npm:1.6.1":
+  version: 1.6.1
+  resolution: "@node-rs/jieba-linux-x64-gnu@npm:1.6.1"
+  conditions: os=linux & cpu=x64 & libc=glibc
+  languageName: node
+  linkType: hard
+
+"@node-rs/jieba-linux-x64-musl@npm:1.6.1":
+  version: 1.6.1
+  resolution: "@node-rs/jieba-linux-x64-musl@npm:1.6.1"
+  conditions: os=linux & cpu=x64 & libc=musl
+  languageName: node
+  linkType: hard
+
+"@node-rs/jieba-win32-arm64-msvc@npm:1.6.1":
+  version: 1.6.1
+  resolution: "@node-rs/jieba-win32-arm64-msvc@npm:1.6.1"
+  conditions: os=win32 & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@node-rs/jieba-win32-ia32-msvc@npm:1.6.1":
+  version: 1.6.1
+  resolution: "@node-rs/jieba-win32-ia32-msvc@npm:1.6.1"
+  conditions: os=win32 & cpu=ia32
+  languageName: node
+  linkType: hard
+
+"@node-rs/jieba-win32-x64-msvc@npm:1.6.1":
+  version: 1.6.1
+  resolution: "@node-rs/jieba-win32-x64-msvc@npm:1.6.1"
+  conditions: os=win32 & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@node-rs/jieba@npm:^1.6.0":
+  version: 1.6.1
+  resolution: "@node-rs/jieba@npm:1.6.1"
+  dependencies:
+    "@node-rs/jieba-android-arm-eabi": 1.6.1
+    "@node-rs/jieba-android-arm64": 1.6.1
+    "@node-rs/jieba-darwin-arm64": 1.6.1
+    "@node-rs/jieba-darwin-x64": 1.6.1
+    "@node-rs/jieba-freebsd-x64": 1.6.1
+    "@node-rs/jieba-linux-arm-gnueabihf": 1.6.1
+    "@node-rs/jieba-linux-arm64-gnu": 1.6.1
+    "@node-rs/jieba-linux-arm64-musl": 1.6.1
+    "@node-rs/jieba-linux-x64-gnu": 1.6.1
+    "@node-rs/jieba-linux-x64-musl": 1.6.1
+    "@node-rs/jieba-win32-arm64-msvc": 1.6.1
+    "@node-rs/jieba-win32-ia32-msvc": 1.6.1
+    "@node-rs/jieba-win32-x64-msvc": 1.6.1
+  dependenciesMeta:
+    "@node-rs/jieba-android-arm-eabi":
+      optional: true
+    "@node-rs/jieba-android-arm64":
+      optional: true
+    "@node-rs/jieba-darwin-arm64":
+      optional: true
+    "@node-rs/jieba-darwin-x64":
+      optional: true
+    "@node-rs/jieba-freebsd-x64":
+      optional: true
+    "@node-rs/jieba-linux-arm-gnueabihf":
+      optional: true
+    "@node-rs/jieba-linux-arm64-gnu":
+      optional: true
+    "@node-rs/jieba-linux-arm64-musl":
+      optional: true
+    "@node-rs/jieba-linux-x64-gnu":
+      optional: true
+    "@node-rs/jieba-linux-x64-musl":
+      optional: true
+    "@node-rs/jieba-win32-arm64-msvc":
+      optional: true
+    "@node-rs/jieba-win32-ia32-msvc":
+      optional: true
+    "@node-rs/jieba-win32-x64-msvc":
+      optional: true
+  checksum: 13f1387d37405e2aed6bf47d0f0e7ee6613822271c5227af9455f24833561eefb080d59f7361a50cc95af8395496766db756f6516f1aecfc1ceb6ddda197f70e
   languageName: node
   linkType: hard
 
@@ -4837,7 +4954,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"debug@npm:4, debug@npm:^4.0.0, debug@npm:^4.1.0, debug@npm:^4.1.1, debug@npm:^4.3.2, debug@npm:^4.3.3, debug@npm:^4.3.4":
+"debug@npm:4, debug@npm:^4.0.0, debug@npm:^4.1.0, debug@npm:^4.1.1, debug@npm:^4.2.0, debug@npm:^4.3.2, debug@npm:^4.3.3, debug@npm:^4.3.4":
   version: 4.3.4
   resolution: "debug@npm:4.3.4"
   dependencies:
@@ -5925,7 +6042,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fs-extra@npm:^10.1.0":
+"fs-extra@npm:^10.0.0, fs-extra@npm:^10.1.0":
   version: 10.1.0
   resolution: "fs-extra@npm:10.1.0"
   dependencies:
@@ -6213,7 +6330,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"graceful-fs@npm:^4.1.2, graceful-fs@npm:^4.1.6, graceful-fs@npm:^4.2.0, graceful-fs@npm:^4.2.4, graceful-fs@npm:^4.2.6, graceful-fs@npm:^4.2.9":
+"graceful-fs@npm:^4.1.11, graceful-fs@npm:^4.1.2, graceful-fs@npm:^4.1.6, graceful-fs@npm:^4.2.0, graceful-fs@npm:^4.2.4, graceful-fs@npm:^4.2.6, graceful-fs@npm:^4.2.9":
   version: 4.2.10
   resolution: "graceful-fs@npm:4.2.10"
   checksum: 3f109d70ae123951905d85032ebeae3c2a5a7a997430df00ea30df0e3a6c60cf6689b109654d6fdacd28810a053348c4d14642da1d075049e6be1ba5216218da
@@ -6429,13 +6546,6 @@ __metadata:
     readable-stream: ^2.0.1
     wbuf: ^1.1.0
   checksum: 2de144115197967ad6eeee33faf41096c6ba87078703c5cb011632dcfbffeb45784569e0cf02c317bd79c48375597c8ec88c30fff5bb0b023e8f654fb6e9c06e
-  languageName: node
-  linkType: hard
-
-"htm@npm:^3.0.0":
-  version: 3.1.1
-  resolution: "htm@npm:3.1.1"
-  checksum: 1827a0cafffcff69690b048a4df59944086d7503fe5eb7c10b40834439205bdf992941e7aa25e92b3c2c086170565b4ed7c365bc072d31067c6e7a4e478776bd
   languageName: node
   linkType: hard
 
@@ -6670,6 +6780,13 @@ __metadata:
   bin:
     image-size: bin/image-size.js
   checksum: 01745fdb47f87cecf538e69c63f9adc5bfab30a345345c2de91105f3afbd1bfcfba1256af02bf3323077b33b0004469a837e077bf0cbb9c907e9c1e9e7547585
+  languageName: node
+  linkType: hard
+
+"immediate@npm:^3.2.3":
+  version: 3.3.0
+  resolution: "immediate@npm:3.3.0"
+  checksum: 634b4305101e2452eba6c07d485bf3e415995e533c94b9c3ffbc37026fa1be34def6e4f2276b0dc2162a3f91628564a4bfb26280278b89d3ee54624e854d2f5f
   languageName: node
   linkType: hard
 
@@ -7266,6 +7383,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"klaw-sync@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "klaw-sync@npm:6.0.0"
+  dependencies:
+    graceful-fs: ^4.1.11
+  checksum: 0da397f8961313c3ef8f79fb63af9002cde5a8fb2aeb1a37351feff0dd6006129c790400c3f5c3b4e757bedcabb13d21ec0a5eaef5a593d59515d4f2c291e475
+  languageName: node
+  linkType: hard
+
 "kleur@npm:^3.0.3":
   version: 3.0.3
   resolution: "kleur@npm:3.0.3"
@@ -7485,6 +7611,13 @@ __metadata:
   version: 1.10.0
   resolution: "lunr-languages@npm:1.10.0"
   checksum: e8fd7562f5e12d9071242bd9fe12795518119eaddc771f0f9bce992dff3ada2eb09771c348b1dbfec1ea3405ebd435cbaae4681347b3297db1c41e2a6f29a634
+  languageName: node
+  linkType: hard
+
+"lunr@npm:^2.3.9":
+  version: 2.3.9
+  resolution: "lunr@npm:2.3.9"
+  checksum: 176719e24fcce7d3cf1baccce9dd5633cd8bdc1f41ebe6a180112e5ee99d80373fe2454f5d4624d437e5a8319698ca6837b9950566e15d2cae5f2a543a3db4b8
   languageName: node
   linkType: hard
 

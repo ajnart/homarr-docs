@@ -6,9 +6,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Homarr Documentation',
-  tagline: 'Simple and lightweight homepage for your server',
-  url: 'https://homarr.ajnart.fr',
+  title: 'Homarr Docs',
+  tagline: 'A modern and lightweight homepage for your server',
+  url: 'https://homarr.dev',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -17,7 +17,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'ajnart', // Usually your GitHub org/user name.
-  projectName: 'homarr', // Usually your repo name.
+  projectName: 'homarr-docs', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -89,7 +89,6 @@ const config = {
         ],
       },
       footer: {
-        style: 'dark',
         links: [
           {
             title: 'Documentation',
@@ -125,7 +124,7 @@ const config = {
                 to: '/blog',
               },
               {
-                label: "ajnart's Website",
+                label: "Ajnart's Website",
                 href: 'https://ajnart.fr/',
               },
             ],
@@ -145,7 +144,7 @@ const config = {
       metadata: [
         {
           name: 'keywords',
-          content: 'homarr, dashboard, selfhosted, hosting, modules, opensource',
+          content: 'Homarr, Dashboard, Selfhosted, Hosting, Modules, Open-Source',
         },
       ],
     },

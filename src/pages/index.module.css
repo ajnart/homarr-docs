@@ -49,22 +49,36 @@
 .heroButton {
   font-weight: 500;
   color: #585858 !important;
-  border-radius: 50rem;
-
+  border-radius: 0.6rem;
   display: flex;
   align-items: center;
   gap: 10px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+}
+
+.heroButton:hover {
+  background-color: #dbd7d7;
 }
 
 [data-theme='dark'] .heroButton {
   background-color: var(--ifm-background-surface-color);
   color: #d4d4d4 !important;
-  border: 1px solid black;
+  border: none;
+}
+
+[data-theme='dark'] .heroButton:hover {
+  background-color: #2f2f2f;
 }
 
 .shieldBadges img {
   border-radius: 4px;
   overflow: hidden;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.shieldBadges img:hover {
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
 }
 
 .particleCanvas {
