@@ -72,17 +72,17 @@ const config = {
             position: 'left',
           },
           {
-            href: 'https://homarr.ajnart.fr/',
+            to: 'https://homarr.ajnart.fr/',
             label: 'Demo',
             position: 'right',
           },
           {
-            href: 'https://discord.com/invite/aCsmEV5RgA',
+            to: 'https://discord.com/invite/aCsmEV5RgA',
             label: 'Discord',
             position: 'right',
           },
           {
-            href: 'https://github.com/ajnart/homarr',
+            to: 'https://github.com/ajnart/homarr',
             label: 'GitHub',
             position: 'right',
           },
@@ -108,11 +108,11 @@ const config = {
             items: [
               {
                 label: 'Discord',
-                href: 'https://discord.com/invite/aCsmEV5RgA',
+                to: 'https://discord.com/invite/aCsmEV5RgA',
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/ajnart/homarr',
+                to: 'https://github.com/ajnart/homarr',
               },
             ],
           },
@@ -125,7 +125,7 @@ const config = {
               },
               {
                 label: "Ajnart's Website",
-                href: 'https://ajnart.fr/',
+                to: 'https://ajnart.fr/',
               },
             ],
           },

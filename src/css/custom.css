@@ -5,6 +5,8 @@
  */
 
 /* You can override the default Infima variables here. */
+@import url(https://api.fontshare.com/v2/css?f[]=work-sans@2,1&display=swap);
+
 :root {
   --ifm-color-primary: #fa5252;
   --ifm-color-primary-dark: #f93232;
@@ -15,9 +17,14 @@
   --ifm-color-primary-lightest: #fdc3c3;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-  --aa-primary-color-rgb: #fa5252 !important;
-  --aa-muted-color-rgb: #fb7272 !important;
   --homarr-secondary-bg: #e8e8e8;
+
+  --aa-primary-color-rgb: #fa5252 !important;
+  --aa-muted-color-rgb: #fa5252 !important;
+  --aa-background-color-rgb: 200,200,200 !important;
+
+  --ifm-font-family-base: 'Work Sans', sans-serif;
+  --ifm-color-content-inverse: var(--ifm-color-emphasis-100);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -31,10 +38,20 @@
   --ifm-color-primary-lightest: #fdc3c3;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   --homarr-secondary-bg: #181818;
+  --ifm-color-content-inverse: var(--ifm-color-emphasis-100);
+
+
+  --aa-primary-color-rgb: #fa5252 !important;
+  --aa-muted-color-rgb: #fa5252 !important;
+  --aa-background-color-rgb: 24,24,24 !important;
 }
 
 .aa-DetachedOverlay {
   backdrop-filter: blur(10px) brightness(0.5);
+}
+
+.aa-DetachedContainer {
+  box-shadow: none !important;
 }
 
 .searchBox_node_modules-\@docusaurus-theme-classic-lib-theme-Navbar-Search-styles-module {
@@ -96,10 +113,4 @@ form.aa-Form {
 
 .footer__copyright {
   color: var(--ifm-color-primary-lighter) !important;
-}
-
-[data-theme='dark'] div#__docusaurus {
-  background: linear-gradient(143deg, rgba(255,255,255,0) 0%, rgba(255,222,222,0) 63%, rgba(255, 0, 0, 0.13) 100%);
-  background-size: 100vw 100vh;
-  background-attachment: fixed;
 }

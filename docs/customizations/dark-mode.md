@@ -1,7 +1,16 @@
+---
+title: 🌗 Dark Mode
+tags:
+  - Design
+  - Themes
+  - Theme
+  - Dark
+  - Dark Mode
+---
+
 # Dark Mode
 
 Homarr has a Dark Mode built-in, which is much more comforting to your eyes.
-You can active the dark mode in your settings or via the [keyboard shortcuts](./../advanced-configuration/keyboard-shortcuts.md).
 
 ## Toggle Dark Mode in the Settings
 

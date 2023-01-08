@@ -66,7 +66,7 @@ export default function HomepageUserReviews() {
           clickable: true,
         }}
         style={{
-          maxWidth: 825,
+          maxWidth: 835,
         }}
       >
         {reviews.map((item) => (

@@ -1,4 +1,5 @@
 ---
+title: 😎 After the installation
 sidebar_position: 3
 tags:
   - Service Management

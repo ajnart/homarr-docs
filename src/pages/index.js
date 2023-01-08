@@ -3,7 +3,7 @@ import React from 'react';
 import Link from '@docusaurus/Link';
 import { useColorMode } from '@docusaurus/theme-common';
 import { IconDownload } from '@tabler/icons';
-import { IconBook } from '@tabler/icons';
+import { IconInfoCircle } from '@tabler/icons';
 import Layout from '@theme/Layout';
 import clsx from 'clsx';
 import { useCallback } from 'react';
@@ -14,7 +14,6 @@ import HomepageUserReviews from '../components/HomepageUserReviews';
 
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
-import StyledDivider from '../components/Divider/StyledDivider';
 import styles from './index.module.css';
 
 function HomepageHeader() {
@@ -40,7 +39,7 @@ function HomepageHeader() {
                 to="#features"
               >
                 Learn More
-                <IconBook size={20} />
+                <IconInfoCircle size={20} />
               </Link>
               <Link
                 className={clsx('button button--secondary button--lg', styles.heroButton)}
@@ -97,11 +96,9 @@ export default function Home() {
           data-darkreader-inline-fill=""
         />
       </svg>
-      <main>
+      <main style={{ paddingLeft: 50, paddingRight: 50 }}>
         <HomepageShowcase />
-        <StyledDivider />
         <HomepageFeatures />
-        <StyledDivider />
         <HomepageUserReviews />
       </main>
     </Layout>

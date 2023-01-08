@@ -12,6 +12,10 @@
   font-size: 3rem;
 }
 
+.hero p {
+  font-weight: 500;
+}
+
 .heroImage {
   display: block;
   margin-left: auto;
@@ -54,6 +58,7 @@
   align-items: center;
   gap: 10px;
   box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+  border: none;
 }
 
 .heroButton:hover {
