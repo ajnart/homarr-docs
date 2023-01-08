@@ -20,9 +20,7 @@ You can enter the edit mode using this button:
 
 When you're in the edit mode, this button will also feature a add button where you can add new tiles to your dashboard.
 
-:::
-
-info
+:::info
 
 After making changes to your dashboard, make sure to press this button again to exit the edit mode and save your changes to the configuration file. Otherwise, your changes will be lost.
 
@@ -49,9 +47,7 @@ At all times, you must populate the following fields with data when you manage y
 
 The icon will automatically adjust when you edit the app name.
 
-:::
-
-tip
+:::tip
 
 The external address can be used for advanced use cases and improving security. For most apps however, you do not need to fill this field.
 
@@ -87,17 +83,13 @@ You can configure access to the applications using the "Integration" tab when yo
 
 After choosing an integration type, you can configure the integration. Some integrations require passwords or token to access your data.
 
-:::
-
-info
+:::info
 
 Homarr has two types of integration configuration values: ``private`` and ``public``. Public values should not contain passwords or tokens, as they are being sent to the client. Private values will never be sent to any client, after you've saved and exited the edit mode. For this reason, you won't be able to read the values of your private credentials after setting them.
 
 :::
 
-:::
-
-warn
+:::warning
 
 The Homarr Team will never ask for your credentials. Do not send people your credentials, as they manage the access to your applications and can cause harm to your device if they are abused.
 

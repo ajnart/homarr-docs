@@ -77,6 +77,11 @@ const config = {
             position: 'right',
           },
           {
+            href: 'https://discord.com/invite/aCsmEV5RgA',
+            label: 'Discord',
+            position: 'right',
+          },
+          {
             href: 'https://github.com/ajnart/homarr',
             label: 'GitHub',
             position: 'right',
