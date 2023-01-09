@@ -2,10 +2,10 @@
 title: 😎 After the installation
 sidebar_position: 3
 tags:
-  - Service Management
+  - App Management
   - Basics
   - Sorting
-  - Services
+  - Apps
   - Getting started
 ---
 

@@ -1,6 +1,6 @@
 ---
 tags:
-  - Modules
+  - Widgets
   - Docker
   - Management
   - Container

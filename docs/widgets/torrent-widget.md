@@ -1,21 +1,21 @@
 ---
-title: 🎞️ Torrent Module
+title: 🎞️ Torrent Widget
 ---
 
-# 🎞️ Torrent Module
+# 🎞️ Torrent Widget
 
-The torrent module uses integrations to display a list of torrents with their name, download and upload speed and progress. It supports displaying the progress from many download clients concurrently.
+The torrent widget uses integrations to display a list of torrents with their name, download and upload speed and progress. It supports displaying the progress from many download clients concurrently.
 
 :::tip
 
-To add your download service as an integration, click on your service and select the corresponding service type:
+To add your download app as an integration, click on your app and select the corresponding app type:
 
-![select the correct service type](images/torrent/module-torrent-service-type-example.jpg)
+![select the correct app type](images/torrent/widget-torrent-app-type-example.jpg)
 
 :::
 
-## Activate the Module
-Please read our documentation on [how to enable a module](index.md#activating-a-module).
+## Activate the Widget
+Please read our documentation on [how to enable a widget](index.md#activating-a-widget).
 
 ## Configuration
 
@@ -23,14 +23,14 @@ Please read our documentation on [how to enable a module](index.md#activating-a-
 | --------------------- | ----------- | ------ | ------------- |
 | Hide completed torrents | Determines if completed torrents should be hidden | yes / no | no |
 
-![configuration of the torrent module](images/torrent/module-torrent-configuration.png)
+![configuration of the torrent widget](images/torrent/widget-torrent-configuration.png)
 
 :::tip
 
-Check out our documentation on [how to configure a module](index.md#configure-a-module).
+Check out our documentation on [how to configure a widget](index.md#configure-a-widget).
 
 :::
 
 ## Screenshots
 
-![torrent module](images/torrent/module-torrent.png)
+![torrent widget](images/torrent/widget-torrent.png)

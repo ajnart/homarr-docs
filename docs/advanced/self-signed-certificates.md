@@ -16,13 +16,13 @@ import TabItem from '@theme/TabItem';
 
 
 ## Allowing self signed certificates
-Some users may come across a barrier, where they're unable to receive a 200 response from the Ping module for some services, while using self-signed certificates or a local certificate authory.
+Some users may come across a barrier, where they're unable to receive a 200 response from the Ping widget for some apps, while using self-signed certificates or a local certificate authory.
 
 :::note What's going on?
 
-Homarr is trying to communicate to your services via the integrations.
+Homarr is trying to communicate to your apps via the integrations.
 It usually doesn't matter if Homarr is running on ``http`` or ``https``.
-Your services have a self-signed certificate - Homarr will recognize that the certificate was signed by an unknown authority and requests will be blocked.
+Your apps have a self-signed certificate - Homarr will recognize that the certificate was signed by an unknown authority and requests will be blocked.
 
 :::
 
@@ -52,7 +52,7 @@ version: '3'
 #---------------------------------------------------------------------#
 #                Homarr -  A homepage for your server.                #
 #---------------------------------------------------------------------#
-services:
+apps:
   homarr:
     container_name: homarr
     image: ghcr.io/ajnart/homarr:latest

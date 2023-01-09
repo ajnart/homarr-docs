@@ -39,9 +39,9 @@ hide_title: true
 
 ## 🔍 About
 
-Homarr is a simple and lightweight homepage for your server, that helps you easily access all of your services in one place.
+Homarr is a simple and lightweight homepage for your server, that helps you easily access all of your apps in one place.
 
-It integrates with the services you use to display information on the homepage (E.g. Show upcoming Sonarr/Radarr releases).
+It integrates with the apps you use to display information on the homepage (E.g. Show upcoming Sonarr/Radarr releases).
 
 If you have any questions about Homarr or want to share information with us, please go to one of the following places:
 
@@ -54,10 +54,10 @@ If you have any questions about Homarr or want to share information with us, ple
 
 ## ✨ Features
 
-- Integrates with services you use.
+- Integrates with apps you use.
 - Search the web directly from your homepage.
-- Real-time status indicator for every service.
-- Automatically finds icons while you type the name of a service.
+- Real-time status indicator for every app.
+- Automatically finds icons while you type the name of an app.
 - Widgets that can display all types of information.
 - Easy deployment with Docker.
 - Very light-weight and fast.

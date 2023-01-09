@@ -1,23 +1,23 @@
 ---
-title: 🚀 Download Speed Module
+title: 🚀 Download Speed Widget
 tags:
-  - Modules
+  - Widgets
   - Speed
   - Measurements
   - ISP
 ---
 
-# 🚀 Download Speed Module
+# 🚀 Download Speed Widget
 
-The download speed module integrates with your existing download services via [integrations](./../integrations/integrations). It refreshes each second and will display the last 10 measurements of the download and upload speed of your download services.
+The download speed widget integrates with your existing download apps via [integrations](./../integrations/integrations). It refreshes each second and will display the last 10 measurements of the download and upload speed of your download apps.
 
-## Activate the Module
-Please read our documentation on [how to enable a module](index.md#activating-a-module).
+## Activate the Widget
+Please read our documentation on [how to enable a widget](index.md#activating-a-widget).
 
 ## Configuration
 
-This module does not offer any configurations. You may configure your download client services instead.
+This widget does not offer any configurations. You may configure your download client apps instead.
 
 ## Screenshots
 
-![download speed module in dark mode](images/networkSpeed/module-download-speed-dark.png)
+![download speed widget in dark mode](images/networkSpeed/widget-download-speed-dark.png)

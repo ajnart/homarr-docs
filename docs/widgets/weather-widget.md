@@ -1,21 +1,21 @@
 ---
-title: ☔ Weather Module
+title: ☔ Weather Widget
 sidebar_position: 1
 tags:
-  - Modules
+  - Widgets
   - Weather
   - Geolocation
   - Forecast
 ---
 
-# ☔ Weather Module
+# ☔ Weather Widget
 
-The Weather Module uses your location to display the current, highest and lowest temperature. The Module uses [open-meteo.com](https://open-meteo.com) to retrieve weather data.
+The Weather Widget uses your location to display the current, highest and lowest temperature. The Widget uses [open-meteo.com](https://open-meteo.com) to retrieve weather data.
 
-The Module **does not request your browsers location**, you must specify a location yourself using the Module's settings.
+The Widget **does not request your browsers location**, you must specify a location yourself using the Widget's settings.
 
-## Activate the Module
-Please read our documentation on [how to enable a module](index.md#activating-a-module).
+## Activate the Widget
+Please read our documentation on [how to enable a widget](index.md#activating-a-widget).
 
 ## Configuration
 
@@ -24,7 +24,7 @@ Please read our documentation on [how to enable a module](index.md#activating-a-
 | Display in Fahrenheit | Displays the temperature in °F. | yes / no | no |
 | Current Location | Location name. Can be pretty much anything and should be as percise as possible. | - | - |
 
-![configuration of the weather module](images/weather/module-weather-configuration.png)
+![configuration of the weather widget](images/weather/widget-weather-configuration.png)
 
 <details>
   <summary>I am having issues / false data with the weather. What can I do?</summary>
@@ -36,12 +36,12 @@ Please read our documentation on [how to enable a module](index.md#activating-a-
 
 :::tip
 
-Check out our documentation on [how to configure a module](index.md#configure-a-module).
+Check out our documentation on [how to configure a widget](index.md#configure-a-widget).
 
 :::
 
 ## Screenshots
 
-![weather module in light mode](images/weather/module-weather-light-mode.png)
+![weather widget in light mode](images/weather/widget-weather-light-mode.png)
 
-![weather module in dark mode](images/weather/module-weather-dark-mode.png)
+![weather widget in dark mode](images/weather/widget-weather-dark-mode.png)

@@ -1,7 +1,7 @@
 ---
-title: 📟 Dash. Module
+title: 📟 Dash. Widget
 tags:
-  - Modules
+  - Widgets
   - Dashboard
   - Dash.
   - Dashdot
@@ -10,19 +10,19 @@ tags:
   - iFrame
 ---
 
-# 📟 Dash. Module
+# 📟 Dash. Widget
 
-The Dash. module will integrate your existing Dash. instance into Homarr. The graphs will be integrated using [iframe](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe).
+The Dash. widget will integrate your existing Dash. instance into Homarr. The graphs will be integrated using [iframe](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe).
 Additionally, you can enable or disable certain graphs, or enable the Multi-Core view for the CPU.
 
 ## Add this widget to your Dashboard
 You can add this widget via the edit mode. Please read [this guide on how to do so](index.md#adding-a-widget).
 
-If you want to quickly test the module, before installing Dash. on your machine, we recommend to use the public demo server of Dash.:
+If you want to quickly test the widget, before installing Dash. on your machine, we recommend to use the public demo server of Dash.:
 https://dash.mauz.io/
 
 ## Initial setup
-For using this module with real data from your server, you need to install https://github.com/MauriceNino/dashdot on your server. We recommend that you use their Docker Container for the easiest and fastest installation.
+For using this widget with real data from your server, you need to install https://github.com/MauriceNino/dashdot on your server. We recommend that you use their Docker Container for the easiest and fastest installation.
 
 ### Install Dash. using Docker
 ```
@@ -37,7 +37,7 @@ docker container run -it \
 ``` 
 version: '3.5'
 
-services:
+apps:
   dash:
     image: mauricenino/dashdot:latest
     restart: unless-stopped
@@ -54,12 +54,12 @@ https://getdashdot.com/docs/install
 
 ## After Installation
 
-After you've installed Dash., you must add it as a service to your Homarr Dashboard.
-If you haven't added a service before, check out our [guide on how to add a service](./../introduction/manage-apps.md#adding-your-first-app).
+After you've installed Dash., you must add it as an app to your Homarr Dashboard.
+If you haven't added an app before, check out our [guide on how to add an app](./../introduction/manage-apps.md#adding-your-first-app).
 
-Make sure, that you've selected ``Dash.`` in the dropdown for the service type, so Homarr can embed it into your Dashboard:
+Make sure, that you've selected ``Dash.`` in the dropdown for the app type, so Homarr can embed it into your Dashboard:
 
-![screenshot of dash. service type selected for a service](images/dashDot/module-dashdot-service-type.png)
+![screenshot of dash. app type selected for an app](images/dashDot/widget-dashdot-app-type.png)
 
 ## Configuration
 | Configuration         | Description | Values | Default Value |
@@ -69,7 +69,7 @@ Make sure, that you've selected ``Dash.`` in the dropdown for the service type, 
 | Use Compact View | Reduce the size of the individual graphs, which makes them use less space. Recommended for smaller screens | yes / no | no |
 | Graphs | Selection of the Dash. graphs, which should be displayed | yes / no | CPU, RAM, Storage, Network |
 
-![dash dot configuration](images/dashDot/module-dashdot-configuration.png)
+![dash dot configuration](images/dashDot/widget-dashdot-configuration.png)
 
 ## Reverse Proxy Configuration
 Homarr will embed the graphs of your Dash. instance.
@@ -83,4 +83,4 @@ If you want to proceed, you must configure this header on your reverse proxy: ht
 
 ## Screenshots
 
-![dash dot module in light mode](images/dashDot/module-dashdot-light-mode.png)
+![dash dot widget in light mode](images/dashDot/widget-dashdot-light-mode.png)

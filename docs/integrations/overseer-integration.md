@@ -1,6 +1,6 @@
 ---
 tags:
-  - Modules
+  - Widgets
   - Integration
   - Overseerr
   - Jellyseerr
@@ -69,14 +69,14 @@ Simply select the correct type from the integration tab when editing the applica
 <Tabs groupId="media-server">
   <TabItem value="plex" label="🎬 Plex Media Server">
     <p>
-      Select <code>Overseerr</code> in the service type for your Overseerr service.<br/>
-      Fill our the field <code>Api token</code> with from the link below, when having <code>Overseerr</code> as the service type selected.
+      Select <code>Overseerr</code> in the app type for your Overseerr app.<br/>
+      Fill our the field <code>Api token</code> with from the link below, when having <code>Overseerr</code> as the app type selected.
     </p>
   </TabItem>
   <TabItem value="jellyfin" label="🎬 Jellyfin Media Server">
     <p>
-      Select <code>Jellyseerr</code> in the service type for your Jellyseer service.<br/>
-      Fill our the field <code>Api token</code> with from the link below, when having <code>Jellyseerr</code> as the service type selected.
+      Select <code>Jellyseerr</code> in the app type for your Jellyseer app.<br/>
+      Fill our the field <code>Api token</code> with from the link below, when having <code>Jellyseerr</code> as the app type selected.
     </p>
   </TabItem>
 </Tabs>
@@ -90,4 +90,4 @@ The integration will display, what content is already available in your media li
 ## Seasons selection
 If you're selecting a series, you'll be asked what seasons you want to request:
 
-![season selector](images/overseerr/module-overseerr-season-select.jpg)
+![season selector](images/overseerr/widget-overseerr-season-select.jpg)

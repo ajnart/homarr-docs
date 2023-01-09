@@ -9,7 +9,7 @@ tags:
   - Custom
   - Customization
   - Custom icons
-  - Services
+  - Apps
 ---
 
 # Custom Icons
@@ -38,7 +38,7 @@ Add any icon(s) to the folder. If you're using unRAID, connect using SMB or (S-)
 ### 3. Restart your docker container
 Currently, a restart of the Homarr container is required to being able to load icons from the frontend. Simply restart it after adding your desired icons to the folder.
 
-### 4. Use your icons for services
+### 4. Use your icons for apps
 Access the icon(s) using `/icons/name.png` or `/icons/name.svg`.
 
 ![image](https://user-images.githubusercontent.com/71191962/170479159-5df02aa0-683a-44f2-bdcf-4f58585655dd.png)
