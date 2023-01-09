@@ -9,7 +9,7 @@ tags:
 # Customize your Search Engine
 ## Select a Search Engine
 
-If you use the search box widget, you might want to configure your search engine.
+If you use the search box module, you might want to configure your search engine.
 Open settings by clicking the settings cog on the top right.
 You can either select one of the default search engines, or you can provide a custom one.
 

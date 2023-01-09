@@ -1,5 +1,4 @@
 ---
-title: 🚀 Installation
 sidebar_position: 2
 tags:
   - Installation
@@ -60,7 +59,7 @@ version: '3'
 #---------------------------------------------------------------------#
 #                Homarr -  A homepage for your server.                #
 #---------------------------------------------------------------------#
-apps:
+services:
   homarr:
     container_name: homarr
     image: ghcr.io/ajnart/homarr:latest
@@ -72,7 +71,7 @@ apps:
       - '7575:7575'
 ```
 
-If you're not using Portainer, you can start the app using ``docker-compose up -d`` in the same directory.
+If you're not using Portainer, you can start the service using ``docker-compose up -d`` in the same directory.
 
 <br/>
 
@@ -80,7 +79,7 @@ If you're not using Portainer, you can start the app using ``docker-compose up -
 Copying the configuration straight from the docker-compose file won't work if you are running homarr behind Traefik, such as a Portainer setup, or docker-swarm. In that case, you should use the following slightly modified configuration:
 ```yaml
 version: '3'
-apps:
+services:
   homarr:
     container_name: homarr
     image: ghcr.io/ajnart/homarr:latest
@@ -96,8 +95,8 @@ apps:
       traefik.enable: true
       traefik.http.routers.homarr.rule: Host(`your.internal.dns.address.here.com`)
       traefik.http.routers.homarr.entrypoints: websecure
-      traefik.http.routers.homarr-secure.app: homarr
-      traefik.http.apps.homarr.loadbalancer.server.port: 7575
+      traefik.http.routers.homarr-secure.service: homarr
+      traefik.http.services.homarr.loadbalancer.server.port: 7575
 
 networks:
   proxy:
@@ -110,7 +109,7 @@ A sample Traefik docker-compose.yml using Cloudflare for certificate generation 
 ```yaml
 version: '3'
 
-apps:
+services:
   traefik:
     image: traefik:latest
     container_name: traefik
@@ -156,7 +155,7 @@ networks:
 
 
 :::tip
-Of particular note here is that both configurations explicitly define which network they are using, in this case "proxy", but it can be named anything. It just has to be the same across all apps for which Traefik is serving as a proxy. These are marked as external because the proxy network was manually created by running: `docker network create proxy` but this might be unecessary depending on HOW exactly you are running Traefik. For example, if running [Traefik with Portainer](https://docs.portainer.io/advanced/reverse-proxy/traefik#deploying-in-a-docker-standalone-scenario), you can follow their official docs on how to setup Traefik and Portainer together, and you can just focus on the homarr docker labels instead.
+Of particular note here is that both configurations explicitly define which network they are using, in this case "proxy", but it can be named anything. It just has to be the same across all services for which Traefik is serving as a proxy. These are marked as external because the proxy network was manually created by running: `docker network create proxy` but this might be unecessary depending on HOW exactly you are running Traefik. For example, if running [Traefik with Portainer](https://docs.portainer.io/advanced/reverse-proxy/traefik#deploying-in-a-docker-standalone-scenario), you can follow their official docs on how to setup Traefik and Portainer together, and you can just focus on the homarr docker labels instead.
 :::
 
 

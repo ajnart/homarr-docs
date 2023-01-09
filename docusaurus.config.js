@@ -6,18 +6,18 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Homarr Docs',
-  tagline: 'A modern and lightweight homepage for your server',
-  url: 'https://homarr.dev',
+  title: 'Homarr Documentation',
+  tagline: 'Simple and lightweight homepage for your server',
+  url: 'https://homarr.ajnart.fr',
   baseUrl: '/',
-  onBrokenLinks: 'warn',
+  onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.png',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'ajnart', // Usually your GitHub org/user name.
-  projectName: 'homarr-docs', // Usually your repo name.
+  projectName: 'homarr', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -72,23 +72,19 @@ const config = {
             position: 'left',
           },
           {
-            to: 'https://homarr.ajnart.fr/',
+            href: 'https://homarr.ajnart.fr/',
             label: 'Demo',
             position: 'right',
           },
           {
-            to: 'https://discord.com/invite/aCsmEV5RgA',
-            label: 'Discord',
-            position: 'right',
-          },
-          {
-            to: 'https://github.com/ajnart/homarr',
+            href: 'https://github.com/ajnart/homarr',
             label: 'GitHub',
             position: 'right',
           },
         ],
       },
       footer: {
+        style: 'dark',
         links: [
           {
             title: 'Documentation',
@@ -98,8 +94,8 @@ const config = {
                 to: '/docs/introduction/installation',
               },
               {
-                label: 'Widgets',
-                to: '/docs/widgets/',
+                label: 'Modules',
+                to: '/docs/modules/',
               },
             ],
           },
@@ -108,11 +104,11 @@ const config = {
             items: [
               {
                 label: 'Discord',
-                to: 'https://discord.com/invite/aCsmEV5RgA',
+                href: 'https://discord.com/invite/aCsmEV5RgA',
               },
               {
                 label: 'GitHub',
-                to: 'https://github.com/ajnart/homarr',
+                href: 'https://github.com/ajnart/homarr',
               },
             ],
           },
@@ -124,8 +120,8 @@ const config = {
                 to: '/blog',
               },
               {
-                label: "Ajnart's Website",
-                to: 'https://ajnart.fr/',
+                label: "ajnart's Website",
+                href: 'https://ajnart.fr/',
               },
             ],
           },
@@ -144,11 +140,11 @@ const config = {
       metadata: [
         {
           name: 'keywords',
-          content: 'Homarr, Dashboard, Selfhosted, Hosting, Modules, Open-Source',
+          content: 'homarr, dashboard, selfhosted, hosting, modules, opensource',
         },
       ],
     },
-  plugins: [require.resolve('@cmfcmf/docusaurus-search-local'), 'plugin-image-zoom'],
+  plugins: [require.resolve('@cmfcmf/docusaurus-search-local')],
 };
 
 module.exports = config;
