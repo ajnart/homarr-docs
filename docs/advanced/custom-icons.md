@@ -19,10 +19,12 @@ The icons used in Homarr are automatically requested from the [dashboard-icons](
 
 Icons are requested in the following way:
 
-1. Grab Name
-2. Replace " " with "-"
+1. Get the name you entered
+2. Replace " " with "-" (to make it compatible with the link)
 3. Convert to lowercase
-4. Insert in link: `https://cdn.jsdelivr.net/gh/walkxhub/dashboard-icons/png/{name}.png`
+4. Interpolate `{name}` in the link: `https://cdn.jsdelivr.net/gh/walkxhub/dashboard-icons/png/{name}.png`
+
+If the name of the app you are trying to use is not recgonized as an icon you can still use the icon search function to find the icon you want or put in **any link that returns an image** or even add your own custom icons.
 
 ![firefox_vCMTN5meLp](https://user-images.githubusercontent.com/71191962/170118033-a72ea587-4df0-43dd-8b7e-e0e7bae45dc6.gif)
 
