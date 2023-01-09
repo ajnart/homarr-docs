@@ -1,5 +1,5 @@
 ---
-title: 📆 Calendar Widget
+title: 📆 Calendar
 sidebar_position: 1
 tags:
   - Widgets

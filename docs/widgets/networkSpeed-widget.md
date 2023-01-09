@@ -1,5 +1,5 @@
 ---
-title: 🚀 Download Speed Widget
+title: 🚀 Download Speed
 tags:
   - Widgets
   - Speed

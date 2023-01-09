@@ -1,5 +1,5 @@
 ---
-title: 📟 Dash. Widget
+title: 📟 Dash.
 tags:
   - Widgets
   - Dashboard

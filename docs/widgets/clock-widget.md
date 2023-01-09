@@ -1,5 +1,5 @@
 ---
-title: 🕓 Clock Widget
+title: 🕓 Clock
 description: Explanation of the Clock Widget
 tags:
   - Widgets

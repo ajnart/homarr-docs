@@ -1,5 +1,5 @@
 ---
-title: 🎞️ Torrent Widget
+title: 🎞️ Torrent
 ---
 
 # 🎞️ Torrent Widget

@@ -1,5 +1,5 @@
 ---
-title: ☔ Weather Widget
+title: ☔ Weather
 sidebar_position: 1
 tags:
   - Widgets

@@ -1,5 +1,5 @@
 ---
-title: 📁 Usenet Widget
+title: 📁 Usenet
 ---
 
 # 📁 Usenet Widget
