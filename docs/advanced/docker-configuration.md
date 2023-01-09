@@ -25,7 +25,7 @@ Our docker container offers multiple environment variables for further configura
 
 ## Configuring the time zone
 
-Some users might experience issues with their [calendar releases](./../modules/built-in-modules/module-calendar.md) in Homarr.
+Some users might experience issues with their [calendar releases](./../widgets/calendar-widget.md) in Homarr.
 This is because the calendar is using the server-side time.
 Although you should always set your host machine to your local time zone, you should specify the timezone for your Homarr Docker container to ensure that the timezone is always set correctly.
 

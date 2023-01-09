@@ -10,7 +10,7 @@ const config = {
   tagline: 'A modern and lightweight homepage for your server',
   url: 'https://homarr.dev',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.png',
 
@@ -98,8 +98,8 @@ const config = {
                 to: '/docs/introduction/installation',
               },
               {
-                label: 'Modules',
-                to: '/docs/modules/',
+                label: 'Widgets',
+                to: '/docs/widgets/',
               },
             ],
           },

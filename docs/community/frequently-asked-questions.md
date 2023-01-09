@@ -16,7 +16,7 @@ Yes, Homarr is compatible for the architecture of the Raspberry Pi. Have a look 
 You can report issues, suggestions or ideas for improvements <a href="https://github.com/ajnart/homarr/issues/new/choose">here</a>.
 
 ### Can I use my own custom icons for services?
-Yes, check out our guide on <a href="/docs/advanced-configuration/custom-icons">how to add your custom icons</a>.
+Yes, check out our guide on <a href="/docs/advanced/custom-icons">how to add your custom icons</a>.
 
 ### I think i found a bug. What can I do?
 If you think, that you found a bug, please create an issue <a href="https://github.com/ajnart/homarr/issues/new/choose">here</a>.

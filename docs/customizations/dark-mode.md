@@ -18,7 +18,7 @@ To activate the darkmode over your settings, click on the cog icon at the top ri
 
 :::tip
 
-Use the [keyboard shortcut](./../advanced-configuration/keyboard-shortcuts.md) for faster toggeling.
+Use the keyboard shortcut <kbd>win</kbd> + <kbd>J</kbd> for faster toggeling.
 
 :::
 
