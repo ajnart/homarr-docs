@@ -2,26 +2,19 @@ import React from 'react';
 
 import Link from '@docusaurus/Link';
 import { useColorMode } from '@docusaurus/theme-common';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import { IconDownload } from '@tabler/icons';
+import { IconInfoCircle } from '@tabler/icons';
 import Layout from '@theme/Layout';
 import clsx from 'clsx';
-import { useCallback } from 'react';
 
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import HomepageShowcase from '@site/src/components/HomepageShowcase';
 import HomepageUserReviews from '../components/HomepageUserReviews';
+import HomepageInstallNow from '../components/HomepageInstallNow';
 
-import Particles from 'react-tsparticles';
-import { loadFull } from 'tsparticles';
-import StyledDivider from '../components/Divider/StyledDivider';
 import styles from './index.module.css';
 
 function HomepageHeader() {
-  const particlesInit = useCallback(async (engine) => {
-    await loadFull(engine);
-  }, []);
-
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner, styles.hero)}>
       <div className="container" style={{ zIndex: 1 }}>
@@ -40,15 +33,16 @@ function HomepageHeader() {
             <div className={styles.heroButtons}>
               <Link
                 className={clsx('button button--secondary button--lg', styles.heroButton)}
-                to="#features"
+                to="/docs/about"
               >
-                Learn more about Homarr
+                Learn More
+                <IconInfoCircle size={20} />
               </Link>
               <Link
                 className={clsx('button button--secondary button--lg', styles.heroButton)}
                 to="/docs/introduction/installation"
               >
-                <span>Install</span>
+                Install
                 <IconDownload size={20} />
               </Link>
             </div>
@@ -67,13 +61,6 @@ function HomepageHeader() {
           </div>
         </div>
       </div>
-
-      <Particles
-        url="/particles/particlesjs-config.json"
-        init={particlesInit}
-        canvasClassName={styles.particleCanvas}
-        style={{ position: 'absolute' }}
-      />
     </header>
   );
 }
@@ -81,7 +68,7 @@ function HomepageHeader() {
 export default function Home() {
   return (
     <Layout
-      title={'Landing Page 🚀'}
+      title={'Home'}
       description="Homarr is a simple and lightweight homepage for your server that helps you easily access all of your services in one place. It integrates with the services you use to display information on the homepage and helps your organize your services."
     >
       <HomepageHeader />
@@ -94,17 +81,15 @@ export default function Home() {
       >
         <path
           fill="#fa5252"
-          fillOpacity="1"
-          d="M0,256L48,256C96,256,192,256,288,245.3C384,235,480,213,576,218.7C672,224,768,256,864,266.7C960,277,1056,267,1152,256C1248,245,1344,235,1392,229.3L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
-          data-darkreader-inline-fill=""
-        />
+          fill-opacity="1"
+          d="M0,224L48,202.7C96,181,192,139,288,133.3C384,128,480,160,576,149.3C672,139,768,85,864,58.7C960,32,1056,32,1152,37.3C1248,43,1344,53,1392,58.7L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+        ></path>
       </svg>
-      <main>
+      <main style={{ paddingLeft: 50, paddingRight: 50 }}>
         <HomepageShowcase />
-        <StyledDivider />
         <HomepageFeatures />
-        <StyledDivider />
         <HomepageUserReviews />
+        <HomepageInstallNow />
       </main>
     </Layout>
   );
@@ -118,7 +103,7 @@ const ThemedDevicePreview = () => {
       className={styles.heroImage}
       src={`/img/pictures/homarr-devices-preview/compressed/homarr-devices-2d-mockup-flat-shadow-${colorMode}-compressed.png`}
       style={{
-        filter: 'drop-shadow(2px 4px 6px rgba(0,0,0,0.5))'
+        filter: 'drop-shadow(2px 4px 6px rgba(0,0,0,0.5))',
       }}
     />
   );

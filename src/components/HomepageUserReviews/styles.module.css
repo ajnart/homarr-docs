@@ -1,12 +1,10 @@
-.swiperContainer {
-  padding: 30px;
-}
-
 .swiperText {
   text-align: center;
   font-size: 2.7rem;
   margin-bottom: 50px;
 }
+
+
 
 .communityFeedbackPlaceholderImage {
   display: block;
@@ -16,3 +14,5 @@
 .communityFeedbackPlaceholderText {
   text-align: center;
 }
+
+

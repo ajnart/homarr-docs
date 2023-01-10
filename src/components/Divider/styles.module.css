@@ -1,8 +1,0 @@
-.styledDivider {
-  margin: 50px auto;
-  max-width: 500px;
-}
-
-[data-theme='dark'] .styledDivider {
-  background-color: rgb(65, 65, 65) !important;
-}
