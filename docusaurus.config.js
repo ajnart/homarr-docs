@@ -96,7 +96,6 @@ const config = {
         ],
       },
       footer: {
-        style: 'dark',
         links: [
           {
             title: 'Documentation',
@@ -108,10 +107,6 @@ const config = {
               {
                 label: 'Installation',
                 to: '/docs/introduction/installation',
-              },
-              {
-                label: 'Modules',
-                to: '/docs/modules/',
               },
             ],
           },
@@ -151,7 +146,6 @@ const config = {
       },
       colorMode: {
         defaultMode: 'dark',
-        disableSwitch: false,
         respectPrefersColorScheme: true,
       },
       metadata: [
