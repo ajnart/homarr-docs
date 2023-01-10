@@ -1,6 +1,6 @@
 {
   "name": "docs",
-  "version": "0.1.2",
+  "version": "0.2.2",
   "scripts": {
     "docusaurus": "docusaurus",
     "dev": "docusaurus start",
@@ -19,7 +19,9 @@
   },
   "dependencies": {
     "@cmfcmf/docusaurus-search-local": "^0.11.0",
+    "@docusaurus/core": "latest",
     "@docusaurus/plugin-sitemap": "^2.2.0",
+    "@docusaurus/preset-classic": "latest",
     "@mdx-js/react": "^1.6.22",
     "@tabler/icons": "^1.95.0",
     "clsx": "^1.1.1",
@@ -27,11 +29,10 @@
     "prism-react-renderer": "^1.3.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-tsparticles": "^2.2.4",
-    "swiper": "^8.3.2",
-    "tsparticles": "^2.2.4"
+    "swiper": "^8.3.2"
   },
   "devDependencies": {
+    "@docusaurus/module-type-aliases": "latest",
     "@fec/remark-a11y-emoji": "^3.1.0",
     "@tsconfig/docusaurus": "^1.0.6",
     "@typescript-eslint/eslint-plugin": "^5.29.0",
