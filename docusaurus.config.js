@@ -56,6 +56,12 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     {
+      announcementBar: {
+        id: 'updates',
+        content:
+          '🎉 Homarr v0.11 has been released! Please <a href="/docs/introduction/installation">update your instance.</a> 🎉',
+        backgroundColor: '#fa5252',
+      },
       navbar: {
         title: 'Homarr',
         hideOnScroll: true,
