@@ -27,11 +27,14 @@ function HomepageHeader() {
       <div className="container" style={{ zIndex: 1 }}>
         <div className="row">
           <div className="col">
-            <h1>A modern and lightweight homepage for your server</h1>
+            <h1>A simple, yet powerful dashboard for your server.</h1>
             <p>
-              Homarr is a simple and modern homepage for your server that helps you access all of
-              your services in one place. It integrates with the services you use to display useful
-              information or control them. It's easy to install and supports many different devices.
+              Simplify the management of your server with Homarr - a sleek, modern dashboard that
+              puts all of your apps and services at your fingertips. With Homarr, you can access and
+              control everything in one convenient location. Homarr seamlessly integrates with the
+              apps you've added, providing you with valuable information and giving you complete
+              control. Installation is a breeze, and Homarr supports a wide range of deployment
+              methods.
             </p>
 
             <div className={styles.heroButtons}>

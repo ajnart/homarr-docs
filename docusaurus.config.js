@@ -8,7 +8,7 @@ const a11yEmoji = require('@fec/remark-a11y-emoji');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Homarr Documentation',
-  tagline: 'Simple and lightweight homepage for your server',
+  tagline: 'A simple, yet powerful dashboard for your server.',
   url: 'https://homarr.ajnart.fr',
   baseUrl: '/',
   onBrokenLinks: 'throw',
