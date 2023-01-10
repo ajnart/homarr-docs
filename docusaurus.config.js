@@ -160,12 +160,15 @@ const config = {
           content: 'Homarr, Dashboard, Selfhosted, Hosting, Modules, Open-Source',
         },
       ],
+      imageZoom: {
+        selector: '.markdown :not(em) > img',
     },
       tableOfContents: {
         minHeadingLevel: 2,
         maxHeadingLevel: 4,
       },
     },
+  plugins: [require.resolve('@cmfcmf/docusaurus-search-local'), 'plugin-image-zoom'],
 };
 
 module.exports = config;
