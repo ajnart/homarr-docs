@@ -58,6 +58,7 @@ const config = {
     {
       navbar: {
         title: 'Homarr',
+        hideOnScroll: true,
         logo: {
           alt: 'Homarr Logo',
           src: 'img/logo.svg',
