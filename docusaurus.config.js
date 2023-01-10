@@ -156,7 +156,7 @@ const config = {
       ],
       imageZoom: {
         selector: '.markdown :not(em) > img',
-    },
+      },
       tableOfContents: {
         minHeadingLevel: 2,
         maxHeadingLevel: 4,
