@@ -10,9 +10,7 @@ Although Homarr has no automatic caching, you can still achieve this behavior us
 To run the script, you need to open the terminal which has access to Homarr's directory. Usually, this is on your host machine or inside your docker container / volume.
 Replace ``/Volumes/docker/homarr`` with your directory of Homarr.
 
-:::
-
-warn
+:::caution
 
 Make a backup, before you execute any scripts, in case anything breaks!
 
