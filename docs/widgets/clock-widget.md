@@ -34,5 +34,4 @@ Check out our documentation on [editing tiles](/docs/introduction/after-the-inst
 ## Screenshots
 
 ![clock widget in light mode](./img/clock/widget-clock-light-mode.png)
-
 ![clock widget in dark mode](./img/clock/widget-clock-dark-mode.png)

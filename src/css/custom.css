@@ -127,3 +127,9 @@ form.aa-Form {
 .menu__list {
   transition: all 0.s ease-in-out !important;
 }
+
+.announcementBar_node_modules-\@docusaurus-theme-classic-lib-theme-AnnouncementBar-styles-module {
+  background-color: transparent !important;
+  background-image: radial-gradient(circle,  rgb(253, 126, 20) 0%, rgb(250, 82, 82) 100%) !important;
+  font-weight: 600;
+}

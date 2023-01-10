@@ -10,21 +10,21 @@ tags:
 Homarr will integrate with a ton of different apps on your system.
 
 <!-- no toc -->
-- [Torrent Download Clients](#⬇️-torrent-download-clients)
+- [Torrent Download Clients](#torrent-download-clients)
   - [Deluge](#deluge)
   - [Transmission](#transmission)
   - [qBittorrent](#qbittorrent-integration)
-- [Usenet Download Clients](#⬇️-usenet-download-clients)
+- [Usenet Download Clients](#senet-download-clients)
   - [SABnzbd](#sabnzbd)
   - [NZBGet](#nzbget)
-- [Collection Managers](#🦜-collection-managers)
+- [Collection Managers](#collection-managers)
   - [Sonarr](#sonarr) (series)
   - [Radarr](#radarr) (movies)
   - [Lidarr](#lidarr) (music)
   - [Readarr](#readarr) (books)
-- [Dash.](#💻-dash)
-- [Overseer & Jellyseerr](#👀-overseerr--jellyseerr) (media requests)
-- [Docker](#🐳-docker)
+- [Dash.](#dash)
+- [Overseer & Jellyseerr](#overseerr--jellyseerr) (media requests)
+- [Docker](#docker)
 
 :::caution
 
@@ -33,7 +33,7 @@ We will not support these, because the underyling API often changes frequently a
 
 :::
 
-## ⬇️ Torrent Download Clients
+## Torrent Download Clients
 
 Homarr supports a total of 3 Torrent download clients.
 You can use them to display your torrents directly on your dashboard and see if you are leeching / seeding.
@@ -99,7 +99,7 @@ The qBittorrent integration is used by the following widgets:
 
 ---
 
-## ⬇️ Usenet Download Clients
+## Usenet Download Clients
 
 ### SABnzbd
 
@@ -140,7 +140,7 @@ You can use this integration from the [Usenet Widget](/docs/widgets/usenet-widge
 
 ---
 
-## 🦜 Collection Managers
+## Collection Managers
 ### Sonarr
 
 Homarr will integrate the shows of your [Sonarr](https://sonarr.tv/) calendars in the [Calendar Widget](/docs/widgets/calendar-widget)
@@ -211,14 +211,14 @@ Homarr will integrate the shows of your [Readarr](https://readarr.com/) calendar
 
 ---
 
-## 💻 Dash.
+## Dash.
 
 The Dash. integration can be used to monitor the performance and used system resources of your machine.
 Dash. will be used in the [Dash.](/docs/widgets/dashdot-widget)
 
 ---
 
-## 👀 Overseerr & Jellyseerr
+## Overseerr & Jellyseerr
 The [Overseerr](https://overseerr.dev/) integration will enable you to request movies and series directly from your Homarr dashboard.
 
 ![](img/overseerr/search-select.png)
@@ -311,7 +311,7 @@ If you're selecting a series, you'll be asked what seasons you want to request:
 
 ---
 
-## 🐳 Docker
+## Docker
 
 Homarr allows you to interact with Docker containers running on your system.
 

@@ -78,15 +78,6 @@ Some Adblockers are preventing Homarr from loading your posters. This is a [well
 
 :::
 
-#### Release Link
-
-Homarr will also display a link to the release on the integration, for example Sonarr.:
-
-![screenshot of release link in the calendar](./img/calendar/widget-calendar-release-link.png)
-
-Please note, that the ImDB link will only be displayed for releases from Radarr and Sonarr.
-
----
 
 ## Configuration
 

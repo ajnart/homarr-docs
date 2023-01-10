@@ -34,7 +34,7 @@ Please consider [making a donation](/docs/community/donate) to Homarr, if this p
 
 ## Full License
 
-```
+```txt
 Copyright © 2022 Thomas "ajnart" Camlong
 
 Permission is hereby granted, free of charge, to any person obtaining a copy

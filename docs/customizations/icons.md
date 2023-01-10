@@ -10,7 +10,7 @@ tags:
 ## Icon search
 Icons in Homarr are automatically requested from the [dashboard-icons](https://github.com/walkxcode/dashboard-icons) repo. If you're unable to find the icon you're looking for, you can [add your own icons](#add-your-own-icons).
 
-![firefox_vCMTN5meLp](https://user-images.githubusercontent.com/71191962/170118033-a72ea587-4df0-43dd-8b7e-e0e7bae45dc6.gif)
+![icon picker showcase](./img/icons/icons-picker.gif)
 
 ---
 
@@ -26,7 +26,7 @@ Add your icons to the icons folder. The icons should be named after the app name
 ### Using your icons
 Access the icon(s) using `/icons/name.png` or `/icons/name.svg`.
 
-![image](https://user-images.githubusercontent.com/71191962/170479159-5df02aa0-683a-44f2-bdcf-4f58585655dd.png)
+![image](./img/icons/custom-icon.png)
 
 :::caution
 

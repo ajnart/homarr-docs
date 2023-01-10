@@ -60,11 +60,11 @@ const config = {
         id: 'updates',
         content:
           '🎉 Homarr v0.11 has been released! Please <a href="/docs/introduction/installation">update your instance.</a> 🎉',
-        backgroundColor: '#fa5252',
+        backgroundColor: 'var(--homarr-secondary-bg)', // #0e8860
+        textColor: "var(--ifm-heading-color)" 
       },
       navbar: {
         title: 'Homarr',
-        hideOnScroll: true,
         logo: {
           alt: 'Homarr Logo',
           src: 'img/logo.svg',

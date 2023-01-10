@@ -16,10 +16,5 @@ You can use the keyboard shortcut <kbd>WIN</kbd> + <kbd>J</kbd> to easily toggle
 
 :::
 
-![screen recoding of toggeling dark mode in settings](./img/customizations-dark-mode-toggle-settings.gif)
+![screen recoding of toggeling dark mode in settings](./img/theme/homarr-darkmode-switch.gif)
 
----
-
-## Preview
-
-![screen recording of dark mode](./img/customizations-dark-mode-toggle.gif)

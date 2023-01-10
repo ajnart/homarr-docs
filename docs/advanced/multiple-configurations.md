@@ -16,7 +16,7 @@ tags:
 ### Drag-and-Drop
 You can drag and drop a `.json` file into the Homarr tab in your browser. It will automatically be added to your configs.
 
-![firefox_7zQOy4DZ83](https://user-images.githubusercontent.com/71191962/170117732-0615d496-6d7d-49d8-aad3-5671c4437ee4.gif)
+![firefox_7zQOy4DZ83](./img/config-upload.gif)
 
 ### Using a Filebrowser
 1. Locate your mounted `default.json` file.
@@ -31,7 +31,7 @@ You can drag and drop a `.json` file into the Homarr tab in your browser. It wil
 1. Open settings.
 2. Select your config from the dropdown menu at the bottom of the settings.
 
-![image](https://user-images.githubusercontent.com/71191962/170117269-28712aa5-8f74-4443-8187-ca33a06fc921.png)
+![image](./img/config-switcher.png)
 
 
 ### Via URL

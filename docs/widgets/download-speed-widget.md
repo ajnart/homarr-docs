@@ -30,4 +30,6 @@ Check out our documentation on [editing tiles](/docs/introduction/after-the-inst
 
 ## Screenshots
 
+![download speed widget in light mode](./img/networkSpeed/widget-download-speed.png)
 ![download speed widget in dark mode](./img/networkSpeed/widget-download-speed-dark.png)
+
