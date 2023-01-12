@@ -1,5 +1,5 @@
 ---
-title: 📜 License
+title: ⚖️ License
 sidebar_position: 6
 tags:
   - Community

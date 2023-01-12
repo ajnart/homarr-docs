@@ -7,6 +7,9 @@ tags:
   - Docker
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 Homarr will integrate with a ton of different apps on your system.
 
 <!-- no toc -->

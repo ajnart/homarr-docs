@@ -59,7 +59,7 @@ const config = {
       announcementBar: {
         id: 'updates',
         content:
-          '🎉 Homarr v0.11 has been released! Please <a href="/docs/introduction/installation">update your instance.</a> 🎉',
+          '🎉 Homarr v0.11 has been released! Please <a href="/docs/introduction/installation#updating">update your instance.</a> 🎉',
         backgroundColor: 'var(--homarr-secondary-bg)', // #0e8860
         textColor: "var(--ifm-heading-color)" 
       },
@@ -143,7 +143,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Homarr`,
+        copyright: `Copyright © ${new Date().getFullYear()} Homarr — <a href="/docs/community/license">License</a>`,
       },
       prism: {
         theme: lightCodeTheme,
