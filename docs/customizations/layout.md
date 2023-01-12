@@ -8,9 +8,23 @@ tags:
 
 Using the layout settings, you can customize the apperance and layout of your Homarr instance.
 
-![](img/layout/customize-layout.gif)
+![Layout](img/layout/customize-layout.gif)
 
 ---
+
+## Screen Sizes
+
+Whenever you enter Edit Mode, a screen size indicator will appear at the bottom-right corner of the screen. You can use this indicator to see which screen size you are editing. To make your dashboard look the best, configure each screen size seperatly, making sure to save your changes before continuing to the next size.
+
+To change the screen size you are editing, simply resize the browser.
+
+| Screen Size | Breakpoint | Amount of Columns |
+|-------------|------------|-------------------|
+| Large       | >1400px    | 12                |
+| Medium      | >768px     | 6                 |
+| Small       | <768px     | 3                 |
+
+![Screen size](./img/layout/screen-size.png)
 
 ## Sidebars
 
@@ -29,7 +43,7 @@ It enables you to search for:
 - Overseerr / Jellyseerr items
 - The apps on your dashboard
 
-![](img/layout/search-box-switch.png)
+![Search Box Switch](img/layout/search-box-switch.png)
 
 ---
 
@@ -44,8 +58,8 @@ Please note, that it [requires some initial setup](/docs/integrations#🐳-docke
 If you activate Pings, Homarr will send a HTTP/-S request to all your services on the page load.
 When the response code matches the expected status code, the ping indicator will be green. Otherwise, it will be red.
 
-![](img/layout/pings.png)
+![Pings](img/layout/pings.png)
 
 Example of an ping indicator:
 
-![](img/layout/example-ping.png)
+![Pings](img/layout/example-ping.png)
