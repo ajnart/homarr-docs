@@ -1,14 +1,12 @@
 ---
-sidebar_label: 'Getting in Touch'
+title: 📧 Get In Touch
 sidebar_position: 3
 description: Still have a question? Click here!
 tags:
-  - Support
   - Help
-  - Discord
+  - Community
 ---
 
-# Get In Touch with Us
 
 If you still have any questions or want to provide feedback, please reach out to us using one of the methods below.
 
@@ -16,9 +14,7 @@ If you still have any questions or want to provide feedback, please reach out to
 
 We have a Discord Server, where we announce new releases, discuss features and bugs and show our configurations off.
 
-<a href="https://discord.gg/aCsmEV5RgA">
-  <img style={{borderRadius: 5}} title="Discord" src="https://discordapp.com/api/guilds/972958686051962910/widget.png?style=banner2" />
-</a>
+[_![](https://discordapp.com/api/guilds/972958686051962910/widget.png?style=banner2)_](https://discord.gg/aCsmEV5RgA)
 
 ## E-Mail
 
