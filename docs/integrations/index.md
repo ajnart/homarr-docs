@@ -13,11 +13,11 @@ import TabItem from '@theme/TabItem';
 Homarr will integrate with a ton of different apps on your system.
 
 <!-- no toc -->
-- [Torrent Download Clients](#torrent-download-clients)
+- [Torrent Clients](#torrent-clients)
   - [Deluge](#deluge)
   - [Transmission](#transmission)
   - [qBittorrent](#qbittorrent-integration)
-- [Usenet Download Clients](#senet-download-clients)
+- [Usenet Clients](#usenet-clients)
   - [SABnzbd](#sabnzbd)
   - [NZBGet](#nzbget)
 - [Collection Managers](#collection-managers)
@@ -36,9 +36,9 @@ We will not support these, because the underyling API often changes frequently a
 
 :::
 
-## Torrent Download Clients
+## Torrent Clients
 
-Homarr supports a total of 3 Torrent download clients.
+Homarr supports a total of 3 Torrent clients.
 You can use them to display your torrents directly on your dashboard and see if you are leeching / seeding.
 
 ### Deluge
@@ -102,7 +102,7 @@ The qBittorrent integration is used by the following widgets:
 
 ---
 
-## Usenet Download Clients
+## Usenet Clients
 
 ### SABnzbd
 
