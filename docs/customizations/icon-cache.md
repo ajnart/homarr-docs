@@ -1,37 +1,42 @@
-# Icon Cache
+---
+title: 📦 Icon Cache
+tags:
+  - Configuration
+  - Customization
+  - Icons
+---
 
-Homarr automatically requests external icons from links. If you do not have access to the internet at all time or want to reduce network traffic, you can use a local cache.
-A cache retrieves the pictures from the external source, stores them on your local disk and will tell Homarr to send those pictures instead of the external ones.
+Homarr automatically requests icons from an external repository, but if you don't have access to the internet at all time or want to reduce network traffic, you may want to use a local cache. A cache retrieves the pictures from the external source, stores them on your local disk and serves them from there. This way, you can use Homarr without internet access and reduce the amount of requests to the external repository.
 
-Although Homarr has no automatic caching, you can still achieve this behavior using a shell script, which does this job for you.
+:::info
 
-## Icon Cache Script
+Homarr currently doesn't have automatic caching. Instead you will need to manually cache the icons.
 
-To run the script, you need to open the terminal which has access to Homarr's directory. Usually, this is on your host machine or inside your docker container / volume.
-Replace ``/Volumes/docker/homarr`` with your directory of Homarr.
+:::
 
-:::caution
+## Caching Icons Manually
 
-Make a backup, before you execute any scripts, in case anything breaks!
+We recommend to use the following script to cache all icons. It will download all icons from the external repository and replace the URLs in the configuration file.
 
-::: 
+:::danger
 
-```
-pathToHomarr="/Volumes/docker/homarr"
+Make a backup before running the script. The script will modify your configuration file. If you don't have a backup and something breaks, you will need to reconfigure Homarr.
+
+:::
+
+### Running the script
+
+
+1. Open a terminal with access to the configuration. Usually, this is on your host machine or inside your Docker container.
+
+2. Run the following script. Make sure to replace ``<your-path-to-homarr>`` with the path to your Homarr installation. If you're using Docker, this is usually ``/data/docker/homarr``.
+
+
+```bash
+pathToHomarr="<your-path-to-homarr>"
 
 configFile="${pathToHomarr}/configs/default.json"; iconCacheDir="${pathToHomarr}/icons/cache"; mkdir -p $iconCacheDir;
 cat $configFile | grep cdn.jsdelivr.net | cut -d'"' -f 4 | while read -r line; do echo "Processing $(basename $line)"; curl -o $iconCacheDir/$(basename $line) $line; done
 sed -i ".`date +%F`.bak" "s%https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png%/icons/cache%g" $configFile
-echo "Done! Relaunch the docker container to update Homarr."
-```
-
-
-### Fix Incorrect URL
-
-On the 07.01.2022, the old icon repository of Homarr has been permanently deleted. All old icons links pointing to this repository may not work. This has been fixed in version ``0.10.7``, but for all services you've created prior to this version, a migration is required. **Version 0.11 of Homarr will ship with an automatic updater for the old URLs. We recommend to wait until 0.11 is released**, but you can migrate them manually as well:
-```
-pathToHomarr="/Volumes/docker/homarr"
-
-configFile="${pathToHomarr}/configs/default.json"; 
-sed -i '' "s% walkxhub%walkxcode%g" $configFile
+echo "Done! Relaunch Homarr to update the icons."
 ```
