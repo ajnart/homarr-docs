@@ -13,7 +13,7 @@ export const SocialMediaReview = ({ username, profilePicture, link, plattform, f
         <img src={profilePicture} alt="Profile Picture" className={styles.genericReviewUserImage} />
         <div>
           <b className={styles.genericReviewUserName}>{username}</b>
-          <a className={styles.genericReviewUserLink} href={link} target="_blank">
+          <a href={link} target="_blank">
             on {plattform}
           </a>
         </div>

@@ -1,10 +1,8 @@
 ---
-title: ⚖️ License
 sidebar_position: 6
-tags:
-  - Community
 ---
 
+# License
 
 Homarr is licensed under [MIT](https://en.wikipedia.org/wiki/MIT_License).
 
@@ -26,7 +24,7 @@ Here is a summary of the MIT license, which Homarr is licensed under:
 
 :::note
 
-Please consider [making a donation](/docs/community/donate) to Homarr, if this project has been useful for your needs. Donations help us to keep Homarr up to date, implement new features and help our users with problems and questions.
+Please consider [making a donation](./donate.md) to Homarr, if this project has been useful for your needs. Donations help us to keep Homarr up to date, implement new features and help our users with problems and questions.
 
 :::
 
@@ -34,7 +32,7 @@ Please consider [making a donation](/docs/community/donate) to Homarr, if this p
 
 ## Full License
 
-```txt
+```
 Copyright © 2022 Thomas "ajnart" Camlong
 
 Permission is hereby granted, free of charge, to any person obtaining a copy

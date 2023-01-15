@@ -4,31 +4,30 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Sleek and modern design',
-    Svg: require('@site/static/img/undraw_illustrations/modern_design.svg').default,
+    title: 'Modern and Simple Design',
+    Svg: require('@site/static/img/undraw_illustrations/undraw_futuristic_interface_re_0cm6.svg')
+      .default,
+    description: (
+      <>Homarr has a simple yet modern design for organizing your services in a central place.</>
+    ),
+  },
+  {
+    title: 'Integrate existing services easily',
+    Svg: require('@site/static/img/undraw_illustrations/undraw_services_re_hu5n.svg').default,
     description: (
       <>
-        Homarr is designed to be modern and sleek. It is built with the latest technologies and is
-        easy to use
+        Homarr lets you integrate your existing services and applications quick and easily.
+        Integrations can be tailored and configured to your needs.
       </>
     ),
   },
   {
-    title: 'Integrate your apps',
-    Svg: require('@site/static/img/undraw_illustrations/integrate.svg').default,
+    title: 'Open Source and active community',
+    Svg: require('@site/static/img/undraw_illustrations/undraw_body_text_re_9riw.svg').default,
     description: (
       <>
-        Homarr seamlessly integrates with the apps you've added, providing you with valuable
-        information and giving you complete control.
-      </>
-    ),
-  },
-  {
-    title: 'Open source and free',
-    Svg: require('@site/static/img/undraw_illustrations/open_source.svg').default,
-    description: (
-      <>
-        Homarr is open source and free to use. You can use it for personal or commercial projects.
+        Homarr is open source and licensed under MIT. Users are welcome to contribute or suggest
+        improvements 💪
       </>
     ),
   },
@@ -51,9 +50,7 @@ function Feature({ Svg, title, description }) {
 export default function HomepageFeatures() {
   return (
     <section>
-      <h2 className={styles.featuresTitle} id="features">
-        A quick glance at our features 👀
-      </h2>
+      <h2 className={styles.featuresTitle} id="features">Features of Homarr</h2>
 
       <div className={styles.features}>
         <div className="container">

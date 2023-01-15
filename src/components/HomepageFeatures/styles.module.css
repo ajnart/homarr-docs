@@ -5,13 +5,6 @@
   width: 100%;
 }
 
-.features > div {
-  background-color: var(--homarr-secondary-bg);
-  border-radius: 0.5rem;
-  padding: 20px;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
-}
-
 .featureSvg {
   height: 200px;
   width: 200px;

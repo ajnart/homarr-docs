@@ -1,20 +1,20 @@
----
-title: 🌗 Dark Mode
-tags:
-  - Configuration
-  - Customization
-  - Theming
----
+# Dark Mode
 
-## Enabling Dark Mode
+Homarr has a Dark Mode built-in, which is much more comforting to your eyes.
+You can active the dark mode in your settings or via the [keyboard shortcuts](./../advanced-configuration/keyboard-shortcuts.md).
 
-To enable dark mode, go to the settings and toggle the switch for dark mode.
+## Toggle Dark Mode in the Settings
+
+To activate the darkmode over your settings, click on the cog icon at the top right and turn on the switch labeled "Switch to darkmode".
 
 :::tip
 
-You can use the keyboard shortcut <kbd>WIN</kbd> + <kbd>J</kbd> to easily toggle the dark mode.
+Use the [keyboard shortcut](./../advanced-configuration/keyboard-shortcuts.md) for faster toggeling.
 
 :::
 
-![screen recoding of toggeling dark mode in settings](./img/theme/homarr-darkmode-switch.gif)
+![screen recoding of toggeling dark mode in settings](./img/customizations-dark-mode-toggle-settings.gif)
 
+## Preview of Dark Mode
+
+![screen recording of dark mode](./img/customizations-dark-mode-toggle.gif)

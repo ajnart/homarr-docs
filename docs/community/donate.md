@@ -1,8 +1,20 @@
 ---
-title: 👛 Donate
+sidebar_label: 'Donate'
 sidebar_position: 4
+description: Help us maintain Homarr
 tags:
-  - Community
+  - Support
+  - Maintenance
+  - Donate
+  - Help
 ---
 
-[_![](https://cdn.ko-fi.com/cdn/kofi3.png?v=3)_](https://ko-fi.com/ajnart)
+# Donations
+
+## Donate to Ajnart
+
+<p>
+  <a href="https://ko-fi.com/ajnart">
+    <img align="left" src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3" height="50" width="210" alt="ajnart" />
+  </a>
+</p>
