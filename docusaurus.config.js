@@ -81,7 +81,7 @@ const config = {
             position: 'left',
           },
           {
-            to: 'https://homarr.ajnart.fr/',
+            to: 'https://demo.homarr.dev/',
             label: 'Demo',
             position: 'right',
           },

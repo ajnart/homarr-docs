@@ -18,7 +18,7 @@ tags:
 
 <!-- Links -->
 <p align="center">
-<a href="https://homarr.ajnart.fr/"><strong> Demo ↗️ </strong></a> • <a href="/docs/introduction/installation"><strong> Install ➡️ </strong></a> • <a href="/docs/tags/"><strong> Tags 🏷️ </strong></a>
+<a href="https://demo.homarr.dev/"><strong> Demo ↗️ </strong></a> • <a href="/docs/introduction/installation"><strong> Install ➡️ </strong></a> • <a href="/docs/tags/"><strong> Tags 🏷️ </strong></a>
 </p>
 
 ---

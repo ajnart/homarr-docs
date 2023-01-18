@@ -19,7 +19,7 @@ export default function HomepageShowcase() {
         </p>
       </video>
 
-      <a className={styles.showcaseButton} href="https://homarr.ajnart.fr/" target={'_blank'}>
+      <a className={styles.showcaseButton} href="https://demo.homarr.dev/" target={'_blank'}>
         Go to demo <IconExternalLink />
       </a>
     </section>
