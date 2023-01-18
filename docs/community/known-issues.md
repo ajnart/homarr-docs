@@ -29,3 +29,13 @@ If you are using [custom icons](/docs/customizations/icons), you might be unable
 
 ### Resolution
 For the time being, restart your docker container after adding / making any changes to your icons.
+
+## 🚨 403 status on most of applications
+If you are using [Nginx Proxy Manager](https://nginxproxymanager.com) for opening Homarr.
+
+### Indicators
+- Applications have red ping status and on hover you see __Offline 403__.
+- Torrents list and speed widgets dont work 
+
+### Resolution
+Open setings of Hommar instance on Nginx Proxy Manager and disable 'Block common exploits'.
