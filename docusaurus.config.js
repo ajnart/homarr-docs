@@ -1,31 +1,26 @@
-// @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
+/* eslint-disable no-undef */
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const a11yEmoji = require('@fec/remark-a11y-emoji');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Homarr Documentation',
-  tagline: 'Simple and lightweight homepage for your server',
-  url: 'https://homarr.ajnart.fr',
+  title: 'Homarr Docs',
+  tagline: 'A simple, yet powerful dashboard for your server.',
+  url: 'https://homarr.dev',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.png',
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'ajnart', // Usually your GitHub org/user name.
-  projectName: 'homarr', // Usually your repo name.
-
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
+  // Used for publishing to GitHub Pages
+  organizationName: 'ajnart',
+  projectName: 'homarr-docs',
+  // Has to be set even if not using translations
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
   },
+  onBrokenLinks: 'warn',
+  onBrokenMarkdownLinks: 'warn',
 
   presets: [
     [
@@ -37,6 +32,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: 'https://github.com/ajnart/homarr-docs/edit/master',
+          remarkPlugins: [a11yEmoji],
         },
         blog: {
           showReadingTime: true,
@@ -47,6 +43,12 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+        sitemap: {
+          changefreq: 'weekly',
+          priority: 0.5,
+          ignorePatterns: ['/tags/**'],
+          filename: 'sitemap.xml',
+        },
       },
     ],
   ],
@@ -54,11 +56,18 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     {
+      announcementBar: {
+        id: 'updates',
+        content:
+          '🎉 Homarr v0.11 has been released! Please <a href="/docs/introduction/installation#updating">update your instance.</a> 🎉',
+        backgroundColor: 'var(--homarr-secondary-bg)', // #0e8860
+        textColor: "var(--ifm-heading-color)" 
+      },
       navbar: {
         title: 'Homarr',
         logo: {
           alt: 'Homarr Logo',
-          src: 'img/logo.png',
+          src: 'img/logo.svg',
         },
         items: [
           {
@@ -72,30 +81,38 @@ const config = {
             position: 'left',
           },
           {
-            href: 'https://homarr.ajnart.fr/',
+            to: 'https://homarr.ajnart.fr/',
             label: 'Demo',
             position: 'right',
           },
           {
-            href: 'https://github.com/ajnart/homarr',
+            to: 'https://discord.com/invite/aCsmEV5RgA',
+            label: 'Discord',
+            position: 'right',
+          },
+          {
+            to: 'https://github.com/ajnart/homarr',
             label: 'GitHub',
+            position: 'right',
+          },
+          {
+            type: 'search',
             position: 'right',
           },
         ],
       },
       footer: {
-        style: 'dark',
         links: [
           {
             title: 'Documentation',
             items: [
               {
-                label: 'Installation',
-                to: '/docs/introduction/installation',
+                label: 'About',
+                to: '/docs/about',
               },
               {
-                label: 'Modules',
-                to: '/docs/modules/',
+                label: 'Installation',
+                to: '/docs/introduction/installation',
               },
             ],
           },
@@ -104,11 +121,11 @@ const config = {
             items: [
               {
                 label: 'Discord',
-                href: 'https://discord.com/invite/aCsmEV5RgA',
+                to: 'https://discord.com/invite/aCsmEV5RgA',
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/ajnart/homarr',
+                to: 'https://github.com/ajnart/homarr',
               },
             ],
           },
@@ -120,31 +137,38 @@ const config = {
                 to: '/blog',
               },
               {
-                label: "ajnart's Website",
-                href: 'https://ajnart.fr/',
+                label: "Ajnart's Website",
+                to: 'https://ajnart.fr/',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Homarr`,
+        copyright: `Copyright © ${new Date().getFullYear()} Homarr — <a href="/docs/community/license">License</a>`,
       },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        defaultLanguage: 'bash',
       },
       colorMode: {
         defaultMode: 'dark',
-        disableSwitch: false,
         respectPrefersColorScheme: true,
       },
       metadata: [
         {
           name: 'keywords',
-          content: 'homarr, dashboard, selfhosted, hosting, modules, opensource',
+          content: 'Homarr, Dashboard, Selfhosted, Hosting, Modules, Open-Source',
         },
       ],
+      imageZoom: {
+        selector: '.markdown :not(em) > img',
+      },
+      tableOfContents: {
+        minHeadingLevel: 2,
+        maxHeadingLevel: 4,
+      },
     },
-  plugins: [require.resolve('@cmfcmf/docusaurus-search-local')],
+  plugins: [require.resolve('@cmfcmf/docusaurus-search-local'), 'plugin-image-zoom'],
 };
 
 module.exports = config;
