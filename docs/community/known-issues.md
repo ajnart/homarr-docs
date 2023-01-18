@@ -30,7 +30,7 @@ If you are using [custom icons](/docs/customizations/icons), you might be unable
 ### Resolution
 For the time being, restart your docker container after adding / making any changes to your icons.
 
-## 🚨 403 status on most of applications
+## 🚨 Nginx Reverse Proxy may block Homarr's requests to several apps
 If you are using [Nginx Proxy Manager](https://nginxproxymanager.com) for opening Homarr.
 
 ### Indicators
