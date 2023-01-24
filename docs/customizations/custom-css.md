@@ -16,6 +16,12 @@ To add custom CSS rules, go to the Customizations tab in the settings menu. Ther
 
 ![homarr custom css settings](./img/customizations-custom-css-setting.png)
 
+also here is a CSS for a blurred background with safari support.
+### NOTE: the added -webkit line is so that safari can use the css blur, as blur will not carry over too mobile devices using safari
+
+![customizations-custom-css-blur-mobile](https://user-images.githubusercontent.com/49504228/214200654-77fc59c5-2212-47dd-8682-4c4b7aa7ea45.png)
+
+
 After entering your rules, click on the "Submit" button to save your changes. You can now directly see the result of your customizations on the dashboard.
 
 ### Example
