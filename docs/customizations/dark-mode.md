@@ -18,3 +18,9 @@ You can use the keyboard shortcut <kbd>WIN</kbd> + <kbd>J</kbd> to easily toggle
 
 ![screen recoding of toggeling dark mode in settings](./img/theme/homarr-darkmode-switch.gif)
 
+:::note
+
+We currently have no way of making dark mode default. We do plan to support this in the future
+
+:::
+
