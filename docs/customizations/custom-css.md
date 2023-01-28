@@ -22,6 +22,25 @@ After entering your rules, click on the "Submit" button to save your changes. Yo
 
 ![homarr custom css result](./img/customizations-custom-css-result.png)
 
+### More custom CSS rules
+
+:::info 
+
+Here is a example for a blurred background image
+
+:::
+
+![homarr custom css results](./img/customizations-custom-css-webkit.png)
+
+:::note
+
+iphone users that are wanting blur support you will need too add **-webkit-backdrop-filter: blur(10px)**
+
+:::
+
+![homarr custom css results](./img/customizations-custom-css-blur.png)
+
+
 ---
 
 ## Finding the class names of elements
