@@ -22,23 +22,42 @@ After entering your rules, click on the "Submit" button to save your changes. Yo
 
 ![homarr custom css result](./img/customizations-custom-css-result.png)
 
-### More custom CSS rules
+### Example: Background image blur
 
-:::info 
-
-Here is a example for a blurred background image
-
-:::
-
-![homarr custom css results](./img/customizations-custom-css-webkit.png)
-
-:::note
-
-iphone users that are wanting blur support you will need too add **-webkit-backdrop-filter: blur(10px)**
-
-:::
+``` 
+body {
+  backdrop-filter: blur(60px);
+  -webkit-backdrop-filter: blur(60px);
+}
+```
+Adding the above to your custom CSS will give you blur support for both desktop and mobile. You can change how much blur is wanted by changing the (60px) to a choice that better suits your needs. 
 
 ![homarr custom css results](./img/customizations-custom-css-blur.png)
+
+We can also add blur support for the settings modal. Here is an example of how we achieve this.
+
+```
+.mantine-w4dwz9 {
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  background-color: transparent;
+}
+```
+
+![homarr custom css results](./img/customizations-css-blur-settings.png)
+
+### Example: border colors
+
+here is another example for adding borders too your apps and widgets
+
+```
+.mantine-y31s44 {
+  border-color: cyan;
+  border-style: groove;
+}
+```
+
+![homarr custom css results](./img/customizations-css-border-color.png)
 
 
 ---
