@@ -10,6 +10,7 @@ Homarr has the following keyboard shortcuts:
 | -------- | ----------- |
 | `CTRL` + `K` | Opens the search bar |
 | `CTRL` + `J` | Toggles Dark Mode |
+| `CTRL` + `B` | Open the Docker integration |
 
 :::note
 
