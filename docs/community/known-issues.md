@@ -39,3 +39,15 @@ If you are using [Nginx Proxy Manager](https://nginxproxymanager.com) to open Ho
 
 ### Resolution
 Open setings of Hommar instance on Nginx Proxy Manager and disable 'Block common exploits'.
+
+## 🚨 qBittorrent webUI showing `Unauthorized`
+When creating a qBittorrent tile, The qBittorrent webUI shows [Unauthorized](./img/qbittorrent_unauthorized.png).
+
+### Indicators
+- Applications have red ping status and on hover you see __Offline 500__.
+- Torrents list and speed widgets dont work 
+
+### Resolution
+- Log in to your qBittorrent webUI.
+- Navigate to _Tools_ > _Options_ > _Web UI_ > _Security_.
+- Uncheck [__Enable Cross-Site Request Forgery (CSRF) protection__](./img/qbittorrent_options_csrf.png).
