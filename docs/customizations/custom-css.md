@@ -34,7 +34,7 @@ Adding the above to your custom CSS will give you blur support for both desktop 
 
 ![homarr custom css results](./img/customizations-custom-css-blur.png)
 
-We can also add blur support for the settings modal. Here is an example of how we achieve this.
+We can also add blur support for the settings modal. Here is an example of how we can achieve this.
 
 ```
 .mantine-w4dwz9 {
@@ -48,7 +48,7 @@ We can also add blur support for the settings modal. Here is an example of how w
 
 ### Example: border colors
 
-here is another example for adding borders too your apps and widgets
+Here is another example for adding borders too your apps and widgets.
 
 ```
 .mantine-y31s44 {
@@ -61,7 +61,7 @@ here is another example for adding borders too your apps and widgets
 
 :::info Important custom CSS information
 
-Homarr currently has dynamic elements, this means that each homarr update may or may not break your custom CSS due to mantines changing. It is planned too make these elements statically named in a future update.
+Homarr currently has dynamic class names "mantines", this means that each homarr update may or may not break your custom CSS due to mantines changing. It is planned too make these class names statically named in a future update.
 
 :::
 
