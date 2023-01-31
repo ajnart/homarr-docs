@@ -18,3 +18,8 @@ You can use the keyboard shortcut <kbd>WIN</kbd> + <kbd>J</kbd> to easily toggle
 
 ![screen recoding of toggeling dark mode in settings](./img/theme/homarr-darkmode-switch.gif)
 
+:::info
+
+Homarr does not currently allow you too set dark mode as the default, this means that sometimes when loading homarr after restart it will be reverted back to "Light mode".
+
+:::

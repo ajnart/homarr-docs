@@ -59,6 +59,12 @@ here is another example for adding borders too your apps and widgets
 
 ![homarr custom css results](./img/customizations-css-border-color.png)
 
+:::info Important custom CSS information
+
+Homarr currently has dynamic elements, this means that each homarr update may or may not break your custom CSS due to mantines changing. It is planned too make these elements statically named in a future update.
+
+:::
+
 ---
 
 ## Finding the class names of elements
