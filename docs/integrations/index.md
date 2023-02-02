@@ -339,3 +339,7 @@ And also check what ports the container has exposed (container port:external por
 In order for Homarr to be able to interact with your Docker instance you must tell Homarr the path to your Docker socket.  You do this by adding the following to the Docker command when you first run Homarr:
 
 `-v /var/run/docker.sock:/var/run/docker.sock`
+
+If you are running Docker Desktop on Windows 10, use the following path to your Docker socket:
+
+`-v //var/run/docker.sock:/var/run/docker.sock`
