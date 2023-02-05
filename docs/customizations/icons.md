@@ -37,6 +37,6 @@ A restart is required for the icons to be loaded.
 :::info
 
 If icons are not loading, make sure Homarr has the correct permissions to access the icons folder.
-Running `sudo chmod -R 777 /path/to/icons` should fix the issue.
+Running `sudo chmod -R 755 /path/to/icons` should fix the issue.
 
 :::
