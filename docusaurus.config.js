@@ -22,6 +22,13 @@ const config = {
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
+  scripts: [
+    {
+      src: '/_vercel/insights/script.js',
+      defer: true,
+    },
+  ],
+
   presets: [
     [
       'classic',
@@ -61,7 +68,7 @@ const config = {
         content:
           '🎉 Homarr v0.11 has been released! Please <a href="/docs/introduction/installation#updating">update your instance.</a> 🎉',
         backgroundColor: 'var(--homarr-secondary-bg)', // #0e8860
-        textColor: "var(--ifm-heading-color)" 
+        textColor: 'var(--ifm-heading-color)',
       },
       navbar: {
         title: 'Homarr',
