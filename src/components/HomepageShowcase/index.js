@@ -9,7 +9,7 @@ export default function HomepageShowcase() {
       <h2 className={styles.showcaseText}>See a live demo ✨</h2>
 
       <video className={styles.showcaseImage} controls preload='auto' autoplay >
-        <source src="/img/videos/showcase.mp4" type="video/mp4" />
+        <source src="https://user-images.githubusercontent.com/30572287/217098893-5880e7de-13d0-42c5-b505-f7921593396f.mp4" type="video/mp4" />
           <p>
             To view this video please enable JavaScript, and consider upgrading to a
             web browser that
