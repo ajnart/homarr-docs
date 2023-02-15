@@ -59,11 +59,47 @@ Here is another example for adding borders too your apps and widgets.
 
 ![homarr custom css results](./img/customizations-css-border-color.png)
 
-:::info Important custom CSS information
+## Static classnames
 
-Homarr currently has dynamic class names "mantines", this means that each homarr update may or may not break your custom CSS due to mantines changing. It is planned too make these class names statically named in a future update.
+Implementing static classnames makes it so that homarr will no longer break your custom css due too the classname of .mantines being randomly generated with every update. Manually defining the classname of the elements makes it too where they are static and will not change during a update. While as of now homarr doesnt support having all mantines static, we now have 13 that are. Homarr plans to support more in the future.
+
+![homarr custom css results](./img/customizations-css.dashbaord-gs-generic-item.png)
+
+:::note
+
+We used too use ```.mantine-11y29xm``` but now we can also use ```.dashboard-gs-generic-item```
 
 :::
+
+## Examples
+
+:::info
+
+You can still use the .mantines instead of the static names. This is important for those that would want widgets to be a different background then applications.
+
+:::
+
+![homarr custom css results](./img/customizations-css.dashbaord-gs-generic-item-custom-css-input.png)
+
+![homarr custom css results](./img/customizations-css.dashbaord-gs-generic-item-custom-css-example.png)
+
+## Classnames staticaly supported
+
+| Classnames   | Description |
+| ------------------ | ------------------ |
+| dashboard-app-shell | This would be for the entire app shell including the header |
+| dashboard-header | The header for mantine |
+| dashboard-header-logo-root | The wrapper for the logo of homarr |
+| dashboard-header-logo-image | The image element of the logo |
+| dashboard-header-logo-text | The text displayed in the header |
+| dashboard-header-group-right | The right group of the header |
+| dashboard-header-search-root | The root element of the searchbar |
+| dashboard-header-search-input | The input element of the searchbar |
+| grid-stack-wrapper | The gridstack wrapper |
+| grid-stack-empty-wrapper | The empty gridstack wrapper |
+| dashboard-gs-category-item | The categories |
+| dashboard-app-title | The title of the app |
+| dashboard-gs-generic-item | The generic wrapper for both apps and widgets |
 
 ---
 
