@@ -83,7 +83,7 @@ You can still use the .mantines instead of the static names. This is important f
 
 ![homarr custom css results](./img/customizations-css.dashbaord-gs-generic-item-custom-css-example.png)
 
-## Classnames staticaly supported
+## Classnames statically supported
 
 | Classnames   | Description |
 | ------------------ | ------------------ |
