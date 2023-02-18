@@ -22,49 +22,6 @@ After entering your rules, click on the "Submit" button to save your changes. Yo
 
 ![homarr custom css result](./img/customizations-custom-css-result.png)
 
-### Example: Background image blur
-
-``` 
-body {
-  backdrop-filter: blur(60px);
-  -webkit-backdrop-filter: blur(60px);
-}
-```
-Adding the above to your custom CSS will give you blur support for both desktop and mobile. You can change how much blur is wanted by changing the (60px) to a choice that better suits your needs. 
-
-![homarr custom css results](./img/customizations-custom-css-blur.png)
-
-We can also add blur support for the settings modal. Here is an example of how we can achieve this.
-
-```
-.mantine-w4dwz9 {
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  background-color: transparent;
-}
-```
-
-![homarr custom css results](./img/customizations-css-blur-settings.png)
-
-### Example: border colors
-
-Here is another example for adding borders too your apps and widgets.
-
-```
-.mantine-y31s44 {
-  border-color: cyan;
-  border-style: groove;
-}
-```
-
-![homarr custom css results](./img/customizations-css-border-color.png)
-
-:::info Important custom CSS information
-
-Homarr currently has dynamic class names "mantines", this means that each homarr update may or may not break your custom CSS due to mantines changing. It is planned too make these class names statically named in a future update.
-
-:::
-
 ---
 
 ## Finding the class names of elements
