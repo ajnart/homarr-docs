@@ -45,9 +45,9 @@ When creating a qBittorrent tile, The qBittorrent webUI shows an Unauthorized pa
 
 <details>
   <summary>Screenshot</summary>
-  <>
-    ![](img/qbittorrent_options_csrf.png)
-  <>
+
+![](img/qbittorrent_options_csrf.png)
+
 </details>
 
 
@@ -62,7 +62,7 @@ When creating a qBittorrent tile, The qBittorrent webUI shows an Unauthorized pa
 
 <details>
   <summary>Screenshot</summary>
-  <>
-    ![](img/qbittorrent_options_csrf.png)
-  <>
+
+![](img/qbittorrent_options_csrf.png)
+
 </details>

@@ -100,6 +100,9 @@ The qBittorrent integration is used by the following widgets:
   </div>
 </details>
 
+Please note the known issue with qBittorrent:
+[qBittorrent webUI showing Unauthorized](./../community/known-issues.md#🚨-qbittorrent-webui-showing-unauthorized)
+
 ---
 
 ## Usenet Clients
