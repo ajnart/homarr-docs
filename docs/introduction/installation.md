@@ -187,10 +187,48 @@ After you've installed the Community Apps Plugin, you can install Homarr from th
 
 After you've installed Homarr, you can find it under the tab "Docker".
 
+The official support thread is located [here](https://forums.unraid.net/topic/123478-support-smartphonelover-homarr/), but we prefer to communicate over GitHub and Discord instead.
+
+---
+
+## Installation on Synology
+The installation process is also quite easy and fast on Synology devices.
+Since this method is used less often, we recommend you the thiry party guide of mariushosting.
+
+https://mariushosting.com/how-to-install-homarr-on-your-synology-nas/
+
+:::note
+
+This is a third party guide - we do not garantuee if it's up to date nor offer support. Use at your own risk.
+
+:::
+
+## Installation on QNAP
+We recommend you to install Homarr via Cointainer Station.
+
+You can also use this: https://www.myqnap.org/product/homarr/
+
+A Chinese tutorial for this can also be found here: https://post.smzdm.com/p/awzm7op2/
+
+:::caution
+
+This is an unvalidated third party guide - we do not garantuee if it's up to date nor offer support. Use at your own risk.
+
+:::
+
+## Installation using Saltbox
+You can also use this to install on Saltbox:
+
+:::caution
+
+This is an unvalidated third party guide - we do not garantuee if it's up to date nor offer support. Use at your own risk.
+
+:::
+
 ---
 
 ## Building from source
-:::caution
+:::info
 
 Installing Homarr from source is not recommended and only intended for developers and contributers, please use the [Docker](#installation-using-docker) installation method instead.
 
@@ -220,7 +258,8 @@ Installing Homarr from source is not recommended and only intended for developer
 </Tabs>
 
 ---
+## Anything else in mind?
+Have you installed Homarr using a different method?
+It would be amazing if you could share, so other users can install Homarr too!
 
-## Troubleshooting
-
-Having trouble installing Homarr on your system? Check out our [FAQ](/docs/community/faq) and [Known Issues](/docs/community/known-issues). If you are still running into issues, please contact us in our [Discord server](https://discord.com/invite/aCsmEV5RgA).
+Click ``Edit this page`` below to adjust this documentation and add your installation method 💪.
