@@ -25,6 +25,7 @@ Homarr will integrate with a ton of different apps on your system.
   - [Radarr](#radarr) (movies)
   - [Lidarr](#lidarr) (music)
   - [Readarr](#readarr) (books)
+- [Media Servers](#)
 - [Dash.](#dash)
 - [Overseer & Jellyseerr](#overseerr--jellyseerr) (media requests)
 - [Docker](#docker)
@@ -207,6 +208,56 @@ Homarr will integrate the shows of your [Readarr](https://readarr.com/) calendar
   Available configuration options
   </summary>
   <div>
+
+| Field    | Type    | Description |
+| -------- | ------- | ----------- |
+| ApiToken | Private | Token used for authentication |
+
+  </div>
+</details>
+
+---
+
+## Media Servers
+Homarr can integrate with your media servers for better control over what's going on.
+
+:::tip
+
+Note, that we recommend you to create seperate accounts for better security.
+Only grant access to the libraries, that must be accessed by Homarr, and remove unnessesary permissions.
+
+Since all media servers do not expose the same information, Homarr might be unable to display certain information for servers.
+
+:::
+
+You may add multiple media servers, also of different kinds, to your dashboard.
+
+### Jellyfin
+The Jellyfin integration enables you to view the active sessions, using the [Media Server widget](../widgets/media-server), on your dashboard.
+
+<details>
+  <summary>
+  Available configuration options
+  </summary>
+  <div>
+
+| Field    | Type    | Description |
+| -------- | ------- | ----------- |
+| Username | Private | Username used for authentication |
+| Password | Private | Password used for authentication |
+
+  </div>
+</details>
+
+### Plex
+The Plex integration enables you to view the active sessions, using the [Media Server widget](../widgets/media-server), on your dashboard.
+
+<details>
+  <summary>
+  Available configuration options
+  </summary>
+  <div>
+
 
 | Field    | Type    | Description |
 | -------- | ------- | ----------- |
