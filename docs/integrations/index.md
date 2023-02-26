@@ -221,7 +221,7 @@ Homarr will integrate the shows of your [Readarr](https://readarr.com/) calendar
 ---
 
 ## Media Servers
-Homarr can integrate with your media servers for better control over what's going on.
+Homarr can integrate with your media servers, which allows you to control it from your dashboard.
 You may add multiple media servers, also of different kinds, to your dashboard.
 
 :::tip
