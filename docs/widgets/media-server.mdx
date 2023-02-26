@@ -41,13 +41,13 @@ Is the widget not working? Please try out the following tips and tricks to possi
   <TabItem value="plex" label="Plex">
 
 
-- Use a URL that does not terminate on a signle ``/`` or something like ``/web`` or ``index.html``. This may break the integration. Only use the basename of your server
-- Ensure that your container has access to the media server. It's recommended that you make a ping or telnet
+- Use a URL that does not terminate on a single ``/`` or something like ``/web`` or ``index.html``. This may break the integration. Only use the main domain of your server.
+- Make sure that your container has access to the media server. Try making a ping to it.
 - Use a token, that has been created from your Plex. You can retrieve the token using this official guide: https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/
-  - Use a token that has not expired
-  - No token visible? Try logging out and in again
-- Do not use the cloud or remote URLs. The integration will only work for local instances. Do not worry, as Homarr will act as a primitve reverse proxy when you're outside the network of Plex
-- Permit access to the required libraries and grant the required permissions
+  - Make sure the token isn't expired.
+  - No token visible? Try logging out and in again.
+- Do not use the cloud or remote URLs. The integration will only work for local instances. Do not worry, as Homarr will act as a primitve reverse proxy when you're outside the network of Plex.
+- Permit access to the required libraries and grant the required permissions.
 
 
   </TabItem>
