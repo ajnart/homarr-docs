@@ -256,8 +256,7 @@ Installing Homarr from source is not recommended and only intended for developer
 </Tabs>
 
 ---
-## Anything else in mind?
-Have you installed Homarr using a different method?
-It would be amazing if you could share, so other users can install Homarr too!
+## Help us add more installation methods!
+Have you installed Homarr using a different method? Please share it with us, so we can expand to a bigger userbase!
 
 Click ``Edit this page`` below to adjust this documentation and add your installation method 💪.
