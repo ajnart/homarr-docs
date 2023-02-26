@@ -44,6 +44,35 @@ Finally, select the classname of the element you want to customize and add it to
 
 ---
 
+### Static Classes
+
+By default, many class names will be made out of a random value, also known as a hash.
+These are used internally by Mantine and can make writing custom CSS quite difficult.
+The biggest issue with these hashes is, that they will be randomized each build - which means, if you update Homarr, they will change and your CSS might no longer work.
+For this reason, we recommend you to avoid the random hash class-names and instead use implemented static ones, for the most important objects on your dashboard, they are easier to use and don't change.
+
+| Classname   | Description |
+| ------------------ | ------------------ |
+| dashboard-app-shell | Full App (including Header) |
+| dashboard-header | Header |
+| dashboard-header-logo-root | Logo wrapper |
+| dashboard-header-logo-image | Logo image |
+| dashboard-header-logo-text | Header text |
+| dashboard-header-group-right | Right group of the Header |
+| dashboard-header-search-root | Searchbar root |
+| dashboard-header-search-input | Searchbar input |
+| grid-stack-wrapper | Gridstack wrapper |
+| grid-stack-empty-wrapper | Empty gridstack wrapper |
+| dashboard-gs-category-item | Category |
+| dashboard-app-title | App Title |
+| dashboard-gs-generic-item | App/Widget wrapper |
+
+:::tip
+
+Please see the [Mantine Docs](https://mantine.dev/) for more information. Homarr uses Mantine as their component library.
+
+:::
+
 ## Additional resources
 
 If you want to learn more about CSS, you can find a lot of resources on the internet. Here are some of the best ones:
