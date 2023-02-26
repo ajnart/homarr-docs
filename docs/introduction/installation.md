@@ -192,14 +192,14 @@ The official support thread is located [here](https://forums.unraid.net/topic/12
 ---
 
 ## Installation on Synology
-The installation process is also quite easy and fast on Synology devices.
-Since this method is used less often, we recommend you the thiry party guide of mariushosting.
+The installation process is quite easy and fast on Synology devices.
+Since this method is used less often, we recommend you to follow this guide written by mariushosting.
 
 https://mariushosting.com/how-to-install-homarr-on-your-synology-nas/
 
 :::note
 
-This is a third party guide - we do not garantuee if it's up to date nor offer support. Use at your own risk.
+This is a third party guide! It might not be up-to-date, nor do we offer official support.
 
 :::
 
