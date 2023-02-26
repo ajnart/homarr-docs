@@ -204,15 +204,13 @@ This is a third party guide! It might not be up-to-date, nor do we offer officia
 :::
 
 ## Installation on QNAP
-We recommend you to install Homarr via Cointainer Station.
+When installing on QNAP, we recommend you to install Homarr using [Container Station]( https://www.qnap.com/en/software/container-station) or [this third-party image](https://www.myqnap.org/product/homarr/).
 
-You can also use this: https://www.myqnap.org/product/homarr/
-
-A Chinese tutorial for this can also be found here: https://post.smzdm.com/p/awzm7op2/
+There is also a guide available, but note that it is written in Chinese: https://post.smzdm.com/p/awzm7op2/
 
 :::caution
 
-This is an unvalidated third party guide - we do not garantuee if it's up to date nor offer support. Use at your own risk.
+This is a *unvalidated* third party guide! It might not be up-to-date, nor do we offer official support.
 
 :::
 
