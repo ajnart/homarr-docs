@@ -266,7 +266,4 @@ Having trouble installing Homarr on your system? Check out our [FAQ](/docs/commu
 
 ---
 ## Anything else in mind?
-Have you installed Homarr using a different method?
-It would be amazing if you could share, so other users can install Homarr too!
-
-Click ``Edit this page`` below to adjust this documentation and add your installation method 💪.
+Have you installed Homarr using a different method? Please share it with us, so we can expand to a bigger userbase!
