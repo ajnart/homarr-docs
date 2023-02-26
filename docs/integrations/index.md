@@ -223,15 +223,6 @@ Homarr will integrate the shows of your [Readarr](https://readarr.com/) calendar
 ## Media Servers
 Homarr can integrate with your media servers for better control over what's going on.
 
-:::tip
-
-Note, that we recommend you to create seperate accounts for better security.
-Only grant access to the libraries, that must be accessed by Homarr, and remove unnessesary permissions.
-
-Since all media servers do not expose the same information, Homarr might be unable to display certain information for servers.
-
-:::
-
 You may add multiple media servers, also of different kinds, to your dashboard.
 
 ### Jellyfin
