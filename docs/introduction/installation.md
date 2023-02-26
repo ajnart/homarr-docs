@@ -203,6 +203,8 @@ This is a third party guide! It might not be up-to-date, nor do we offer officia
 
 :::
 
+---
+
 ## Installation on QNAP
 When installing on QNAP, we recommend you to install Homarr using [Container Station]( https://www.qnap.com/en/software/container-station) or [this third-party image](https://www.myqnap.org/product/homarr/).
 
@@ -214,12 +216,14 @@ This is a *unvalidated* third party guide! It might not be up-to-date, nor do we
 
 :::
 
+---
+
 ## Installation using Saltbox
 You can also use this to install on Saltbox:
 
 :::caution
 
-This is an unvalidated third party guide - we do not garantuee if it's up to date nor offer support. Use at your own risk.
+This is a *unvalidated* third party guide! It might not be up-to-date, nor do we offer official support.
 
 :::
 
@@ -254,6 +258,11 @@ Installing Homarr from source is not recommended and only intended for developer
     </ol>
   </TabItem>
 </Tabs>
+
+---
+
+### Troubleshooting
+Having trouble installing Homarr on your system? Check out our [FAQ](/docs/community/faq) and [Known Issues](/docs/community/known-issues). If you are still running into issues, please contact us in our [Discord server](https://discord.com/invite/aCsmEV5RgA).
 
 ---
 ## Anything else in mind?
