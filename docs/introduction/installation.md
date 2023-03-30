@@ -187,10 +187,50 @@ After you've installed the Community Apps Plugin, you can install Homarr from th
 
 After you've installed Homarr, you can find it under the tab "Docker".
 
+The official support thread is located [here](https://forums.unraid.net/topic/123478-support-smartphonelover-homarr/), but we prefer to communicate over GitHub and Discord instead.
+
+---
+
+## Installation on Synology
+The installation process is quite easy and fast on Synology devices.
+Since this method is used less often, we recommend you to follow this guide written by mariushosting.
+
+https://mariushosting.com/how-to-install-homarr-on-your-synology-nas/
+
+:::note
+
+This is a third party guide! It might not be up-to-date, nor do we offer official support.
+
+:::
+
+---
+
+## Installation on QNAP
+When installing on QNAP, we recommend you to install Homarr using [Container Station]( https://www.qnap.com/en/software/container-station) or [this third-party image](https://www.myqnap.org/product/homarr/).
+
+There is also a guide available, but note that it is written in Chinese: https://post.smzdm.com/p/awzm7op2/
+
+:::caution
+
+This is a *unvalidated* third party guide! It might not be up-to-date, nor do we offer official support.
+
+:::
+
+---
+
+## Installation using Saltbox
+You can also use this to install on Saltbox:
+
+:::caution
+
+This is a *unvalidated* third party guide! It might not be up-to-date, nor do we offer official support.
+
+:::
+
 ---
 
 ## Building from source
-:::caution
+:::info
 
 Installing Homarr from source is not recommended and only intended for developers and contributers, please use the [Docker](#installation-using-docker) installation method instead.
 
@@ -221,6 +261,9 @@ Installing Homarr from source is not recommended and only intended for developer
 
 ---
 
-## Troubleshooting
-
+### Troubleshooting
 Having trouble installing Homarr on your system? Check out our [FAQ](/docs/community/faq) and [Known Issues](/docs/community/known-issues). If you are still running into issues, please contact us in our [Discord server](https://discord.com/invite/aCsmEV5RgA).
+
+---
+## Anything else in mind?
+Have you installed Homarr using a different method? Please share it with us, so we can expand to a bigger userbase!
