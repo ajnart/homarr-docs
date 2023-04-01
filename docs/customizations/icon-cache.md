@@ -29,13 +29,15 @@ Make a backup before running the script. The script will modify your configurati
 
 1. Open a terminal with access to the configuration. Usually, this is on your host machine or inside your Docker container.
 
-2. Run the following script. Make sure to replace ``<your-path-to-homarr>`` with the path to your Homarr installation. If you're using Docker, this is usually ``/data/docker/homarr``.
+2. Run the following script. Make sure to replace ``<your-path-to-homarr-config>`` and ``<your-path-to-homarr-icons>`` with the path to your Homarr installation. If you're using Docker, this is usually ``/app/data`` and ``/app/public``, respectfully.
 
 
 ```bash
-pathToHomarr="<your-path-to-homarr>"
+pathToConfig="<your-path-to-homarr-config>" eg /app/data
+pathToIcons="<your-path-to-homarr-icons>" eg /app/public
 
-configFile="${pathToHomarr}/configs/default.json"; iconCacheDir="${pathToHomarr}/icons/cache"; mkdir -p $iconCacheDir;
+apk add curl
+configFile="${pathToConfig}/configs/default.json"; iconCacheDir="${pathToIcons}/icons/cache"; mkdir -p $iconCacheDir;
 cat $configFile | grep cdn.jsdelivr.net | cut -d'"' -f 4 | while read -r line; do echo "Processing $(basename $line)"; curl -o $iconCacheDir/$(basename $line) $line; done
 sed -i ".`date +%F`.bak" "s%https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png%/icons/cache%g" $configFile
 echo "Done! Relaunch Homarr to update the icons."
