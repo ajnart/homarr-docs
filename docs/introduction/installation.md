@@ -220,6 +220,9 @@ This is a *unvalidated* third party guide! It might not be up-to-date, nor do we
 
 ## Installation using Saltbox
 You can also use this to install on Saltbox:
+```sh
+    sb install sandbox-homarr
+  ```
 
 :::caution
 
