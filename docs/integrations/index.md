@@ -29,7 +29,7 @@ Homarr will integrate with a ton of different apps on your system.
   - [Jellyfin](#jellyfin)
   - [Plex](#plex)
 - [Dash.](#dash)
-- [Overseer & Jellyseerr](#overseerr--jellyseerr) (media requests)
+- [Overseerr & Jellyseerr](#overseerr--jellyseerr) (media requests)
 - [Docker](#docker)
 
 :::caution
