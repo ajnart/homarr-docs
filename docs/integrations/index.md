@@ -26,16 +26,16 @@ Homarr will integrate with a ton of different apps on your system.
   - [Lidarr](#lidarr) (music)
   - [Readarr](#readarr) (books)
 - [Media Servers](#media-servers)
-	- [Jellyfin](#jellyfin)
-	- [Plex](#plex)
+  - [Jellyfin](#jellyfin)
+  - [Plex](#plex)
 - [Dash.](#dash)
-- [Overseer & Jellyseerr](#overseerr--jellyseerr) (media requests)
+- [Overseerr & Jellyseerr](#overseerr--jellyseerr) (media requests)
 - [Docker](#docker)
 
 :::caution
 
-Homarr usually does not suport ``beta``, ``alpha`` or older legacy versions of integrations, because new versions often contain breaking API changes.
-We will not support these, because the underyling API often changes frequently and would require much attention for very little outcome.
+Homarr usually does not support ``beta``, ``alpha`` or older legacy versions of integrations, because new versions often contain breaking API changes.
+We will not support these, because the underlying API often changes frequently and would require much attention for very little outcome.
 
 :::
 
@@ -226,7 +226,7 @@ You may add multiple media servers, also of different kinds, to your dashboard.
 
 :::tip
 
-We recommend creating a seperate account just for Homarr. Only grant access to the libraries and permissions that you require to be accessed by Homarr. This allows for better security.
+We recommend creating a separate account just for Homarr. Only grant access to the libraries and permissions that you require to be accessed by Homarr. This allows for better security.
 
 :::
 
@@ -283,7 +283,7 @@ After choosing the correct type, you can search for content:
 
 ![](img/overseerr/search-show.png)
 
-It displays, which content is already in your Overseerr library and links availble content directly to your [Plex](https://www.plex.tv/) or [Jellyfin](https://jellyfin.org/) instance.
+It displays, which content is already in your Overseerr library and links available content directly to your [Plex](https://www.plex.tv/) or [Jellyfin](https://jellyfin.org/) instance.
 
 <details>
   <summary>
@@ -300,7 +300,7 @@ It displays, which content is already in your Overseerr library and links availb
 
 ### Initial setup
 #### Installation of Media Server
-The Overseer integration supports both Overseer and Jellyseer, a fork of Overseer compatible with Jellyfin.
+The Overseer integration supports both Overseerr and Jellyseerr, a fork of Overseerr compatible with Jellyfin.
 
 <Tabs groupId="media-server">
   <TabItem value="plex" label="🎬 Plex Media Server">
@@ -327,7 +327,7 @@ The Overseer integration supports both Overseer and Jellyseer, a fork of Oversee
   </TabItem>
   <TabItem value="jellyfin" label="🎬 Jellyfin Media Server">
     <p>
-      Oficially, Jellyfin is not supported by Overseerr. This is why Jellyfin users must use a fork of the official Overseerr project, which was modified to work with Jellyfin: <a href="https://github.com/bignuto/jellyseer">https://github.com/bignuto/jellyseer</a>.<br/>
+      Officially, Jellyfin is not supported by Overseerr. This is why Jellyfin users must use a fork of the official Overseerr project, which was modified to work with Jellyfin: <a href="https://github.com/Fallenbagel/jellyseerr">https://github.com/Fallenbagel/jellyseerr</a>.<br/>
       We recommend the installation using Docker for the easiest and fastest installation.
     </p>
   </TabItem>
@@ -348,7 +348,7 @@ Simply select the correct type from the integration tab when editing the applica
   </TabItem>
   <TabItem value="jellyfin" label="🎬 Jellyfin Media Server">
     <p>
-      Select <code>Jellyseerr</code> in the app type for your Jellyseer app.<br/>
+      Select <code>Jellyseerr</code> in the app type for your Jellyseerr app.<br/>
       Fill our the field <code>Api token</code> with from the link below, when having <code>Jellyseerr</code> as the app type selected.
     </p>
   </TabItem>
@@ -375,9 +375,9 @@ You can **restart**, **stop**, **start**, **refresh** and **remove** containers 
 
 ![Docker Core Features](https://user-images.githubusercontent.com/190136/180496007-8456e486-a864-4510-b91f-fabf74df020c.png)
 
-Additonally, if you have a lot of containers you can search and filter them by **container** or **image** name
+Additionally, if you have a lot of containers you can search and filter them by **container** or **image** name
 
-![Contailer and Image Search](https://user-images.githubusercontent.com/190136/180496391-12a9a1c6-a54b-4d22-98ea-a5eb3a93fce4.png)
+![Container and Image Search](https://user-images.githubusercontent.com/190136/180496391-12a9a1c6-a54b-4d22-98ea-a5eb3a93fce4.png)
 
 View the state of each container (**created**, **running** or **stopped**)
 
