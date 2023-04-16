@@ -29,6 +29,12 @@ This applies to all widgets, but in the case of the IFrame widget, it enables yo
 
 ![](https://media.discordapp.net/attachments/988335098493542410/1094665745226539168/update-teaser.png?width=1046&height=666)
 
+## Edit mode password
+We've added a setting to disable editing completely. This will allow you to restrict edit access without password-protection.
+use the `EDIT_MODE_PASSWORD` ENV variable to set a password for edit mode. 
+turn on `DISABLE_EDIT_MODE=TRUE` to disable edit mode on startup.
+
+
 ## 😎 Blazingly fast
 We've implemented a new caching system, that will cache all data in your browser, meaning that Homarr will load within milliseconds, as if it was *powered by rust and blazingly fast* !!!
 
@@ -76,39 +82,5 @@ Now, you can use the following environment variables to configure this:
 
 - ``DOCKER_HOST``
 - ``DOCKER_PORT``
-
-## What's Changed
-* 🚑 Fix URL malformed by @manuel-rw in https://github.com/ajnart/homarr/pull/743
-* 🐛 Fix StatusCode not being used properly by @ajnart in https://github.com/ajnart/homarr/pull/750
-* Update bug.yml by @manuel-rw in https://github.com/ajnart/homarr/pull/756
-* Turbo cache by @ajnart in https://github.com/ajnart/homarr/pull/767
-* ✨ Add beforeunload hook by @manuel-rw in https://github.com/ajnart/homarr/pull/762
-* ✨ Add widget error boundary by @manuel-rw in https://github.com/ajnart/homarr/pull/753
-* ✨ Environment variable for default color scheme #237 by @manuel-rw in https://github.com/ajnart/homarr/pull/744
-* 🚑 Fix RSS widget crash by @manuel-rw in https://github.com/ajnart/homarr/pull/742
-* ✨ Add a simple keybind viewer in about menu #751 by @ajnart in https://github.com/ajnart/homarr/pull/775
-* ✨ Make integrations fields required by @ajnart in https://github.com/ajnart/homarr/pull/770
-* Edit mode password modal by @ajnart in https://github.com/ajnart/homarr/pull/748
-* ✨ Add TV show name in media info and style changes by @ajnart in https://github.com/ajnart/homarr/pull/779
-* Mantine v6 by @ajnart in https://github.com/ajnart/homarr/pull/771
-* Format code with prettier by @deepsource-autofix in https://github.com/ajnart/homarr/pull/784
-* ✅ Add vitest and initial tests by @manuel-rw in https://github.com/ajnart/homarr/pull/766
-* ✨ Add support for proxied docker #758 by @ajnart in https://github.com/ajnart/homarr/pull/768
-* Replace short hand type conversions with function calls by @deepsource-autofix in https://github.com/ajnart/homarr/pull/783
-* 💄 Style and usability improvements to RSS widget by @ajnart in https://github.com/ajnart/homarr/pull/780
-* Allow multiple widgets of same type by @Meierschlumpf in https://github.com/ajnart/homarr/pull/788
-* ✨ Add localstorage caching with React Query by @ajnart in https://github.com/ajnart/homarr/pull/798
-* 🚑 Fix sidebar ribbons breakpoint by @manuel-rw in https://github.com/ajnart/homarr/pull/799
-* ✨ Add console warn if apps are missing properties by @ajnart in https://github.com/ajnart/homarr/pull/769
-* ✨ Add overseerr widget by @manuel-rw in https://github.com/ajnart/homarr/pull/796
-* Rss multiple feeds by @ajnart in https://github.com/ajnart/homarr/pull/797
-* 📝 Fix images in Documentation by @walkxcode in https://github.com/ajnart/homarr/pull/804
-* 💄 Dynamic calender dimensions by @manuel-rw in https://github.com/ajnart/homarr/pull/807
-* ♻️ Fix default img paths by @manuel-rw in https://github.com/ajnart/homarr/pull/806
-* ✅ Add tests for media request widget by @manuel-rw in https://github.com/ajnart/homarr/pull/805
-* New Crowdin updates by @ajnart in https://github.com/ajnart/homarr/pull/733
-
-## New Contributors
-* @deepsource-autofix made their first contribution in https://github.com/ajnart/homarr/pull/784
 
 **Full Changelog**: https://github.com/ajnart/homarr/compare/v0.11.5...v0.12.0
