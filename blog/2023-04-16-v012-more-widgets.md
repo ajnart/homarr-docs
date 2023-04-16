@@ -50,7 +50,7 @@ You can now consume multiple RSS feeds at the same time:
 ![image](https://user-images.githubusercontent.com/30572287/231829886-69133a84-3ae7-4fa3-a6d2-c582f4cc9eea.png)
 
 ## Tab refresh / close confirmation
-Since some have lost their changes, by refreshing the page in the edit mode, we've implemented a popup that will ask your browser to confirm the page change from the user:
+Since some have lost their changes, by refreshing the page in the edit mode. We've added a popup that will ask you to confirm you want to reload the page :
 
 ![image](https://user-images.githubusercontent.com/30572287/231823776-9cbb12d4-3cb3-422e-b2e8-f9917bb3f8cc.png)
 
