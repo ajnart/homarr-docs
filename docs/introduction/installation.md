@@ -17,7 +17,7 @@ Homarr can be installed in many ways. For most users, [Installation using Docker
 
 ## Installation using Docker
 
-Docker is a free Software that isolates Homarr using containers. Using Docker, you can run Homarr on any supported plattform (including Windows and Raspberry Pi), easily.
+Docker is a free Software that isolates Homarr using containers. Using Docker, you can run Homarr on any supported platform (including Windows and Raspberry Pi), easily.
 
 ### Prerequisites
 
@@ -235,7 +235,7 @@ This is a *unvalidated* third party guide! It might not be up-to-date, nor do we
 ## Building from source
 :::info
 
-Installing Homarr from source is not recommended and only intended for developers and contributers, please use the [Docker](#installation-using-docker) installation method instead.
+Installing Homarr from source is not recommended and only intended for developers and contributors, please use the [Docker](#installation-using-docker) installation method instead.
 
 :::
 
