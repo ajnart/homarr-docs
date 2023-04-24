@@ -10,7 +10,7 @@ tags:
 Homarr's initial purpose was, to run it only within your local network.
 For this reason, earlier versions lacked critical security measures.
 
-Since ``0.11.0``, Homarr has now a comprehensive secrets manegement system,
+Since ``0.11.0``, Homarr has now a comprehensive secrets management system,
 that protects you from having confidential data being leaked or misused.
 This means, that no credentials are sent to clients, and they're kept on the server.
 
@@ -22,7 +22,7 @@ Versions prior to 0.11.0 are deemed to be unsafe and deprecated. We highly advis
 
 However, we do not recommend that you directly expose Homarr with any authentication for the following reasons:
 - The [current password functionality is not safe](https://github.com/ajnart/homarr/issues/510), to be exposed on the internet. Users could be able to grab the password from your cookies - also known as cookie theft.
-- Some endpoints potentionally create a lot of network traffic. If a bot, indexer or web crawler floods your server with requests, it might clog up your network, since API routes have no rate limiting.
+- Some endpoints potentially create a lot of network traffic. If a bot, indexer or web crawler floods your server with requests, it might clog up your network, since API routes have no rate limiting.
 - The password functionality does not use best practices and could be brute-forced, also known as DDOS
 - Some routes, which should require authentication, are not fully protected.
 
@@ -50,7 +50,7 @@ When this mode is enabled, the following changes will be made:
 
 This can be used, if you serve your page to multiple users, and don't want them to be able to edit anything.
 As the name suggests, this is not a permanent solution and not recommended for most users.
-It also requiers a restart each time, that you want to enable or disable the read-only mode.
+It also requires a restart each time, that you want to enable or disable the read-only mode.
 
 You can enable the read-only mode by setting the ``DISABLE_EDIT_MODE`` environment variable to ``true``.
 Disable by unsetting ``DISABLE_EDIT_MODE``.
