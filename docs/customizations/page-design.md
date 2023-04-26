@@ -21,7 +21,7 @@ To add a custom background, open the settings at the top right and click on the 
 
 :::tip
 
-If you are using Docker, mount the path ``/app/public/`` and put the background inside of a folder called ``img``.
+If you are using Docker, mount the path ``/app/public/img`` and put the backgrounds or custom icons inside of that folder.
 
 :::
 
