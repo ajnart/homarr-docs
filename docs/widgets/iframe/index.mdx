@@ -1,0 +1,52 @@
+---
+title: 🎴 IFrame
+tags:
+  - Widgets
+  - Configuration
+  - Iframe
+  - Integrade
+  - Grafana
+---
+
+
+If you application is not supported natively by Homarr, you can integrate it using the iframe widget.
+It uses the [iframe element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe),
+which emeds the desired page in the browser.
+This means, no traffic is routed through Homarr (and the URL must be reachable from the client).
+
+Athough you can integrate many websites, some may not work.
+This is because the administrators of those sites disallow iframes
+for security reasons, as users could easily be tricked
+by embeding the original site on a malicious page.
+
+Some proxies disallow iframes by default for this reason.
+You can use https://iframetester.com/ to check, if the site is allowing iframes.
+If you manage all of your own applications, you can usually change that.
+
+If you want to test a page, you can use the following URL:
+https://en.wikipedia.org/wiki/Main_Page
+
+---
+
+## Adding the widget
+Please check out our documentation on [how to add a widget](/docs/introduction/after-the-installation#adding-widgets).
+
+---
+
+## Configuration
+
+| Configuration         | Description | Values | Default Value |
+| --------------------- | ----------- | ------ | ------------- |
+| Embed URL | The page that should be embedded | URL | - |
+| Allow full screen | Allow pages inside the iframe to enter full screen | yes / no | no |
+
+:::tip
+
+Check out our documentation on [editing tiles](/docs/introduction/after-the-installation#organizing-and-re-arranging-your-dashboard).
+
+:::
+
+---
+
+## Screenshots
+![](./widget.jpg)
