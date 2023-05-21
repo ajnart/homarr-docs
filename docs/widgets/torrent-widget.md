@@ -25,7 +25,7 @@ You can configure this widget when the [Edit Mode](/docs/introduction/after-the-
 | Display stale torrents | Display torrents that are stale | yes / no | yes |
 | Refresh interval | Changes the refresh interval of your widget | 1s - 60s | 10s |
 
-![configuration of the torrent widget](./img/torrent/widget-torrent-configuration.png)
+![configuration of the torrent widget](./img/torrent/widget-torrent-configuration.webp)
 
 :::tip
 
@@ -37,4 +37,4 @@ Check out our documentation on [editing tiles](/docs/introduction/after-the-inst
 
 ## Screenshots
 
-![torrent widget](./img/torrent/widget-torrent.png)
+![torrent widget](./img/torrent/widget-torrent.webp)

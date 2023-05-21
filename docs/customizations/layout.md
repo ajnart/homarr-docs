@@ -24,7 +24,7 @@ To change the screen size you are editing, simply resize the browser.
 | Medium      | >768px     | 6                 |
 | Small       | <768px     | 3                 |
 
-![Screen size](./img/layout/screen-size.png)
+![Screen size](./img/layout/screen-size.webp)
 
 ## Sidebars
 
@@ -43,7 +43,7 @@ It enables you to search for:
 - Overseerr / Jellyseerr items
 - The apps on your dashboard
 
-![Search Box Switch](img/layout/search-box-switch.png)
+![Search Box Switch](img/layout/search-box-switch.webp)
 
 ---
 
@@ -58,8 +58,8 @@ Please note, that it [requires some initial setup](/docs/integrations#🐳-docke
 If you activate Pings, Homarr will send a HTTP/-S request to all your services on the page load.
 When the response code matches the expected status code, the ping indicator will be green. Otherwise, it will be red.
 
-![Pings](img/layout/pings.png)
+![Pings](img/layout/pings.webp)
 
 Example of an ping indicator:
 
-![Pings](img/layout/example-ping.png)
+![Pings](img/layout/example-ping.webp)

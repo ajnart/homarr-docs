@@ -10,7 +10,7 @@ tags:
 
 <!-- Project Title -->
 <p align="center">
-  <img width={150} src="/img/logo.png" />
+  <img width={150} src="/img/logo.webp" />
 </p>
 
 <h1 align="center">Welcome to Homarr</h1>

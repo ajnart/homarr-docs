@@ -11,7 +11,7 @@ tags:
 
 To add a custom Homarr title, open the settings at the top right and click on the Tab "Customization". Then, change your title in the input field:
 
-![homarr input field for custom title](./img/customizations-custom-title-setting.png)
+![homarr input field for custom title](./img/customizations-custom-title-setting.webp)
 
 ---
 
@@ -27,11 +27,11 @@ If you are using Docker, mount the path ``/app/public/img`` and put the backgrou
 
 Then, define your background in the input field:
 
-![homarr background settings](./img/customizations-custom-background-setting.png)
+![homarr background settings](./img/customizations-custom-background-setting.webp)
 
 Example:
 
-![homarr with custom background](./img/customizations-custom-background-dashboard.png)
+![homarr with custom background](./img/customizations-custom-background-dashboard.webp)
 
 ### Random Backgrounds
 
@@ -45,4 +45,4 @@ You can get a random image from Unsplash by using their [public API](https://uns
 
 Example:
 
-![homarr with random unplash background](./img/customizations-custom-background-unplash.png)
+![homarr with random unplash background](./img/customizations-custom-background-unplash.webp)

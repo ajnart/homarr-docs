@@ -14,7 +14,7 @@ If you still have any questions or want to provide feedback, please reach out to
 
 We have a Discord Server, where we announce new releases, discuss features and bugs and show our configurations off.
 
-[_![](https://discordapp.com/api/guilds/972958686051962910/widget.png?style=banner2)_](https://discord.gg/aCsmEV5RgA)
+[_![](https://discordapp.com/api/guilds/972958686051962910/widget.webp?style=banner2)_](https://discord.gg/aCsmEV5RgA)
 
 ## E-Mail
 

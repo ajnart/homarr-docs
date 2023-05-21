@@ -26,5 +26,5 @@ Check out our documentation on [editing tiles](/docs/introduction/after-the-inst
 
 ## Screenshots
 
-![usenet widget](./img/usenet/widget-usenet.png)
-![usenet widget dark](./img/usenet/widget-usenet-dark.png)
+![usenet widget](./img/usenet/widget-usenet.webp)
+![usenet widget dark](./img/usenet/widget-usenet-dark.webp)

@@ -65,7 +65,7 @@ You can find more installation options on the Dash. [documentation page](https:/
 | Graphs | Selection of the Dash. graphs, which should be displayed | yes / no | CPU, RAM, Storage, Network |
 | Dash. URL | The address of your Dash. installation | string | *none* |
 
-![dash dot configuration](./img/dashDot/widget-dashdot-configuration.png)
+![dash dot configuration](./img/dashDot/widget-dashdot-configuration.webp)
 
 :::tip
 
@@ -89,4 +89,4 @@ If you want to proceed, you must configure this header on your reverse proxy: ht
 
 ## Screenshots
 
-![dash dot widget in light mode](./img/dashDot/widget-dashdot-light-mode.png)
+![dash dot widget in light mode](./img/dashDot/widget-dashdot-light-mode.webp)

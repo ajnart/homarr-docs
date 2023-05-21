@@ -10,7 +10,7 @@ tags:
 Homarr has a collection of search engines pre-configured. You can select one of them from the settings.
 To change the search engine, go to the settings and select the search engine you'd like to use.
 
-![select in homarr for search engines](./img/customizations-custom-search-engine-select.png)
+![select in homarr for search engines](./img/customizations-custom-search-engine-select.webp)
 
 ---
 
@@ -24,7 +24,7 @@ Choose "Custom" from the collection of search engines.
 Then, enter the URL of the search engine you'd like to use. Homarr will append the search query to the end of the URL.
 
 
-![custom search engine yandex](./img/customizations-custom-search-engine-custom.png)
+![custom search engine yandex](./img/customizations-custom-search-engine-custom.webp)
 
 :::tip
 
