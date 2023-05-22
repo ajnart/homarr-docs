@@ -27,7 +27,7 @@ This applies to all widgets, but in the case of the IFrame widget, it enables yo
 - Integrate monitoring tools like Grafana, Splunk or Elasticsearch
 - Integrate your services (for example Sonarr, Radarr and Overseerr) directly into Homarr
 
-![](https://media.discordapp.net/attachments/988335098493542410/1094665745226539168/update-teaser.webp?width=1046&height=666)
+![](https://media.discordapp.net/attachments/988335098493542410/1094665745226539168/update-teaser.png?width=1046&height=666)
 
 ## Edit mode password
 We've added a setting to disable editing completely. This will allow you to restrict edit access without password-protection.
@@ -42,17 +42,17 @@ We've implemented a new caching system, that will cache all data in your browser
 We've implemented a new widget, that displays a history of all requests.
 You can't approve from the widget yet, but we plan to add this in the future.
 
-![image](https://user-images.githubusercontent.com/30572287/231829411-f61f03e9-79a0-45fc-9a87-94d69ea3ea84.webp)
+![image](https://user-images.githubusercontent.com/30572287/231829411-f61f03e9-79a0-45fc-9a87-94d69ea3ea84.png)
 
 ## Multiple RSS feeds
 You can now consume multiple RSS feeds at the same time:
 
-![image](https://user-images.githubusercontent.com/30572287/231829886-69133a84-3ae7-4fa3-a6d2-c582f4cc9eea.webp)
+![image](https://user-images.githubusercontent.com/30572287/231829886-69133a84-3ae7-4fa3-a6d2-c582f4cc9eea.png)
 
 ## Tab refresh / close confirmation
 Since some have lost their changes, by refreshing the page in the edit mode. We've added a popup that will ask you to confirm you want to reload the page :
 
-![image](https://user-images.githubusercontent.com/30572287/231823776-9cbb12d4-3cb3-422e-b2e8-f9917bb3f8cc.webp)
+![image](https://user-images.githubusercontent.com/30572287/231823776-9cbb12d4-3cb3-422e-b2e8-f9917bb3f8cc.png)
 
 ## Environment variable for default theme
 You can now set the default color scheme using environment variables:
