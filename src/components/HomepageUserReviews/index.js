@@ -30,14 +30,14 @@ export default function HomepageUserReviews() {
     {
       username: 'u/uncmnsense',
       plattform: 'r/selfhosted on Reddit',
-      profilePicture: '/img/pictures/reviews/r_selfhosted.png',
+      profilePicture: '/img/pictures/reviews/r_selfhosted.webp',
       fullText: 'Anyone using homarr? check it out, its pretty fancy...',
       link: 'https://www.reddit.com/r/selfhosted/comments/wqxsk3/anyone_using_homarr_check_it_out_its_pretty_fancy',
     },
     {
       username: 'u/RoachedCoach',
       plattform: 'r/unRAID on Reddit',
-      profilePicture: '/img/pictures/reviews/r_unraid.png',
+      profilePicture: '/img/pictures/reviews/r_unraid.webp',
       fullText:
         "I enjoy Homarr - mostly because it's very simple, straightforward, and attractive.",
       link: 'https://www.reddit.com/r/unRAID/comments/wk3x2s/comment/ijn4vpg/',
@@ -45,7 +45,7 @@ export default function HomepageUserReviews() {
     {
       username: 'u/YankeesIT',
       plattform: 'r/selfhosted on Reddit',
-      profilePicture: '/img/pictures/reviews/r_selfhosted.png',
+      profilePicture: '/img/pictures/reviews/r_selfhosted.webp',
       fullText: 'My Homarr setup...',
       link: 'https://www.reddit.com/r/selfhosted/comments/x84c9v/my_homarr_setup/',
     },

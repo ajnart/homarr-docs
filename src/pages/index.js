@@ -101,7 +101,7 @@ const ThemedDevicePreview = () => {
   return (
     <img
       className={styles.heroImage}
-      src={`/img/pictures/homarr-devices-preview/compressed/homarr-devices-2d-mockup-flat-shadow-${colorMode}-compressed.png`}
+      src={`/img/pictures/homarr-devices-preview/compressed/homarr-devices-2d-mockup-flat-shadow-${colorMode}-compressed.webp`}
       style={{
         filter: 'drop-shadow(2px 4px 6px rgba(0,0,0,0.5))',
       }}
