@@ -15,7 +15,7 @@ export default function HomepageUserReviews() {
     {
       username: 'Maeglin',
       plattform: 'Twitter',
-      profilePicture: '/img/pictures/reviews/maeglin.jpg',
+      profilePicture: '/img/pictures/reviews/maeglin.webp',
       fullText:
         "Day 49/100 set up Homarr just for a test spin. It's a nice dashboard and the Arrs integration especialy the calendar is awesome.",
       link: 'https://twitter.com/Maeglin931/status/1555725442744586240',
@@ -23,7 +23,7 @@ export default function HomepageUserReviews() {
     {
       username: 'IBRACORP',
       plattform: 'Youtube',
-      profilePicture: '/img/pictures/reviews/ibracorp.jpg',
+      profilePicture: '/img/pictures/reviews/ibracorp.webp',
       fullText: "Homarr Is Here To Stay. Here's Why | Selfhosted Homepage",
       link: 'https://www.youtube.com/watch?v=Mk9ZZiH5qi0',
     },
