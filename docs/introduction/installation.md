@@ -172,7 +172,7 @@ You can install Homarr directly from your Unraid Dashboard, no terminal required
 
 Don't know whether you have the plugin installed or not? Search for this tab in the navigation:
 
-![](img/unraid-navigation-app-manager.png)
+![](img/unraid-navigation-app-manager.webp)
 :::
 
 ### Installing
@@ -183,7 +183,7 @@ After you've installed the Community Apps Plugin, you can install Homarr from th
 2. Search for "Homarr" and click on the result.
 3. Click on "Install" and adjust the settings to your liking.
 
-![](img/unraid-apps-homarr.png)
+![](img/unraid-apps-homarr.webp)
 
 After you've installed Homarr, you can find it under the tab "Docker".
 

@@ -21,7 +21,7 @@ Please check out our documentation on [how to add a widget](/docs/introduction/a
 
 Please make sure to select the appropriate integration type for your app, so the calendar widget can communicate with it:
 
-![](./img/calendar/widget-calendar-integration-sonarr-example.png)
+![](./img/calendar/widget-calendar-integration-sonarr-example.webp)
 
 Then, enter your API key and click on the save button:
 
@@ -35,7 +35,7 @@ Then, enter your API key and click on the save button:
 
 The calendar widget will display a calendar with indicators for upcoming releases:
 
-![Screenshot showing multiple indicators](./img/calendar/widget-calendar-indicators.png)
+![Screenshot showing multiple indicators](./img/calendar/widget-calendar-indicators.webp)
 
 :::info
 
@@ -59,7 +59,7 @@ All indicators in the calendar have a specific color depending on their app:
 
 All days with indicators will be clickable and will open a popup with detailed information about the releases on this day:
 
-![Screenshot showing pop-up of day information](./img/calendar/widget-calendar-day-information.png)
+![Screenshot showing pop-up of day information](./img/calendar/widget-calendar-day-information.webp)
 
 :::info
 
@@ -85,7 +85,7 @@ Some Adblockers are preventing Homarr from loading your posters. This is a [well
 | -------------------- | ----------- | ------ | ------------- |
 | Start week on sunday | Determines, if the calendar week should start on Sunday. If deactivated, Week will start on Monday. | yes / no | no |
 
-![configuration of the calendar widget](./img/calendar/widget-calendar-configuration.png)
+![configuration of the calendar widget](./img/calendar/widget-calendar-configuration.webp)
 
 :::tip
 

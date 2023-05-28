@@ -12,15 +12,15 @@ Congratulations! You've installed Homarr. Now, it's time to configure it to your
 ## Adding your first app
 Let's begin by adding your first app to Homarr. [Enter Edit Mode](#entering-edit-mode) and click on the Add a Tile button:
 
-![](img/edit-mode-add-tile-button.png)
+![](img/edit-mode-add-tile-button.webp)
 
 A popup will appear, where you can choose the type of tile you want to add. For now, we'll choose "Apps":
 
-![](img/edit-mode-select-element.png)
+![](img/edit-mode-select-element.webp)
 
 Another popup will appear, where you can enter the details of your app. You can also [choose an icon](/docs/customizations/icons) for your app:
 
-![](img/add-app-modal.png)
+![](img/add-app-modal.webp)
 
 The following fields are required:
 
@@ -36,7 +36,7 @@ You can adjust your dashboard by going into ***✨ Edit Mode ✨***. In Edit Mod
 
 You can enter Edit Mode using this button, which is located at the top right of your screen:
 
-![edit mode button at the top right](img/enter-edit-mode.png)
+![edit mode button at the top right](img/enter-edit-mode.webp)
 
 When you enter Edit Mode, you will see a few changes:
 
@@ -69,7 +69,7 @@ After you've added a few apps, it's time to organize and re-arrange your dashboa
 
 You can add categories to your dashboard. Categories are useful for organizing your apps. Click the "Add a new tile" button and choose "Category":
 
-![](img/edit-mode-select-element.png)
+![](img/edit-mode-select-element.webp)
 
 Tiles can be organized into categories. Simply drag and drop the tile into the category.
 
@@ -77,7 +77,7 @@ Tiles can be organized into categories. Simply drag and drop the tile into the c
 
 Each category will have it's own menu, allowing you to change it's position and name, to delete it, or to add a new category below/above.
 
-![](img/category-menu.png)
+![](img/category-menu.webp)
 
 ---
 
@@ -87,10 +87,10 @@ You can further extend the functionality of your dashboard by adding widgets. Wi
 
 Click the "Add a new tile" button and choose "Widget":
 
-![](img/edit-mode-select-element.png)
+![](img/edit-mode-select-element.webp)
 
 Click on the widget you want to add. You can choose from a variety of widgets:
-![](./img/widgets-select-type.png)
+![](./img/widgets-select-type.webp)
 
 :::tip
 
@@ -100,7 +100,7 @@ Wigets can be organized the same way as apps can be. Please note that some widge
 
 Integrations are configured using the "Integration" tab when Editing/Adding a widget. You can [choose from a variety of integrations](/docs/integrations).
 
-![](img/app-integration.png)
+![](img/app-integration.webp)
 
 After choosing an integration type, you can configure the integration. For example, if you choose the "Weather" integration, you will be able to configure the location of the weather widget.
 

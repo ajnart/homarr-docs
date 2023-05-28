@@ -23,7 +23,7 @@ Please check out our documentation on [how to add a widget](/docs/introduction/a
 | Display in Fahrenheit | Displays the temperature in °F. | yes / no | no |
 | Current Location | Location name. Can be pretty much anything and should be as percise as possible. | - | - |
 
-![configuration of the weather widget](./img/weather/widget-weather-configuration.png)
+![configuration of the weather widget](./img/weather/widget-weather-configuration.webp)
 
 <details>
   <summary>I am having issues / false data with the weather. What can I do?</summary>
@@ -43,6 +43,6 @@ Check out our documentation on [editing tiles](/docs/introduction/after-the-inst
 
 ## Screenshots
 
-![weather widget in light mode](./img/weather/widget-weather-light-mode.png)
+![weather widget in light mode](./img/weather/widget-weather-light-mode.webp)
 
-![weather widget in dark mode](./img/weather/widget-weather-dark-mode.png)
+![weather widget in dark mode](./img/weather/widget-weather-dark-mode.webp)

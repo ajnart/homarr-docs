@@ -20,13 +20,13 @@ Icons in Homarr are automatically requested from the [dashboard-icons](https://g
 If you haven't already mounted the icons folder, please go back to the [installation docs](/docs/introduction/installation) and follow the instructions for mounting the icons folder.
 
 ### Adding your icons
-Add your icons to the icons folder. The icons should be named after the app name. For example, if you want to add an icon for the app `plex`, the icon should be named `plex.png` or `plex.svg`.
+Add your icons to the icons folder. The icons should be named after the app name. For example, if you want to add an icon for the app `plex`, the icon should be named `plex.webp` or `plex.svg`.
 
 
 ### Using your icons
-Access the icon(s) using `/icons/name.png` or `/icons/name.svg`.
+Access the icon(s) using `/icons/name.webp` or `/icons/name.svg`.
 
-![image](./img/icons/custom-icon.png)
+![image](./img/icons/custom-icon.webp)
 
 :::caution
 

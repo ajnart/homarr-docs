@@ -21,7 +21,7 @@ Please check out our documentation on [how to add a widget](/docs/introduction/a
 | --------------------- | ----------- | ------ | ------------- |
 | Display full time (24 hour format) | Determines if the clock displays in 12 or 24 hour format | yes / no | yes |
 
-![configuration of the weather widget](./img/clock/widget-clock-configuration.png)
+![configuration of the weather widget](./img/clock/widget-clock-configuration.webp)
 
 :::tip
 
@@ -33,5 +33,5 @@ Check out our documentation on [editing tiles](/docs/introduction/after-the-inst
 
 ## Screenshots
 
-![clock widget in light mode](./img/clock/widget-clock-light-mode.png)
-![clock widget in dark mode](./img/clock/widget-clock-dark-mode.png)
+![clock widget in light mode](./img/clock/widget-clock-light-mode.webp)
+![clock widget in dark mode](./img/clock/widget-clock-dark-mode.webp)

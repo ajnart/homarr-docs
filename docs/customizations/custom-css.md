@@ -14,13 +14,13 @@ To further customize your dashboard, you can add your own CSS rules to Homarr. T
 
 To add custom CSS rules, go to the Customizations tab in the settings menu. There you can find a text field where you can enter your CSS rules.
 
-![homarr custom css settings](./img/customizations-custom-css-setting.png)
+![homarr custom css settings](./img/customizations-custom-css-setting.webp)
 
 After entering your rules, click on the "Submit" button to save your changes. You can now directly see the result of your customizations on the dashboard.
 
 ### Example
 
-![homarr custom css result](./img/customizations-custom-css-result.png)
+![homarr custom css result](./img/customizations-custom-css-result.webp)
 
 ---
 
@@ -28,19 +28,19 @@ After entering your rules, click on the "Submit" button to save your changes. Yo
 
 When writing CSS you will be required to use class names to select the elements you want to customize. To find the class names of the elements you want to customize, you can use the browser's developer tools. To open the developer tools, right-click on the page and select "Inspect" or "Inspect Element" from the context menu.
 
-![context menu](./img/customizations-custom-css-context-menu.png)
+![context menu](./img/customizations-custom-css-context-menu.webp)
 
 This opens up the DevTools of your browser. In the DevTools, you can find the Element Picker in the top left corner. Click on the Element Picker to activate it.
 
-![selector mode](./img/customizations-custom-css-element-selector.png)
+![selector mode](./img/customizations-custom-css-element-selector.webp)
 
 Now you can hover over the elements you want to customize. The element you are hovering over will be highlighted. If you click on the element, the DevTools will show you the classname of the element.
 
-![element highlighted](./img/customizations-custom-css-element-highlight.png)
+![element highlighted](./img/customizations-custom-css-element-highlight.webp)
 
 Finally, select the classname of the element you want to customize and add it to your CSS rules.
 
-![element classname](./img/customizations-custom-css-classname.png)
+![element classname](./img/customizations-custom-css-classname.webp)
 
 ---
 

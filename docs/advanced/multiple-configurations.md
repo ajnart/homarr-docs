@@ -31,12 +31,12 @@ You can drag and drop a `.json` file into the Homarr tab in your browser. It wil
 1. Open settings.
 2. Select your config from the dropdown menu at the bottom of the settings.
 
-![image](./img/config-switcher.png)
+![image](./img/config-switcher.webp)
 
 
 ### Via URL
 1. Add the name of the config to the end of your URL. _(E.g. `http://localhost:7575/exampleconfig`)_
 
-![image](https://user-images.githubusercontent.com/71191962/170117208-8aa66256-9900-471f-b250-77938b491acd.png)
+![image](https://user-images.githubusercontent.com/71191962/170117208-8aa66256-9900-471f-b250-77938b491acd.webp)
 
 
