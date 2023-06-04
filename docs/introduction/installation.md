@@ -268,5 +268,20 @@ Installing Homarr from source is not recommended and only intended for developer
 Having trouble installing Homarr on your system? Check out our [FAQ](/docs/community/faq) and [Known Issues](/docs/community/known-issues). If you are still running into issues, please contact us in our [Discord server](https://discord.com/invite/aCsmEV5RgA).
 
 ---
+
+## Installation using Easypanel
+
+Easypanel is a modern server control panel. If you [run Easypanel](https://easypanel.io/docs) on your server, you can deploy Homarr with 1 click on it.
+
+[![Deploy to Easypanel](https://easypanel.io/img/deploy-on-easypanel-40.svg)](https://easypanel.io/docs/templates/homarr)
+
+### Instructions
+
+1. Create a VM that runs Ubuntu on your cloud provider.
+2. Install Easypanel using the instructions from the website.
+3. Create a new project.
+4. Install Homarr using the dedicated template.
+
+---
 ## Anything else in mind?
 Have you installed Homarr using a different method? Please share it with us, so we can expand to a bigger userbase!
