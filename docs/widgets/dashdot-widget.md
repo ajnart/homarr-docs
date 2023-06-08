@@ -18,7 +18,7 @@ Please check out our documentation on [how to add a widget](/docs/introduction/a
 :::tip
 
 If you want to quickly test the widget, before installing Dash. on your machine, we recommend to use the public demo server of Dash.
-`https://dash.mauz.io/`
+`https://dash.mauz.dev/`
 
 :::
 
