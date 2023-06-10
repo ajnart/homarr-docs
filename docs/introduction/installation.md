@@ -275,13 +275,6 @@ Easypanel is a modern server control panel. If you [run Easypanel](https://easyp
 
 [![Deploy to Easypanel](https://easypanel.io/img/deploy-on-easypanel-40.svg)](https://easypanel.io/docs/templates/homarr)
 
-### Instructions
-
-1. Create a VM that runs Ubuntu on your cloud provider.
-2. Install Easypanel using the instructions from the website.
-3. Create a new project.
-4. Install Homarr using the dedicated template.
-
 ---
 ## Anything else in mind?
 Have you installed Homarr using a different method? Please share it with us, so we can expand to a bigger userbase!
