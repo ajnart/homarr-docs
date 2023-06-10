@@ -113,7 +113,7 @@ export default function Home() {
         <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 mb-10">
           {authors.map((author) => (
             <a className="hover:no-underline" href={author.link}>
-              <div class="flex items-center space-x-4 h-full bg-zinc-100 hover:bg-zinc-200 p-2 rounded transition-colors">
+              <div class="flex items-center space-x-4 h-full bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-700 p-2 rounded transition-colors">
                 <img class="w-10 h-10 rounded-full" src={author.image} alt="" />
                 <div class="font-medium dark:text-white">
                   <div>{author.name}</div>
