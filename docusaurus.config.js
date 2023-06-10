@@ -90,6 +90,10 @@ const config = async function createConfig() {
               label: 'Documentation',
             },
             {
+              to: '/about-us',
+              label: 'About us',
+            },
+            {
               to: '/blog',
               label: 'Blog',
               position: 'left',
