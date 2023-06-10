@@ -160,7 +160,7 @@ export default function Home() {
               <span
                 class={clsx(
                   'absolute flex items-center justify-center w-6 h-6 rounded-full -left-3 ring-8 ring-white dark:ring-opacity-10 ',
-                  item.reached ? 'bg-red-100 dark:ring-red-500 dark:bg-red-900' : 'bg-gray-100'
+                  item.reached ? 'bg-red-100 dark:ring-red-500 dark:bg-red-900' : 'bg-gray-100 dark:bg-zinc-600'
                 )}
               >
                 {item.icon}
