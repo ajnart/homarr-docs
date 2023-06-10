@@ -1,10 +1,7 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-/* You can override the default Infima variables here. */
 @import url(https://api.fontshare.com/v2/css?f[]=work-sans@2,1&display=swap);
 
 :root {
