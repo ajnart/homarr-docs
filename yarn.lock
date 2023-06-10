@@ -1750,7 +1750,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@docusaurus/core@npm:2.4.1, @docusaurus/core@npm:latest":
+"@docusaurus/core@npm:2.4.1, @docusaurus/core@npm:^2.4.1":
   version: 2.4.1
   resolution: "@docusaurus/core@npm:2.4.1"
   dependencies:
@@ -1884,7 +1884,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@docusaurus/module-type-aliases@npm:2.4.1, @docusaurus/module-type-aliases@npm:latest":
+"@docusaurus/module-type-aliases@npm:2.4.1, @docusaurus/module-type-aliases@npm:^2.4.1":
   version: 2.4.1
   resolution: "@docusaurus/module-type-aliases@npm:2.4.1"
   dependencies:
@@ -2038,7 +2038,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@docusaurus/plugin-sitemap@npm:2.4.1, @docusaurus/plugin-sitemap@npm:latest":
+"@docusaurus/plugin-sitemap@npm:2.4.1, @docusaurus/plugin-sitemap@npm:^2.4.1":
   version: 2.4.1
   resolution: "@docusaurus/plugin-sitemap@npm:2.4.1"
   dependencies:
@@ -2058,7 +2058,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@docusaurus/preset-classic@npm:latest":
+"@docusaurus/preset-classic@npm:^2.4.1":
   version: 2.4.1
   resolution: "@docusaurus/preset-classic@npm:2.4.1"
   dependencies:
@@ -2157,7 +2157,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@docusaurus/theme-mermaid@npm:latest":
+"@docusaurus/theme-mermaid@npm:^2.4.1":
   version: 2.4.1
   resolution: "@docusaurus/theme-mermaid@npm:2.4.1"
   dependencies:
@@ -5553,11 +5553,11 @@ __metadata:
   resolution: "docs@workspace:."
   dependencies:
     "@cmfcmf/docusaurus-search-local": ^0.11.0
-    "@docusaurus/core": latest
-    "@docusaurus/module-type-aliases": latest
-    "@docusaurus/plugin-sitemap": latest
-    "@docusaurus/preset-classic": latest
-    "@docusaurus/theme-mermaid": latest
+    "@docusaurus/core": ^2.4.1
+    "@docusaurus/module-type-aliases": ^2.4.1
+    "@docusaurus/plugin-sitemap": ^2.4.1
+    "@docusaurus/preset-classic": ^2.4.1
+    "@docusaurus/theme-mermaid": ^2.4.1
     "@fec/remark-a11y-emoji": ^3.1.0
     "@mdx-js/react": ^1.6.22
     "@tabler/icons": ^1.95.0

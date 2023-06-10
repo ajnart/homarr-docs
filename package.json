@@ -19,10 +19,10 @@
   },
   "dependencies": {
     "@cmfcmf/docusaurus-search-local": "^0.11.0",
-    "@docusaurus/core": "latest",
-    "@docusaurus/plugin-sitemap": "latest",
-    "@docusaurus/preset-classic": "latest",
-    "@docusaurus/theme-mermaid": "latest",
+    "@docusaurus/core": "^2.4.1",
+    "@docusaurus/plugin-sitemap": "^2.4.1",
+    "@docusaurus/preset-classic": "^2.4.1",
+    "@docusaurus/theme-mermaid": "^2.4.1",
     "@mdx-js/react": "^1.6.22",
     "@tabler/icons": "^1.95.0",
     "autoprefixer": "^10.4.14",
@@ -36,7 +36,7 @@
     "tailwindcss": "^3.3.2"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "latest",
+    "@docusaurus/module-type-aliases": "^2.4.1",
     "@fec/remark-a11y-emoji": "^3.1.0",
     "@tsconfig/docusaurus": "^1.0.6",
     "@typescript-eslint/eslint-plugin": "^5.29.0",
