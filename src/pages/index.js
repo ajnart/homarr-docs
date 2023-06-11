@@ -20,7 +20,7 @@ function HomepageHeader() {
       <div className="container" style={{ zIndex: 1 }}>
         <div className="row">
           <div className="col">
-            <h1>A simple, yet powerful dashboard for your server.</h1>
+            <h1 className='hyphens-auto'>A simple, yet<br/>powerful dashboard<br/>for your server.</h1>
             <p>
               Simplify the management of your server with Homarr - a sleek, modern dashboard that
               puts all of your apps and services at your fingertips. With Homarr, you can access and
