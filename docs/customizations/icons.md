@@ -26,7 +26,12 @@ Add your icons to the icons folder. The icons should be named after the app name
 ### Using your icons
 Access the icon(s) using `/icons/name.webp` or `/icons/name.svg`.
 
+:::info
+
+Even if you mounted the icons folder in `/app/public/icons`, your custom icons should be accessed by `/icons/` directly.
+
 ![image](./img/icons/custom-icon.webp)
+
 
 :::caution
 
