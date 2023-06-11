@@ -65,7 +65,7 @@ const roadmap = [
     title: 'Technical debt and tRPC migration',
     subtitle: 'Due to release in 0.12.4',
     content:
-      "Homarr has grown in complexity and the code is starting to get a problem. We often hit a border, where it't getting harder to implement something, than it actuall should be. This is also known as technical debt. We have learned many new things in our journey and have decided to migrate to tRPC. That will clean up code and enable for faster development.",
+      "Homarr has grown in complexity and the code is starting to get a problem. We often hit a border, where it's getting harder to implement something, than it actually should be. This is also known as technical debt. We have learned many new things in our journey and have decided to migrate to tRPC. That will clean up code and enable us for faster development.",
     badge: 'In progress',
   },
   {
@@ -87,7 +87,7 @@ const roadmap = [
     title: 'Administration Pages',
     subtitle: 'Due to release in 0.13.1',
     content:
-      "In this version, we'll add an administration section to Homarr and add a more complex permission system to users.",
+      "In this version, we'll add an administration section to Homarr and add a more complex permission system for users.",
   },
   {
     icon: <IconSettings size="1rem" strokeWidth={1.5} />,
