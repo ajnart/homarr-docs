@@ -23,6 +23,8 @@ To add a custom background, open the settings at the top right and click on the 
 
 If you are using Docker, mount the path ``/app/public/img`` and put the backgrounds or custom icons inside of that folder.
 
+A restart is required for the backgrounds to be loaded.
+
 :::
 
 Then, define your background in the input field:
@@ -32,6 +34,8 @@ Then, define your background in the input field:
 Example:
 
 ![homarr with custom background](./img/customizations-custom-background-dashboard.webp)
+
+*`App Opacity` option is below the `Background` option.*
 
 ### Random Backgrounds
 
