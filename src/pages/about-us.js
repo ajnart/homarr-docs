@@ -63,42 +63,43 @@ const roadmap = [
   {
     icon: <IconCode size="1rem" strokeWidth={1.5} />,
     title: 'Technical debt and tRPC migration',
-    subtitle: 'Due to release in 0.12.4',
+    subtitle: 'Released in 0.13.0',
     content:
       "Homarr has grown in complexity and the code is starting to get a problem. We often hit a border, where it's getting harder to implement something, than it actually should be. This is also known as technical debt. We have learned many new things in our journey and have decided to migrate to tRPC. That will clean up code and enable us for faster development.",
-    badge: 'In progress',
+    reached: true,
   },
   {
     icon: <IconLock size="1rem" strokeWidth={1.5} />,
     title: 'Authentication',
-    subtitle: 'Due to release in 0.12.5',
+    subtitle: 'Due to release in 0.13.1',
     content:
       "A part of Homarr is still not secure enough to be exposed to the internet. Existing solutions for authentication exist, but are incredibly cumbersome. We'll implement a basic authentication solution using the new tRPC APIs and remove the old legacy systems.",
+    badge: 'In progress',
   },
   {
     icon: <IconDatabase size="1rem" strokeWidth={1.5} />,
     title: 'Breaking: Migrate from JSON to Sqlite',
-    subtitle: 'Due to release in 0.13',
+    subtitle: 'Due to release in 0.14',
     content:
       "Homarr still uses an unstructured JSON file behind the scenes. This adds much complexity regarding types, errors, exceptions and relationships. In 0.13, we'll migrate to a RDBMS. After that, JSON will no longer be supported.",
   },
   {
     icon: <IconUser size="1rem" strokeWidth={1.5} />,
     title: 'Administration Pages',
-    subtitle: 'Due to release in 0.13.1',
+    subtitle: 'Due to release in 0.14.1',
     content:
       "In this version, we'll add an administration section to Homarr and add a more complex permission system for users.",
   },
   {
     icon: <IconSettings size="1rem" strokeWidth={1.5} />,
     title: 'Dashboard administration & configuration',
-    subtitle: 'Due to release in 0.13.2',
+    subtitle: 'Due to release in 0.14.2',
     content:
       "The settings in Homarr are a bit cluttered. We'll migrate the existing settings for dashboards to the new administration pages.",
   },
 ];
 
-export default function Home() {
+export default function AboutUs() {
   return (
     <Layout title="Roadmap">
       <main className="mx-auto w-full md:w-2/3 ps-10 pr-10 mt-5">
