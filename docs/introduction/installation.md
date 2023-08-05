@@ -117,7 +117,7 @@ services:
 
 :::note
 
-Portainer will mount the configuration files and icons to your host machine. Please make sure to replace ``<your-path>`` from the docker run command with your desired storage location. The path must be absolute.
+Portainer will mount the configuration files and icons to your host machine. Please make sure to replace ``<your-path>`` from the docker run command with your desired storage location. The path must be absolute and you cannot mount the volumes to the same location.
 
 :::
 
