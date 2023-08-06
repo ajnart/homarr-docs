@@ -71,7 +71,7 @@ const roadmap = [
   {
     icon: <IconLock size="1rem" strokeWidth={1.5} />,
     title: 'Authentication',
-    subtitle: 'Due to release in 0.13.1',
+    subtitle: 'Due to release in 0.14',
     content:
       "A part of Homarr is still not secure enough to be exposed to the internet. Existing solutions for authentication exist, but are incredibly cumbersome. We'll implement a basic authentication solution using the new tRPC APIs and remove the old legacy systems.",
     badge: 'In progress',
@@ -79,24 +79,17 @@ const roadmap = [
   {
     icon: <IconDatabase size="1rem" strokeWidth={1.5} />,
     title: 'Breaking: Migrate from JSON to Sqlite',
-    subtitle: 'Due to release in 0.14',
+    subtitle: 'Due to release in 0.15',
     content:
       "Homarr still uses an unstructured JSON file behind the scenes. This adds much complexity regarding types, errors, exceptions and relationships. In 0.13, we'll migrate to a RDBMS. After that, JSON will no longer be supported.",
   },
   {
     icon: <IconUser size="1rem" strokeWidth={1.5} />,
-    title: 'Administration Pages',
-    subtitle: 'Due to release in 0.14.1',
+    title: 'Fine grained permissions',
+    subtitle: 'Due to release in 0.15.1',
     content:
       "In this version, we'll add an administration section to Homarr and add a more complex permission system for users.",
-  },
-  {
-    icon: <IconSettings size="1rem" strokeWidth={1.5} />,
-    title: 'Dashboard administration & configuration',
-    subtitle: 'Due to release in 0.14.2',
-    content:
-      "The settings in Homarr are a bit cluttered. We'll migrate the existing settings for dashboards to the new administration pages.",
-  },
+  }
 ];
 
 export default function AboutUs() {
