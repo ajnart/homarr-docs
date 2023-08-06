@@ -244,6 +244,21 @@ This is a *unvalidated* third party guide! It might not be up-to-date, nor do we
 
 ---
 
+## Installation on TrueNas Scale
+Although Homarr is available from the Official TrueNas Scale Catalog, we recommend using the Truecharts catalog instead as they update to the latest release faster and offer more customization.
+
+![](img/truenas-scale-integration.webp)
+
+It is also recommended to make the volumes in there into HostPaths so you can access the folders easily.
+
+:::caution
+
+Don't use the same final destination folder twice as this will cause problems.
+
+:::
+
+---
+
 ## Building from source
 :::info
 
