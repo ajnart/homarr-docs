@@ -57,7 +57,7 @@ All indicators in the calendar have a specific color depending on their app:
 
 ### Release information
 
-All days with indicators will be clickable and will open a popup with detailed information about the releases on this day:
+All days with indicators will be clickable, highlight the clicked day, and will open a popup with detailed information about the releases on this day:
 
 ![Screenshot showing pop-up of day information](./img/calendar/widget-calendar-day-information.webp)
 
@@ -83,7 +83,11 @@ Some Adblockers are preventing Homarr from loading your posters. This is a [well
 
 | Configuration        | Description | Values | Default Value |
 | -------------------- | ----------- | ------ | ------------- |
+| Hide week days | Enable the name of the days on the first row of the calendar (This may cause problems fitting in 2 by 2). | yes / no | yes |
+| Use Sonarr v4 API | If you use Sonarr, you may be using Sonarr v4, which uses a different API. If you do use it, then toggle this switch. | yes / no | no |
 | Start week on sunday | Determines, if the calendar week should start on Sunday. If deactivated, Week will start on Monday. | yes / no | no |
+| Radarr release type | Select what type of release date to see. | <ul><li>Cinemas</li><li>Physical</li><li>Digital</li></ul> | In Cinemas |
+| Font Size | Size of the font of the numbers in the calendar. This is to help have a better fit onto bigger sizes (Other than extra small might not be fit for 2 by 2). | <ul><li>Extra Small</li><li>Small</li><li>Medium</li><li>Large</li><li>Extra Large</li></ul> | Extra Small |
 
 ![configuration of the calendar widget](./img/calendar/widget-calendar-configuration.webp)
 
