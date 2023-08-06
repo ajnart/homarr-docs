@@ -277,3 +277,55 @@ with a relational database, that will enable us to
 never read out credentials, when sending data to the client.
 
 :::
+
+## InfoCard
+When making something in homarr, if you wish to add some information for the user, you may do so using the InfoCard. An element preprogrammed and easy to implement.
+
+![](./img/InfoCard-exemple.webp)
+
+The element includes the info Icon and the hover card. Simply enter your message and the link if there is one.
+
+Simply insert it as any other element:
+```tsx
+import { InfoCard } from '~/components/InfoCard/InfoCard'
+
+return(
+  <InfoCard message="Leave empty to keep the title hidden." link="https://homarr.dev/docs/"/>
+)
+```
+
+| Component Prop | Description | Input value | Default state |
+| -------------- | ----------- | ----------- | ------------- |
+| message | Message in plain text to be shown to the user upon hover. | Text | Obligatory value upon using the element |
+| link | Link shown at the end of the text under the translated text "See More...", if left empty the "See More..." will not show. | URL | Optionnal value |
+| bg | The background of the HoverCard is by default set to follow the Dark/Light modes, but can be changed using this prop. | Color | Optionnal value |
+| Position | Position from where the HoverCard will open. | <ul><li>bottom</li><li>bottom-end</li><li>bottom-start</li><li>left</li><li>left-end</li><li>left-start</li><li>right</li><li>right-end</li><li>right-start</li><li>top</li><li>top-end</li><li>top-start</li></ul> | Optionnal value, default at Top |
+| hoverProp | Prop directly linked to the HoverCard element in the InfoCard. | ```Partial<HoverCardProp>``` | - |
+| cardProp | Prop directly linked to the RichTextEditor element in the InfoCard | ```Partial<RichTextEditorProps>``` | - |
+
+If you wish for more control over the hovercard, go check it out directly in ```src/components/InfoCard/InfoCard.tsx```.
+
+
+### Widget options
+The InfoCard is already implemented onto the Widget's Options.
+If your widget option is a bit ambiguous, you can give more information by activating it's infocard automatically like in the following exemple that will directly use the translation point, using ```info: true```.
+
+This exemple is the one that leads to the first screenshot. It shows it being implemented onto the text widget option but is in fact available on ALL widget options.
+
+As stated before, it supports links and here you just need to add it onto the ```infoLink``` component to which we recommend linking to the Homarr docs.
+
+```tsx
+const definition = defineWidget({
+  id: '',
+  icon: Icon,
+  options: {
+    name: {
+      type: 'text',
+      defaultValue: '',
+      info: true,
+      infoLink: 'https://homarr.dev/docs/',
+    },
+  }
+})
+
+```
