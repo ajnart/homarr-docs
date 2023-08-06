@@ -43,6 +43,12 @@ Docker will mount the configuration files and icons to your host machine. Please
 
 :::
 
+:::caution
+
+Make sure all your volumes path are pointing at different folders or the mounting will fail.
+
+:::
+
 ### Updating
 To update Homarr, you must remove your container first. Make sure that you've mounted your data and that you have access to it, so your configuration doesn't get lost.
 
@@ -118,6 +124,12 @@ services:
 :::note
 
 Portainer will mount the configuration files and icons to your host machine. Please make sure to replace ``<your-path>`` from the docker run command with your desired storage location. The path must be absolute.
+
+:::
+
+:::caution
+
+Make sure all your volumes path are pointing at different folders or the mounting will fail.
 
 :::
 
