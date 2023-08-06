@@ -88,7 +88,7 @@ const roadmap = [
     title: 'Fine grained permissions',
     subtitle: 'Due to release in 0.15.1',
     content:
-      "In this version, we'll add an administration section to Homarr and add a more complex permission system for users.",
+      "In this version we'll add more configurations to the adminstration section and a more complex permission system for users.",
   }
 ];
 
