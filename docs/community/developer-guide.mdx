@@ -278,7 +278,10 @@ never read out credentials, when sending data to the client.
 
 :::
 
-## InfoCard
+## Helper components
+
+### InfoCard
+
 When making something in homarr, if you wish to add some information for the user, you may do so using the InfoCard. An element preprogrammed and easy to implement.
 
 ![](./img/InfoCard-exemple.webp)
@@ -294,6 +297,11 @@ return(
 )
 ```
 
+
+
+<details>
+<summary><b>Component Prop</b></summary>
+
 | Component Prop | Description | Input value | Default state |
 | -------------- | ----------- | ----------- | ------------- |
 | message | Message in plain text to be shown to the user upon hover. | Text | Obligatory value upon using the element |
@@ -303,8 +311,12 @@ return(
 | hoverProp | Prop directly linked to the HoverCard element in the InfoCard. | ```Partial<HoverCardProp>``` | - |
 | cardProp | Prop directly linked to the RichTextEditor element in the InfoCard | ```Partial<RichTextEditorProps>``` | - |
 
-If you wish for more control over the hovercard, go check it out directly in ```src/components/InfoCard/InfoCard.tsx```.
+:::note
 
+If you wish for more control over the hovercard, go check it out directly in <code>src/components/InfoCard/InfoCard.tsx</code>.
+
+:::
+</details>
 
 ### Widget options
 The InfoCard is already implemented onto the Widget's Options.
