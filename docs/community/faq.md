@@ -6,6 +6,8 @@ tags:
   - Help
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 ### Can I install Homarr on a Raspberry Pi?
 Yes, Homarr is compatible with the architecture of the Raspberry Pi. Have a look in our <a href="/docs/introduction/installation">installation guide</a> on how to do so.
@@ -15,6 +17,70 @@ You can report issues, suggestions, or ideas for improvements <a href="https://g
 
 ### Can I use my own custom icons for apps?
 Yes, check out our guide on <a href="/docs/customizations/icons">how to add your custom icons</a>.
+
+### Can I add my own widgets? Do I need programming skills?
+We have decided, not to support custom widgets, until Homarr is in a stable and highly polished state.
+Enabling users to write their own widgets is easy at the first glance, but there are some major issues with it:
+
+- There are mainly two options for adding plugins or custom widgets to Homarr. The first option is, to allow and inject custom code in Homarr. Apps like Nextcloud can do this easily, because they use the Runtime to render all components of the application (In reality, the process is still a bit more complicated). In contrast, Homarr is using Next.js - a framework that needs to be compiled in production. That means, that each time you would modify a custom widget or plugin, the app would have to be restarted. There are options to avoid this, but they are quite flakey and bring disadvantages in our experience. The second option is, to write widgets declaratively instead of imperatively. This way, we would be able to render and modify widgets without any restarting at all. However, we'd have to write our own interpreter for said declarative schema. This is totally possible, but requires a lot of planning and architecture design to function properly. The required work to implement either option is therefore quite substantial.
+- Custom widgets would need to be able to request data, so they work properly. We use tRPC for this. Many APIs use different formats and we'd have to convert and read those.
+- Using custom widgets, one could easily create harmful widgets, leak your personal data (potentially including your tokens) and trick your users. A proper implementation (eg. official plugin store, where we can ban harmful widgets from) would resolve this problem to a certain extend, but again requires additional work and time to be put in.
+
+If you still want to add a widget, please consider to contribute it directly to Homarr. For that, basic programming skills are required. Our [Developer Guides](./developer-guide.mdx) explain this even more detailed.
+
+### My widgets or apps are not updating, after I made changes to them.
+The Homarr caching system is most likely messing around with the update.
+Please try to clear the cache at ``Menu at the top right`` > ``Settings`` > ``Clear all cache``.
+
+### Is it secure to expose Homarr to the WWW?
+
+:::info
+
+TLDR; No, we don't recommend to expose Homarr. Please use alternatives like https://www.wireguard.com/, https://tailscale.com/, https://github.com/juanfont/headscale, https://www.cloudflare.com/products/tunnel/, https://openvpn.net/ or https://www.zerotier.com/. Even https://store.steampowered.com/remoteplay, https://www.teamviewer.com/en/, https://rustdesk.com/, https://moonlight-stream.org/ and https://parsec.app/ will work, if you use VMs.
+
+:::
+
+We don't recommend to expose Homarr, because...
+- there could always be security vulnerabilities, even if we update dependencies and update frequently.
+- Homarr can act as a reverse proxy for integration data. It will not forward *any* request like a more conventional proxy does, but it could expose data, that you maybe don't want to show.
+- you generally want to avoid to expose information about your network to the outside, as this can be used against you (both legally depending on what you're hosting, technically using hacking methods and mentally by leaking data / putting pressure on you).
+- there are always crawlers and automated hack bots on the Internet, that try to find open holes in your security.
+- current implementation for security in Homarr don't meet the unwritten standards for exposing to the web. Future updates will completely overhaul and fix this: https://homarr.dev/about-us .
+- exposing could put other devices in your network at risk.
+
+Do you still want to do this? We recommend https://www.authelia.com/ or https://goauthentik.io/ for this. Make sure, that you've read the above concerns and understand the risk.
+
+### How do I open the console / log?
+There are two different sources of information:
+- console: This is your client (browser). It can tell us, if there is an issue on the client (crash, bug, ...).
+- log: This is your server. It will tell us, if there are issues with connections for the integrations, crashes and errors.
+
+Both variants *can* contain personal data. It's recommended, that you don't post them publicly or remove personal data from it.
+
+<Tabs>
+  <TabItem value="apple" label="Read console" default>
+
+> Note: This will not work on most mobile browsers.
+
+Open your browser and ensure, that Homarr is your current tab.
+Press ``CTRL`` + ``SHIFT`` + ``I`` on your keyboard. If this shortcut doesn't work, please use one of the alternatives: https://developer.chrome.com/docs/devtools/open/.
+Click on ``Console`` in the new window, that opened. There, you should see white, orange and sometimes red messages. You can use the Windows Snip & Sketch tool (or your respective tool on Linux / MacOS) to screenshot those messages.
+
+> Please never execute any commands in the console. Scammers are using the console to let you execute harmful commands. If you want to resolve an issue in Homarr, **you'll never have to execute any commands here**
+
+  </TabItem>
+  <TabItem value="orange" label="Read log">
+
+This depends on your installation method. If you use Unraid, you can simply click on the App and on ``Log``. If you have a bare Docker install, use ``docker container logs homarr``. If you used a different name than ``homarr`` for your container, you need to replace said argument. Here is some additional information about the command: https://geekflare.com/check-docker-logs/.
+
+  </TabItem>
+</Tabs>
+
+### How do I post logs?
+Please check [the section above](#how-do-i-open-the-console--log), on how to obtain logs. Logs should always be posted to https://pastebin.com/ or https://rentry.co/.
+
+### Can I use Homarr at my company?
+Yes, you can! But please consider a donation, if our work has been useful to you.
 
 ### I think I found a bug. What can I do?
 If you think, that you found a bug, please create an issue <a href="https://github.com/ajnart/homarr/issues/new/choose">here</a>.
