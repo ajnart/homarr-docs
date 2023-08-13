@@ -46,6 +46,17 @@ Docker will mount the configuration files and icons to your host machine. Please
 :::caution
 
 Make sure all your volumes path are pointing at different folders or the mounting will fail.
+Example of what NOT to do:
+```bash
+-v apps/homarr:/app/data/configs \
+-v apps/homarr:/app/public/icons \
+```
+
+Instead do:
+```bash
+-v apps/homarr/configs:/app/data/configs \
+-v apps/homarr/icons:/app/public/icons \
+```
 
 :::
 

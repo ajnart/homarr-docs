@@ -3,7 +3,13 @@ title: 🚀 Installation
 sidebar_position: 2
 tags:
   - Apps
+  - Layout
+  - Hide Name
   - Configuration
+  - Description
+  - Tooltip
+  - Hover
+  - Line clamp
 ---
 
 import Tabs from '@theme/Tabs';
