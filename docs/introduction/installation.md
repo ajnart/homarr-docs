@@ -43,6 +43,23 @@ Docker will mount the configuration files and icons to your host machine. Please
 
 :::
 
+:::caution
+
+Make sure all your volumes path are pointing at different folders or the mounting will fail.
+Example of what NOT to do:
+```bash
+-v apps/homarr:/app/data/configs \
+-v apps/homarr:/app/public/icons \
+```
+
+Instead do:
+```bash
+-v apps/homarr/configs:/app/data/configs \
+-v apps/homarr/icons:/app/public/icons \
+```
+
+:::
+
 ### Updating
 To update Homarr, you must remove your container first. Make sure that you've mounted your data and that you have access to it, so your configuration doesn't get lost.
 
@@ -118,6 +135,12 @@ services:
 :::note
 
 Portainer will mount the configuration files and icons to your host machine. Please make sure to replace ``<your-path>`` from the docker run command with your desired storage location. The path must be absolute.
+
+:::
+
+:::caution
+
+Make sure all your volumes path are pointing at different folders or the mounting will fail.
 
 :::
 
@@ -227,6 +250,21 @@ You can also use this to install on Saltbox:
 :::caution
 
 This is a *unvalidated* third party guide! It might not be up-to-date, nor do we offer official support.
+
+:::
+
+---
+
+## Installation on TrueNas Scale
+Although Homarr is available from the Official TrueNas Scale Catalog, we recommend using the Truecharts catalog instead as they update to the latest release faster and offer more customization.
+
+![](img/truenas-scale-integration.webp)
+
+It is also recommended to make the volumes in there into HostPaths so you can access the folders easily.
+
+:::caution
+
+Don't use the same final destination folder twice as this will cause problems.
 
 :::
 
