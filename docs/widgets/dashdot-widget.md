@@ -40,7 +40,7 @@ docker container run -it \
 ```
 version: '3.5'
 
-apps:
+services:
   dash:
     image: mauricenino/dashdot:latest
     restart: unless-stopped
