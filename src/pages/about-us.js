@@ -81,7 +81,7 @@ const roadmap = [
     title: 'Breaking: Migrate from JSON to Sqlite',
     subtitle: 'Due to release in 0.15',
     content:
-      "Homarr still uses an unstructured JSON file behind the scenes. This adds much complexity regarding types, errors, exceptions and relationships. In 0.13, we'll migrate to a RDBMS. After that, JSON will no longer be supported.",
+      "Homarr still uses an unstructured JSON file behind the scenes. This adds much complexity regarding types, errors, exceptions and relationships. In 0.15, we'll migrate to a RDBMS. After that, JSON will no longer be supported.",
   },
   {
     icon: <IconUser size="1rem" strokeWidth={1.5} />,

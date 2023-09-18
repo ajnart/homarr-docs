@@ -73,7 +73,7 @@ const config = async function createConfig() {
         announcementBar: {
           id: 'updates',
           content:
-            '🎉 Homarr v0.12 has been released! Please <a href="/docs/introduction/installation#updating">update your instance.</a> 🎉',
+            '🎉 Homarr v0.13 has been released! Please <a href="/docs/introduction/installation#updating">update your instance.</a> 🎉',
           backgroundColor: 'var(--homarr-secondary-bg)', // #0e8860
           textColor: 'var(--ifm-heading-color)',
         },
