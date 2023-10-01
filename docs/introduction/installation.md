@@ -91,6 +91,12 @@ services:
 
 Then, run ``docker-compose up -d`` in the same directory. This will start the Homarr container in the background.
 
+:::caution
+
+Docker compose creates a network by default. Some integrations may not work (specifically Dash.) when the network internal hostname is used since clients do not know this name. It is recommended that you either use a local network wide hostname or the IP directly. An alternative is to create a DNS record with the same internal compose stack hostname for all clients outside.
+
+:::
+
   </TabItem>
 
   <TabItem value="portainer" label="Portainer Stacks">
