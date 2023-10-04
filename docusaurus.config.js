@@ -18,7 +18,7 @@ const config = async function createConfig() {
     // Has to be set even if not using translations
     i18n: {
       defaultLocale: 'en',
-      locales: ['en'],
+      locales: ['en','zh'],
     },
     onBrokenLinks: 'warn',
     onBrokenMarkdownLinks: 'warn',
@@ -84,6 +84,10 @@ const config = async function createConfig() {
             src: 'img/logo.svg',
           },
           items: [
+            {
+          type: 'localeDropdown',
+          position: 'left',
+            },
             {
               type: 'doc',
               docId: 'about',
