@@ -8,7 +8,7 @@ const a11yEmoji = require('@fec/remark-a11y-emoji');
 const config = async function createConfig() {
   return {
     title: 'Homarr Docs',
-    tagline: 'A simple, yet powerful dashboard for your server.',
+    tagline: 'A simple yet powerful dashboard for your server.',
     url: 'https://homarr.dev',
     baseUrl: '/',
     favicon: 'img/favicon.png',
@@ -20,8 +20,8 @@ const config = async function createConfig() {
       defaultLocale: 'en',
       locales: ['en'],
     },
-    onBrokenLinks: 'warn',
-    onBrokenMarkdownLinks: 'warn',
+    onBrokenLinks: 'throw',
+    onBrokenMarkdownLinks: 'throw',
 
     markdown: {
       mermaid: true,
@@ -112,6 +112,11 @@ const config = async function createConfig() {
               to: 'https://github.com/ajnart/homarr',
               label: 'GitHub',
               position: 'right',
+            },
+            {
+              to: 'https://www.answeroverflow.com/c/972958686051962910',
+              label: 'Answer Overflow',
+              position: 'right'
             },
             {
               type: 'search',
