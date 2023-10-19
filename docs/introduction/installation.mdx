@@ -32,6 +32,7 @@ docker run  \
   --name homarr \
   --restart unless-stopped \
   -p 7575:7575 \
+  -v /var/run/docker.sock:/var/run/docker.sock \
   -v <your-path>/homarr/configs:/app/data/configs \
   -v <your-path>/homarr/icons:/app/public/icons \
   -d ghcr.io/ajnart/homarr:latest
@@ -83,6 +84,7 @@ services:
     image: ghcr.io/ajnart/homarr:latest
     restart: unless-stopped
     volumes:
+      - /var/run/docker.sock:/var/run/docker.sock # Optional, only if you want docker integration
       - ./homarr/configs:/app/data/configs
       - ./homarr/icons:/app/public/icons
     ports:
@@ -114,6 +116,7 @@ services:
     image: ghcr.io/ajnart/homarr:latest
     restart: unless-stopped
     volumes:
+      - /var/run/docker.sock:/var/run/docker.sock  # Optional, only if you want docker integration
       - <your-path>:/app/data/configs
       - <your-path>:/app/public/icons
     ports:
