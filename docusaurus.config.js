@@ -33,7 +33,7 @@ const config = async function createConfig() {
       {
         src: "https://umami.ajnart.fr/script.js",
         async: true,
-        dataWebsiteId: "2847e7dd-32a1-41f2-a6ed-2d9db17d71b9",
+        'data-website-id': "2847e7dd-32a1-41f2-a6ed-2d9db17d71b9",
       }
     ],
 
