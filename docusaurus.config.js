@@ -30,10 +30,6 @@ const config = async function createConfig() {
     themes: ['@docusaurus/theme-mermaid'],
 
     scripts: [
-      {
-        src: '/_vercel/insights/script.js',
-        defer: true,
-      },
     ],
 
     presets: [
@@ -205,6 +201,15 @@ const config = async function createConfig() {
           },
         };
       },
+      "@dipakparmar/docusaurus-plugin-umami",
+      /** @type {import('@dipakparmar/docusaurus-plugin-umami').Options} */
+      ({
+        websiteID: "2847e7dd-32a1-41f2-a6ed-2d9db17d71b9", // Required
+        analyticsDomain: "https://umami.ajnart.fr", // Required
+        dataAutoTrack: true, // Optional
+        dataCache: true, // Optional
+        dataDomains: "https://homarr.dev", // comma separated list of domains, *Recommended*
+      }),
     ],
   };
 };

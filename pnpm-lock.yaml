@@ -8,6 +8,9 @@ dependencies:
   '@cmfcmf/docusaurus-search-local':
     specifier: ^0.11.0
     version: 0.11.0(@docusaurus/core@2.4.3)(search-insights@2.8.3)
+  '@dipakparmar/docusaurus-plugin-umami':
+    specifier: ^2.1.1
+    version: 2.1.1(eslint@8.51.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2)
   '@docusaurus/core':
     specifier: ^2.4.3
     version: 2.4.3(@docusaurus/types@2.4.3)(eslint@8.51.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2)
@@ -1720,6 +1723,33 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  /@dipakparmar/docusaurus-plugin-umami@2.1.1(eslint@8.51.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2):
+    resolution: {integrity: sha512-oAWNzCMccO3YnfwUzhBbKh4QyqM/fh7iSahW9MmT9qfLZosWkq9XOLetQF8iJpkqvumA5aJ26hh5du7DD+XtrA==}
+    dependencies:
+      '@docusaurus/core': 2.4.3(@docusaurus/types@2.4.3)(eslint@8.51.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2)
+      '@docusaurus/types': 2.4.3(react-dom@18.2.0)(react@18.2.0)
+      '@docusaurus/utils-validation': 2.4.3(@docusaurus/types@2.4.3)
+      tslib: 2.6.2
+    transitivePeerDependencies:
+      - '@parcel/css'
+      - '@swc/core'
+      - '@swc/css'
+      - bufferutil
+      - csso
+      - debug
+      - esbuild
+      - eslint
+      - lightningcss
+      - react
+      - react-dom
+      - supports-color
+      - typescript
+      - uglify-js
+      - utf-8-validate
+      - vue-template-compiler
+      - webpack-cli
+    dev: false
 
   /@discoveryjs/json-ext@0.5.7:
     resolution: {integrity: sha512-dBVuXR082gk3jsFp7Rd/JI4kytwGHecnCoTtXFb7DB6CNHp4rg5k1bhg0nWdLGLnOV71lmDzGQaLMy8iPLY0pw==}
