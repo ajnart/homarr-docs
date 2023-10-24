@@ -31,7 +31,7 @@ const config = async function createConfig() {
 
     scripts: [
       {
-        src: "https://umami.ajnart.fr/script.js",
+        src: "https://umami.homarr.dev/script.js",
         async: true,
         'data-website-id': "2847e7dd-32a1-41f2-a6ed-2d9db17d71b9",
       }
@@ -159,10 +159,6 @@ const config = async function createConfig() {
                 {
                   label: 'Blog',
                   to: '/blog',
-                },
-                {
-                  label: "Ajnart's Website",
-                  to: 'https://ajnart.fr/',
                 },
               ],
             },
