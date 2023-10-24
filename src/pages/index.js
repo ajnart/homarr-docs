@@ -39,6 +39,7 @@ function HomepageHeader() {
                 <IconInfoCircle size={20} />
               </Link>
               <Link
+                data-umami-event="Install button"
                 className={clsx('button button--secondary button--lg', styles.heroButton)}
                 to="/docs/introduction/installation"
               >
