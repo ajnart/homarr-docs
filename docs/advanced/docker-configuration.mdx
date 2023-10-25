@@ -14,39 +14,20 @@ Homarr offers a Docker Container, which can be run on any compatible system, suc
 
 Homarr offers a few environment variables, which can be used to configure the container.
 
-| Environment Variable | Description                                                 | Examples           |
+| Environment Variable | Description                                                 | Allowed values           |
 | -------------------- | ----------------------------------------------------------- | ------------------ |
-| ``BASE_URL``         | Allows you to change the base URL you use to access Homarr  | homarr.example.com |
-| ``PASSWORD``         | Allows you to set a password for Password protection        | -                  |
+| ``DEFAULT_COLOR_SCHEME``         | Allows you to set the default color scheme        | ``light`` or ``dark``                  |
 | ``PORT``             | Allows you to change the default port Homarr uses to deploy | ``1234``           |
+| ``DOCKER_HOST``      | Allows you to change the default Docker Host, useful if using docker proxy from another machine               | ``unix:///var/run/docker.sock`` or ``tcp://<ip>:<port>`` |
+| ``DOCKER_PORT``     | Allows you to change the default Docker Port (if you have one)              | ``2375``           |
+| ``TZ``               | Allows you to set the timezone for Homarr                  | ``Europe/Paris``, ``America/Denver``, ``others`` |
+| ``DISABLE_ANALYTICS``              | Allows you to disable the analytics feature of Homarr (we collect most used features to improve them)                 | ``true`` or ``false`` |
 
 ---
 
 ## Timezone Settings
 
 Some users might experience wrong dates/times in their [Calendar](/docs/widgets/calendar-widget). This is because the Calendar is using the server-side time. Although you should always set your host machine to your local time zone, you should specify the timezone for Homarr to ensure that the timezone is always set correctly.
-
-### Set Timezone in Docker
-You can set the timezone using the ``--tz`` when running ``docker run``.
-
-**Example:**
-```bash
-docker run  \
-  --name homarr \
-  --restart unless-stopped \
-  --tz Europe/Paris \
-  -p 7575:7575 \
-  -v <your-path>/homarr/configs:/app/data/configs \
-  -v <your-path>/homarr/icons:/app/public/icons \
-  -d ghcr.io/ajnart/homarr:latest
-```
-
-### Set Timezone in Docker Compose
-If you're using docker-compose, you can add the following to your ``docker-compose.yml`` file:
-```yaml
-environment:
-  - TZ=America/Denver
-```
 
 :::tip
 

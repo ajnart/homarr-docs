@@ -6,30 +6,18 @@ tags:
   - Configuration
 ---
 
-Congratulations! You've installed Homarr. Now, it's time to configure it to your liking. This guide will help you get started with Homarr.
+Congratulations! You've installed Homarr. Now, it's time to configure it to **your** liking. This guide will help you get started with Homarr.
 
 ---
-## Adding your first app
-Let's begin by adding your first app to Homarr. [Enter Edit Mode](#entering-edit-mode) and click on the Add a Tile button:
+## Creating the administator account
+Let's begin by creating the administrator account. This account will be used to manage your dashboard. Simply follow the onboarding steps and enter the required information.
 
-![](img/edit-mode-add-tile-button.webp)
 
-A popup will appear, where you can choose the type of tile you want to add. For now, we'll choose "Apps":
+![onboarding](img/create-account.webp)
 
-![](img/edit-mode-select-element.webp)
-
-Another popup will appear, where you can enter the details of your app. You can also [choose an icon](/docs/customizations/icons) for your app:
-
-![](img/add-app-modal.webp)
-
-The following fields are required:
-
-- App Name
-- Internal address
-- App Icon *(Will be automatically grabbed if possible.)*
+After this step, you can click continue and go to your board.
 
 ---
-
 
 ## Entering Edit Mode
 You can adjust your dashboard by going into ***✨ Edit Mode ✨***. In Edit Mode, you can move, edit and delete tiles.
@@ -52,6 +40,36 @@ Changes are only saved when you exit Edit Mode. If you leave the page without ex
 
 ---
 
+
+## Adding your first app
+In homarr, apps are the key concept, an app is a tile on your dashboard that links to an external application, it can be connected via an integration, for more information about the terms we will use please take a look at the [glossary](/docs/introduction/glossary).
+
+Let's begin by adding your first app to Homarr. [Enter Edit Mode](#entering-edit-mode) and click on the Add a Tile button:
+
+![](img/edit-mode-add-tile-button.webp)
+
+A popup will appear, where you can choose the type of tile you want to add. For now, we'll choose "Apps":
+
+![](img/edit-mode-select-element.webp)
+
+Another popup will appear, where you can enter the details of your app. You can also [choose an icon](/docs/customizations/icons) for your app:
+
+![](img/add-app-modal.webp)
+
+The following fields are required:
+
+- App Name
+- Internal address
+- App Icon *(Will be automatically grabbed if possible.)*
+
+:::note What's the internal address? 
+
+> The internal URL defines how Homarr should communicate to the application, it is the address that will be used by integrations in order to communicate with 3rd party services, it is often an IP address so that Homarr can communicate with the application inside your network, by passing any layers on top of it (eg. reverse proxy, auth)
+
+From the [glossary](/docs/introduction/glossary)
+:::
+
+---
 
 ## Organizing and re-arranging your dashboard
 
