@@ -5,6 +5,23 @@ tags:
   - Integration
   - Configuration
   - Docker
+  - Deluge
+  - Transmission
+  - qBitTorrent
+  - SABnzbd
+  - NZBGet
+  - Sonarr
+  - Radarr
+  - Lidarr
+  - Readarr
+  - Jellyfin
+  - Plex
+  - Overseerr
+  - Jellyseerr
+  - PiHole
+  - Adguard
+  - Dashdot
+  - Dash.
 ---
 
 import Tabs from '@theme/Tabs';
@@ -250,6 +267,10 @@ The Jellyfin integration enables you to view the active sessions, using the [Med
 ### Plex
 The Plex integration enables you to view the active sessions, using the [Media Server widget](../widgets/media-server), on your dashboard.
 
+For a successful integration, remember that the internal address should not have a path, only the IP and the port (http://IP:port).
+
+In this case it would mean to remove anything of the likes of "/web/index.html" from the link you would usually use.
+
 <details>
   <summary>
   Available configuration options
@@ -263,13 +284,6 @@ The Plex integration enables you to view the active sessions, using the [Media S
 
   </div>
 </details>
-
----
-
-## Dash.
-
-The Dash. integration can be used to monitor the performance and used system resources of your machine.
-Dash. will be used in the [Dash.](/docs/widgets/dashdot-widget)
 
 ---
 
@@ -366,25 +380,80 @@ If you're selecting a series, you'll be asked what seasons you want to request:
 
 ---
 
+## DNS Holes
+Homarr allows the integration of DHS-holes to control them and display their stats.
+Multiple DNS-holes can be added at the same time.
+Currently, only PiHole and AdGuard Home are supported.
+
+### PiHole
+The PiHole integration enables you to see basic stats like the number of queries in the day and how many are blocked.
+
+You can also disable and enable it using the dns-hole control widget.
+
+For a successful integration, remember that the internal address should not have a path, only the IP and the port (http://IP:port).
+
+In this case it would mean to remove anything of the likes of "/admin" from the link you would usually use.
+
+<details>
+  <summary>
+  Available configuration options
+  </summary>
+  <div>
+
+| Field    | Type    | Description |
+| -------- | ------- | ----------- |
+| ApiToken | Private | Token used for authentication |
+
+  </div>
+</details>
+
+### AdGuard Home
+The Adguard Home integration enables you to see basic stats like the number of queries in the day and how many are blocked.
+
+You can also disable and enable it using the dns-hole control widget.
+
+<details>
+  <summary>
+  Available configuration options
+  </summary>
+  <div>
+
+| Field    | Type    | Description |
+| -------- | ------- | ----------- |
+| Username | Private | Username used for authentication |
+| Password | Private | Password used for authentication |
+
+  </div>
+</details>
+
+---
+
+## Dash.
+
+The Dash. integration can be used to monitor the performance and used system resources of your machine.
+Dash. will be used in the [Dash.](/docs/widgets/dashdot-widget)
+
+---
+
 ## Docker
 
 Homarr allows you to interact with Docker containers running on your system.
 
 You can **restart**, **stop**, **start**, **refresh** and **remove** containers as well as **add** them to the Homarr dashboard
 
-![Docker Core Features](https://user-images.githubusercontent.com/190136/180496007-8456e486-a864-4510-b91f-fabf74df020c.webp)
+![Docker Core Features](img/docker-core-features.png)
 
 Additionally, if you have a lot of containers you can search and filter them by **container** or **image** name
 
-![Container and Image Search](https://user-images.githubusercontent.com/190136/180496391-12a9a1c6-a54b-4d22-98ea-a5eb3a93fce4.webp)
+![Container and Image Search](img/container-and-image-search.png)
 
 View the state of each container (**created**, **running** or **stopped**)
 
-![Container States](https://user-images.githubusercontent.com/190136/180598244-61c1db95-ed04-48c9-9577-2bd5ebff3ae9.webp)
+![Container States](img/container-states.png)
 
 And also check what ports the container has exposed (container port:external port)
 
-![Exposed Ports](https://user-images.githubusercontent.com/190136/180598308-b24c7e83-e278-4556-a177-143fdd347f28.webp)
+![Exposed Ports](img/exposed-ports.png)
 
 
 ### Before you begin
