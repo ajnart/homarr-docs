@@ -32,6 +32,7 @@ docker run  \
   --name homarr \
   --restart unless-stopped \
   -p 7575:7575 \
+  -v /var/run/docker.sock:/var/run/docker.sock \
   -v <your-path>/homarr/configs:/app/data/configs \
   -v <your-path>/homarr/icons:/app/public/icons \
   -d ghcr.io/ajnart/homarr:latest
@@ -40,6 +41,23 @@ docker run  \
 :::note
 
 Docker will mount the configuration files and icons to your host machine. Please make sure to replace ``<your-path>`` from the docker run command with your desired storage location. The path must be absolute.
+
+:::
+
+:::caution
+
+Make sure all your volumes path are pointing at different folders or the mounting will fail.
+Example of what NOT to do:
+```bash
+-v apps/homarr:/app/data/configs \
+-v apps/homarr:/app/public/icons \
+```
+
+Instead do:
+```bash
+-v apps/homarr/configs:/app/data/configs \
+-v apps/homarr/icons:/app/public/icons \
+```
 
 :::
 
@@ -83,6 +101,7 @@ services:
     image: ghcr.io/ajnart/homarr:latest
     restart: unless-stopped
     volumes:
+      - /var/run/docker.sock:/var/run/docker.sock # Optional, only if you want docker integration
       - ./homarr/configs:/app/data/configs
       - ./homarr/icons:/app/public/icons
     ports:
@@ -114,6 +133,7 @@ services:
     image: ghcr.io/ajnart/homarr:latest
     restart: unless-stopped
     volumes:
+      - /var/run/docker.sock:/var/run/docker.sock  # Optional, only if you want docker integration
       - <your-path>:/app/data/configs
       - <your-path>:/app/public/icons
     ports:
@@ -124,6 +144,12 @@ services:
 :::note
 
 Portainer will mount the configuration files and icons to your host machine. Please make sure to replace ``<your-path>`` from the docker run command with your desired storage location. The path must be absolute.
+
+:::
+
+:::caution
+
+Make sure all your volumes path are pointing at different folders or the mounting will fail.
 
 :::
 
@@ -233,6 +259,21 @@ You can also use this to install on Saltbox:
 :::caution
 
 This is a *unvalidated* third party guide! It might not be up-to-date, nor do we offer official support.
+
+:::
+
+---
+
+## Installation on TrueNas Scale
+Although Homarr is available from the Official TrueNas Scale Catalog, we recommend using the Truecharts catalog instead as they update to the latest release faster and offer more customization.
+
+![](img/truenas-scale-integration.webp)
+
+It is also recommended to make the volumes in there into HostPaths so you can access the folders easily.
+
+:::caution
+
+Don't use the same final destination folder twice as this will cause problems.
 
 :::
 
