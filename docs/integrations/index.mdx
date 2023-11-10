@@ -27,7 +27,14 @@ tags:
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-Homarr will integrate with a ton of different apps on your system.
+Integrations are a useful way to further connect and manage your network.
+They may require additional configuration in or outside Homarr.
+An integration cannot be added by itself.
+You must configure an app to a specific integration.
+Most integration will then fill widgets with data or add functionality to
+other parts of Homarr.
+
+The following integrations are available:
 
 - [Torrent Clients](#torrent-clients)
   - [Deluge](#deluge)
@@ -57,7 +64,7 @@ We will not support these, because the underlying API often changes frequently a
 
 ## Torrent Clients
 
-Homarr supports a total of 3 Torrent clients.
+Homarr supports a total of 3 Torrent clients (Deluge, Transmission and qBittorrent).
 You can use them to display your torrents directly on your dashboard and see if you are leeching / seeding.
 
 ### Deluge
@@ -125,6 +132,7 @@ Please note the known issue with qBittorrent:
 ---
 
 ## Usenet Clients
+Usenet clients are an alternative to Torrent clients and enable you to download a wide variety of files.
 
 ### SABnzbd
 
