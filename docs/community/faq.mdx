@@ -32,23 +32,10 @@ If you still want to add a widget, please consider to contribute it directly to 
 The Homarr caching system is most likely messing around with the update.
 Please try to clear the cache at ``Menu at the top right`` > ``Settings`` > ``Clear all cache``.
 
-### Is it secure to expose Homarr to the WWW?
+### Is it secure to expose Homarr to the web?
 
-:::info
-
-TLDR; No, we don't recommend to expose Homarr. Please use alternatives like https://www.wireguard.com/, https://tailscale.com/, https://github.com/juanfont/headscale, https://www.cloudflare.com/products/tunnel/, https://openvpn.net/ or https://www.zerotier.com/. Even https://store.steampowered.com/remoteplay, https://www.teamviewer.com/en/, https://rustdesk.com/, https://moonlight-stream.org/ and https://parsec.app/ will work, if you use VMs.
-
-:::
-
-We don't recommend to expose Homarr, because...
-- there could always be security vulnerabilities, even if we update dependencies and update frequently.
-- Homarr can act as a reverse proxy for integration data. It will not forward *any* request like a more conventional proxy does, but it could expose data, that you maybe don't want to show.
-- you generally want to avoid to expose information about your network to the outside, as this can be used against you (both legally depending on what you're hosting, technically using hacking methods and mentally by leaking data / putting pressure on you).
-- there are always crawlers and automated hack bots on the Internet, that try to find open holes in your security.
-- current implementation for security in Homarr don't meet the unwritten standards for exposing to the web. Future updates will completely overhaul and fix this: https://homarr.dev/about-us .
-- exposing could put other devices in your network at risk.
-
-Do you still want to do this? We recommend https://www.authelia.com/ or https://goauthentik.io/ for this. Make sure, that you've read the above concerns and understand the risk.
+Yes, since v0.14.0, we are confident that Homarr is secure enough to be exposed to the web. 
+Make sure to enable the "allow anonymouse access" [option in the settings](/docs/customizations/board-customization#access), if you want to allow people without an account to be able to see your dashboard (not edit)
 
 ### How do I open the console / log?
 There are two different sources of information:

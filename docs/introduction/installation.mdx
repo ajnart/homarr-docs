@@ -32,7 +32,9 @@ docker run  \
   --name homarr \
   --restart unless-stopped \
   -p 7575:7575 \
+  -v /var/run/docker.sock:/var/run/docker.sock \
   -v <your-path>/homarr/configs:/app/data/configs \
+  -v <your-path>/homarr/data:/data \
   -v <your-path>/homarr/icons:/app/public/icons \
   -d ghcr.io/ajnart/homarr:latest
 ```
@@ -50,12 +52,14 @@ Example of what NOT to do:
 ```bash
 -v apps/homarr:/app/data/configs \
 -v apps/homarr:/app/public/icons \
+-v apps/homarr:/data
 ```
 
 Instead do:
 ```bash
 -v apps/homarr/configs:/app/data/configs \
 -v apps/homarr/icons:/app/public/icons \
+-v apps/homarr/icons:/data
 ```
 
 :::
@@ -100,8 +104,10 @@ services:
     image: ghcr.io/ajnart/homarr:latest
     restart: unless-stopped
     volumes:
+      - /var/run/docker.sock:/var/run/docker.sock # Optional, only if you want docker integration
       - ./homarr/configs:/app/data/configs
       - ./homarr/icons:/app/public/icons
+      - ./homarr/data:/data
     ports:
       - '7575:7575'
 ```
@@ -131,8 +137,10 @@ services:
     image: ghcr.io/ajnart/homarr:latest
     restart: unless-stopped
     volumes:
-      - <your-path>:/app/data/configs
-      - <your-path>:/app/public/icons
+      - /var/run/docker.sock:/var/run/docker.sock # Optional, only if you want docker integration
+      - <your-path>/configs:/app/data/configs
+      - <your-path>/icons:/app/public/icons
+      - <your-path>/data:/data
     ports:
       - '7575:7575'
 ```
@@ -249,9 +257,9 @@ This is a *unvalidated* third party guide! It might not be up-to-date, nor do we
 
 ## Installation using Saltbox
 You can also use this to install on Saltbox:
-```sh
-    sb install sandbox-homarr
-  ```
+```bash
+sb install sandbox-homarr
+```
 
 :::caution
 
@@ -290,6 +298,8 @@ Installing Homarr from source is not recommended and only intended for developer
       <li>Enter the created directory using <code>cd homarr</code></li>
       <li>Install all dependencies using <code>yarn install</code></li>
       <li>Build the source using <code>yarn build</code></li>
+      <li>Copy the <code>example.env</code> file to <code>.env</code></li>
+      <li>Run <code>yarn db:migrate</code> and wait that it completes</li>
       <li>Start the NextJS web server using <code>yarn start</code></li>
       <li><i>Alternatively, use <code>yarn dev</code> to run a live development server.</i></li>
     </ol>
@@ -300,6 +310,8 @@ Installing Homarr from source is not recommended and only intended for developer
       <li>Enter the created directory using <code>cd homarr</code></li>
       <li>Install all dependencies using <code>npm install</code></li>
       <li>Build the source using <code>npm build</code></li>
+      <li>Copy the <code>example.env</code> file to <code>.env</code></li>
+      <li>Run <code>yarn db:migrate</code> and wait that it completes</li>
       <li>Start the NextJS web server using <code>npm start</code></li>
       <li><i>Alternatively, use <code>npm run dev</code> to run a live development server.</i></li>
     </ol>

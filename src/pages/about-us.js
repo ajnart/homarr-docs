@@ -72,14 +72,15 @@ const roadmap = [
     icon: <IconLock size="1rem" strokeWidth={1.5} />,
     title: 'Authentication',
     subtitle: 'Due to release in 0.14',
+    reached: true,
     content:
       "A part of Homarr is still not secure enough to be exposed to the internet. Existing solutions for authentication exist, but are incredibly cumbersome. We'll implement a basic authentication solution using the new tRPC APIs and remove the old legacy systems.",
-    badge: 'In progress',
   },
   {
     icon: <IconDatabase size="1rem" strokeWidth={1.5} />,
     title: 'Breaking: Migrate from JSON to Sqlite',
     subtitle: 'Due to release in 0.15',
+    badge: 'In progress',
     content:
       "Homarr still uses an unstructured JSON file behind the scenes. This adds much complexity regarding types, errors, exceptions and relationships. In 0.15, we'll migrate to a RDBMS. After that, JSON will no longer be supported.",
   },

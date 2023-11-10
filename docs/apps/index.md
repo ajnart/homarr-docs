@@ -1,5 +1,5 @@
 ---
-title: 🚀 Installation
+title: Adding an app
 sidebar_position: 2
 tags:
   - Apps
@@ -22,7 +22,7 @@ There is a wide variety of options for it, and if you wish for more customizatio
 
 ## Adding an App and General Option
 
-Adding any new app follows the same steps as this [Adding your first app](https://homarr.dev/docs/introduction/after-the-installation#adding-your-first-app) part of the introduction.
+Adding any new app follows the same steps as this [Adding your first app](../introduction/after-the-installation#adding-your-first-app) part of the introduction.
 
 ---
 
