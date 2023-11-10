@@ -40,7 +40,7 @@ const config = async function createConfig() {
         'data-website-id': '1e4656f4-abeb-4343-bbae-1d8626f52378',
         'data-project-name': 'Homarr',
         'data-project-color': '#2B2B2B',
-        'data-project-logo': 'https://homarr.dev/img/logo.png',
+        'data-project-logo': 'https://homarr.dev/img/favicon.png',
         async: true,
       },
     ],
@@ -82,7 +82,7 @@ const config = async function createConfig() {
         announcementBar: {
           id: 'updates',
           content:
-            '🎉 <b>Homarr v0.14 has been released!</b> Please <a href="/docs/introduction/installation#updating">update your instance.</a> 🎉',
+            '🎉 <b>Homarr\'s authentication update v0.14 has been released!</b> Please <a href="/docs/introduction/installation#updating">update your instance.</a> 🎉',
           backgroundColor: 'var(--homarr-secondary-bg)', // #0e8860
           textColor: 'var(--ifm-heading-color)',
           isCloseable: true,
