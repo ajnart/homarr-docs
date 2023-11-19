@@ -39,6 +39,7 @@ docker run  \
   -p 7575:7575 \
   -v ./homarr/configs:/app/data/configs \
   -v ./homarr/icons:/app/public/icons \
+  -v ./homarr/data:/data \
   -e NODE_TLS_REJECT_UNAUTHORIZED=0 \
   -d ghcr.io/ajnart/homarr:latest
 ```
@@ -59,6 +60,7 @@ apps:
     volumes:
       - ./homarr/configs:/app/data/configs
       - ./homarr/icons:/app/public/icons
+      - ./homarr/data:/data
     environment:
       NODE_TLS_REJECT_UNAUTHORIZED: 0
     ports:
@@ -83,6 +85,7 @@ apps:
     volumes:
       - ./homarr/configs:/app/data/configs
       - ./homarr/icons:/app/public/icons
+      - ./homarr/data:/data
     environment:
       - BASE_URL=your.internal.dns.address.here.com
     networks:
