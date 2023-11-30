@@ -398,6 +398,31 @@ All available values are listed on the [artifacthub](https://artifacthub.io/pack
 
 ---
 
+## Installation as a Home Assistant Add-on
+
+Homarr can now be seamlessly integrated into your Home Assistant setup with our new add-on. This is perfect for users who rely on Home Assistant as their primary server and don't have a separate device for hosting. With this add-on, you can easily access and manage Homarr directly within Home Assistant.
+
+### Prerequisites
+
+- [Home Assistant](https://www.home-assistant.io/getting-started/)
+- Access to your Home Assistant's Supervisor panel.
+
+### Installation
+
+1. **Add Repository**: Navigate to your Home Assistant Supervisor panel, and go to the Add-on Store. Add the following repository URL: `https://github.com/Wiggen94/ha-homarr-server` or click this button 
+[![Open your Home Assistant instance and show the add add-on repository dialog with a specific repository URL pre-filled.](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2FWiggen94%2Fha-homarr-server)
+
+2. **Install the Add-on**: Search for "Homarr Server" in the Add-on Store and select it. Click on "Install" to start the installation process.
+
+3. **Start the Add-on**: Once installed and configured, start the Homarr Server add-on from the Home Assistant Supervisor panel.
+
+4. **Access Homarr**: Homarr will be available at `http://<your-home-assistant-ip>:7575`. Open this address in your browser to access your Homarr dashboard.
+
+Your configuration, data and icons will be saved at /shares
+
+---
+
+
 ### Troubleshooting
 Having trouble installing Homarr on your system? Check out our [FAQ](/docs/community/faq) and [Known Issues](/docs/community/known-issues). If you are still running into issues, please contact us in our [Discord server](https://discord.com/invite/aCsmEV5RgA).
 
