@@ -67,6 +67,23 @@ apps:
       - '7575:7575'
 ```
 
+ </TabItem>
+  <TabItem value="UNRAID" label="Example with UNRAID">
+
+To allow unsigned certificates in Homarr, you can deactivate the rejection for unauthorized TLS requests. This can be done by adding the NODE_TLS_REJECT_UNAUTHORIZED environment variable and setting it to 0.
+
+Here is an example of how to do this with in Unraid.
+
+- Go to Docker
+- Click Homarr then click EDIT
+- Scroll down & click Add another Path, Port, Variable, Label or Device
+- Choose ‘Variable’
+- Key: NODE_TLS_REJECT_UNAUTHORIZED
+- Value: 0
+- Click Save
+
+Note you may need to go into homarr and re-save your integrations.
+
   </TabItem>
 </Tabs>
 
